@@ -1,0 +1,18 @@
+
+{% macro test(
+    fontSection, 
+    fontStyle
+    ) %}
+
+<!-- maybe instead of style and css var, this should just use a font class... -->
+<section id="{{ fontSection }}" class="font-section" style="font-family:var({{ fontStyle }});">
+    <div class="section-title">
+        <div class="section-title-wrapper">
+            <h3>Recursive Mono </br> Heading</h3>
+            <p style="font-family:var(--mono-heading-regular);">For flavorful monospace headlines in markdown and for code snippets inside web headlines, around 16–72
+                px in size</p>
+        </div>
+    </div>
+</section>
+
+{% endmacro %}

@@ -1,0 +1,16 @@
+// base.scss
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* RESET */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

@@ -1,0 +1,403 @@
+
+
+:root {
+    /* mono */
+    --mono-text-light:"Recursive Mono Text Light", "IBM Plex Mono", monospace;
+    --mono-text-regular:"Recursive Mono Text Regular", "IBM Plex Mono", monospace;
+    --mono-text-medium:"Recursive Mono Text Medium", "IBM Plex Mono", monospace;
+    --mono-text-bold:"Recursive Mono Text Bold", "IBM Plex Mono", monospace;
+    --mono-heading-light:"Recursive Mono Heading Light", "IBM Plex Mono", monospace;
+    --mono-heading-regular:"Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
+    --mono-heading-medium:"Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
+    --mono-heading-bold:"Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
+
+    /* mono italic */
+
+    --mono-heading-light-italic: "Recursive Mono Heading Light Italic", "IBM Plex Mono", monospace;
+    --mono-heading-regular-italic: "Recursive Mono Heading Regular Italic", "IBM Plex Mono", monospace;
+    --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
+    --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
+
+    /* sans */
+    --sans-text-light:"Recursive Sans Text Light", "IBM Plex Sans", monospace;
+    --sans-text-regular:"Recursive Sans Text Regular", "IBM Plex Sans", monospace;
+    --sans-text-medium:"Recursive Sans Text Medium", "IBM Plex Sans", monospace;
+    --sans-text-bold:"Recursive Sans Text Bold", "IBM Plex Sans", monospace;
+    --sans-heading-light:"Recursive Sans Heading Light", "IBM Plex Sans", monospace;
+    --sans-heading-regular:"Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
+    --sans-heading-medium:"Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
+    --sans-heading-bold:"Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
+
+    --w-light: 200;
+
+    /* padding */
+    --p-med: 2vw;
+
+    /* sidebar */
+    --sidebar-width: 20vw;
+
+    /* colors */
+
+    --main-accent: #00ff00;
+}
+
+/* html {
+    width: 100vw;
+} */
+
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* font-family:  var(--sans-heading-bold); */
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    /* grid-template-columns: 1fr 3fr; */
+    grid-template-rows: 3rem 1fr;
+    grid-template-areas:
+        "header     header"
+        "sidebar    content";
+    /* justify-content: stretch; */
+}
+
+* {
+    /* font-family: var(--micro-reg), Menlo, monospace; */
+    /* font-family: "RecursiveMonov0.0.11-TextBold", Menlo; */
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    color: #fff;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    font-family: var(--sans-heading-bold);
+    /* display: grid;
+    grid-template-columns: 1fr auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 3rem; */
+    grid-area: header;
+    z-index: 2;
+    border-bottom: 1px solid #444;
+}
+
+#sidebar {
+    grid-column: 1 / 2;
+    background-color: #000;
+    padding-top: 4rem;
+    font-family: var(--mono-heading-bold);
+    position: fixed;
+    width: var(--sidebar-width);
+    height: 100vh;
+    grid-area: sidebar;
+    overflow-y: auto;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+#sidebar ul ul {
+    margin-bottom: 1rem;
+}
+
+#sidebar li {
+    line-height: 1.5rem;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    color: #ccc;
+    /* padding: 2rem 0; */
+    transition: .25s;
+    display: block;
+}
+
+#sidebar li a:hover {
+   color: #fff;
+   /* transform: skewX(9deg); */
+   transform: skewX(-18.43deg);
+}
+
+#sidebar ul li li a:before {
+    content: "▶";
+    /* position: fixed; */
+    margin-left: -1.5em;
+    padding-right:.5em;
+    font-size: .65em;
+    color: rgba(0,255,0,0);
+    transition: .75s;
+}
+#sidebar ul li li a:hover:before {
+
+    color: #888;
+    transition: .25s;
+}
+
+
+
+#sidebar li ul {
+    padding: 0 1rem;
+    font-family: var(--mono-text-regular);
+}
+
+#sidebar ul > li a.highlight {
+    color: var(--main-accent);
+    transition: .25s;
+}
+
+#sidebar ul li li a.highlight {
+    color: #fff;
+    text-shadow: none;
+    font-weight: 800;
+}
+
+#sidebar ul li li a.highlight:before {
+    color: rgba(0,255,0,1);
+    transition: .25s;
+}
+
+
+
+
+#tests {
+    /* grid-column: 2 / span 1; */
+    grid-column-end: -1;
+    grid-area: content;
+    /* padding-left: var(--sidebar-width); */
+}
+
+.print-only {
+    display: none;
+}
+
+/* font weight reset until OTF files are properly style-linked */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+header h1 {
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+
+nav li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+nav li:last-of-type {
+    padding-right: 0;
+}
+
+nav li a {
+    color: white;
+    font-family: var(--sans-heading-bold);
+}
+
+.tests {
+    padding-top: 4rem;
+}
+
+@media print {
+    .print-only {
+        display: block;
+    }
+    body {
+        display: block;
+    }
+    header {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
+    #tests {
+        padding-top: 0;
+    }
+}
+
+.section-title {
+    /* width: 100vw; */
+    /* width: calc(100% - var(--sidebar-width)); */
+    background: #181818;
+    color: var(--main-accent);
+    /* background: var(--main-accent); */
+    /* height: 10rem; */
+    display: grid;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.section-title-wrapper {
+    /* padding: var(--p-med); */
+    width:100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6vw var(--p-med);
+}
+.section-title h3 {
+    /* font-family: var(--text-bold); */
+    font-size: 6vw;
+    margin: 0;
+}
+
+.section-title p {
+    font-size: 20px;
+    max-width: 20em;
+    color: #ddd;
+}
+
+.font-title {
+    background: #ddd;
+    color: #000;
+    padding: var(--p-med);
+}
+
+.font-title h4 {
+    font-size: 4vw;
+    margin: 10vh 0 0;
+}
+
+@media print {
+    .section-title, .font-title {
+        display: none;
+    }
+}
+
+
+/* PAGE */
+
+@page {
+    margin: 18pt;
+    size: landscape a4;
+}
+
+.page {
+    padding: var(--p-med);
+    /* overflow-x: hidden; */
+    display: grid;
+    grid-gap: 0 15px;
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, 100px); */
+    /* grid-template-rows: repeat(auto-fit, minmax(40px, auto)); */
+    align-items: flex-start;
+    border-bottom: 1px #ccc solid;
+    /* font-family:  var(--sans-heading-bold); */
+    font-weight: normal;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* width: calc(100% - var(--sidebar-width)); */
+}
+
+@media (max-width:1000px) {
+    .page {
+        /* grid-template-columns: repeat(8, minmax(80px, 1fr)); */
+    }
+}
+
+@media print {
+    .page {
+        border-bottom: none;
+        size: landscape;
+        page-break-after: always;
+    }
+}
+
+
+
+.page h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-family: var(--sans-heading-bold);
+    color: blue;
+}
+
+.alphabet {
+    font-size: 8rem;
+    line-height: 8rem;
+    margin:0rem 0;
+    grid-column: 1 / -1;
+    word-wrap: break-word;   
+}
+
+.very-large-text {
+    /* font-size: 40pt;
+    line-height: 45pt; */
+    font-size: 50px;
+    line-height: 50px;
+    grid-column: 1 / -1;
+}
+
+.large-text {
+    /* font-size: 20pt; */
+    font-size: 30px;
+    line-height: 1.25;
+    /* grid-column: 1 / span 5; */
+}
+
+.very-large-text p:last-of-type, .large-text p:last-of-type {
+    margin: 0;
+}
+
+.small-text {
+    /* font-size: 10pt; */
+    font-size: 16px;
+    line-height: 1.5;
+    /* grid-column: auto / span 5; */
+}
+
+.caption {
+    font-family: var(--sans-heading-bold);
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(32, 136, 0);
+}
+
+
+@media (max-width: 600px) {
+    .section-title h3 {
+        font-size: 5vw;
+    }
+}
+
+.waterfall {
+    margin: 0;
+    grid-column: 1 / -1;
+    /* text-transform: lowercase; */
+}
+
+.size-1 {
+    font-size: 36px;
+    line-height: 1.25;
+    max-width: 27.5em;
+}
+.size-2 {
+    font-size: 24px;
+    line-height: 1.25;
+    max-width: 30em;
+}
+.size-3 {
+    font-size: 18px;
+    line-height: 1.25;
+    max-width: 35em;
+}
+
+/* type styles */
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

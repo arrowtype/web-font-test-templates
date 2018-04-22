@@ -1,0 +1,21 @@
+<!-- index.nunjucks -->
+{% import "partials/font-tests.html" as fontTest %}
+
+{% extends "default.html" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+  
+{% include "partials/sidebar.html" %}
+
+
+<div id="tests">
+  <!-- later, use a macro to do this for each font file or name -->
+    <!-- {% include "partials/font-test.html" %} -->
+
+    {{ fontTest.test('mono-heading', '--mono-heading-bold') }}
+
+</div>
+
+{% endblock %}
