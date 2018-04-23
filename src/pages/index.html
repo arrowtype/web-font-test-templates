@@ -13,11 +13,27 @@
 
 
 <div id="tests">
+        <!-- <ul>
+        {% for word in words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+        </ul> -->
+
+       
+        {% for family in fonts.families %}
+        <p>{{ family }}</p>
         <ul>
-                {% for style in fonts %}
-                  <li>{{ style }}</li>
+            {% for opsz in fonts.params.opsz %}
+                {% for wght in fonts.params.wght %}
+                    {% for ital in fonts.params.ital %}
+                        <li>{{ opsz }} {{ wght }} {{ ital }}</li>
+                    {% endfor %}
                 {% endfor %}
-                </ul>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+
   <!-- later, use a macro to do this for each font file or name -->
 
     <!-- 

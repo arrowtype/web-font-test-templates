@@ -1,8 +1,24 @@
 {
-    "fonts": [
-        "yo",
-        "is",
-        "it",
-        "working?"
-    ]
+    "fonts": {
+        "families": [
+            "Recursive Mono",
+            "Recursive Sans"
+        ],
+		"params": {
+            "opsz": [
+                "Heading",
+                "Text"
+            ],
+            "wght": [
+                "Bold",
+                "Medium",
+                "Regular",
+                "Light"
+            ],
+            "ital": [
+                "",
+                "Italic"
+            ]
+        }
+    }
 }
