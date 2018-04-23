@@ -11,6 +11,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
 var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
+var data = require('gulp-data');
 var concat      = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
@@ -25,6 +26,7 @@ var input = './src/scss/**/*.scss';
 var inputMain = './src/scss/main.scss';
 var output = siteOutput + '/css';
 var inputPages = './src/pages/*.html';
+var inputData = './src/data/*.json';
 var inputTemplates = './src/templates/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
@@ -68,6 +70,10 @@ gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure([inputTemplates]);
   // Gets .html and .nunjucks files in pages
   return gulp.src(inputPages)
+  // Adding data to Nunjucks
+  .pipe(data(function() {
+    return require('./src/data/data.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in dist folder

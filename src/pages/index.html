@@ -10,7 +10,14 @@
 {% include "partials/sidebar.html" %}
 
 
+
+
 <div id="tests">
+        <ul>
+                {% for style in fonts %}
+                  <li>{{ style }}</li>
+                {% endfor %}
+                </ul>
   <!-- later, use a macro to do this for each font file or name -->
 
     <!-- 
@@ -45,6 +52,8 @@
         'mono-heading-regular',
         'Recursive Mono Heading Regular'
         ) }}
+
+    
 
 </div>
 
