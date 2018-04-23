@@ -1,8 +1,14 @@
 {
     "fonts": {
         "families": [
-            "Recursive Mono",
-            "Recursive Sans"
+            {
+                "title": "Recursive Mono",
+                "id": "mono"
+            },
+            {
+                "title": "Recursive Sans",
+                "id": "sans"
+            }
         ],
 		"params": {
             "opsz": [

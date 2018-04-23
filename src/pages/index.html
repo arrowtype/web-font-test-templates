@@ -21,12 +21,12 @@
 
        
         {% for family in fonts.families %}
-        <p>{{ family }}</p>
+        <p>{{ family.title }}, {{ family.id }}</p>
         <ul>
             {% for opsz in fonts.params.opsz %}
                 {% for wght in fonts.params.wght %}
                     {% for ital in fonts.params.ital %}
-                        <li>{{ opsz }} {{ wght }} {{ ital }}</li>
+                        <li>{{ family }} {{ opsz }} {{ wght }} {{ ital }}</li>
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
