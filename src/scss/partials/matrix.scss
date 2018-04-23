@@ -3,6 +3,7 @@
     grid-row: 1 / -1;
     background-color: #121;
     color: var(--main-accent);
+    // color: #060;
     overflow: hidden;
     display: grid;
     justify-content: center;
@@ -15,7 +16,8 @@
         word-break: break-all;
         line-height: 1.125em;
         letter-spacing: .25em;
-        animation: scrollUp .75s infinite linear;
+        animation: scrollUp 3.75s infinite linear,
+        scrollUp2 2.25s infinite linear;
     }
     .name-wrapper{
         grid-column: 2 / 3;
@@ -39,6 +41,15 @@
         transform: translateY(0) scale(1.05);
     }
     to {
-        transform: translateY(-1.125em) scale(1.05);
+        transform: translateY(-5.625em) scale(1.05);
+    }
+}
+
+@keyframes scrollUp2 {
+    from {
+        transform: translateY(0) scale(1.05);
+    }
+    to {
+        transform: translateY(-3.375em) scale(1.05);
     }
 }
