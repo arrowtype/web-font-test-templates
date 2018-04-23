@@ -1,0 +1,44 @@
+.matrix {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-color: #121;
+    color: var(--main-accent);
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    p {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        word-break: break-all;
+        line-height: 1.125em;
+        letter-spacing: .25em;
+        animation: scrollUp .75s infinite linear;
+    }
+    .name-wrapper{
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        display: grid;
+        align-items: center; 
+    }
+    h1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        z-index: 1;
+        text-align: center;
+        font-size: 30vw;
+        color: white;
+        margin: 0;
+    }
+}
+
+@keyframes scrollUp {
+    from {
+        transform: translateY(0) scale(1.05);
+    }
+    to {
+        transform: translateY(-1.125em) scale(1.05);
+    }
+}

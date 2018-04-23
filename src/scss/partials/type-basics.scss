@@ -28,13 +28,6 @@
     --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
 }
 
-.mono-heading-bold {
-    font-family: var(--mono-heading-bold);
-}
-.mono-heading-regular {
-    font-family: var(--mono-heading-regular);
-}
-
 $wdth: mono, sans;
 $opsz: heading, text;
 $wght: bold, medium, regular, light;
