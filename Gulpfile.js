@@ -21,10 +21,11 @@ var siteOutput = './dist';
 // Configuration
 // -----------------------------------------------------------------------------
 
-var input = './scss/*.scss';
-var inputMain = './scss/main.scss';
+var input = './src/scss/**/*.scss';
+var inputMain = './src/scss/main.scss';
 var output = siteOutput + '/css';
-var inputTemplates = './pages/*.html';
+var inputPages = './src/pages/*.html';
+var inputTemplates = './src/templates/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
@@ -64,9 +65,9 @@ gulp.task('scripts', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('nunjucks', function() {
-  nunjucksRender.nunjucks.configure(['./templates/']);
+  nunjucksRender.nunjucks.configure([inputTemplates]);
   // Gets .html and .nunjucks files in pages
-  return gulp.src(inputTemplates)
+  return gulp.src(inputPages)
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in dist folder
@@ -125,7 +126,7 @@ gulp.task('watch', function() {
     gulp.watch('./js/*', ['scripts']).on('change', browserSync.reload);
 
     // Watch nunjuck templates and reload browser if change
-    gulp.watch(inputTemplates, ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch(inputPages, ['nunjucks']).on('change', browserSync.reload);
 
 });
 

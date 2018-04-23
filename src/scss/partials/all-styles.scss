@@ -1,33 +1,6 @@
 
 
 :root {
-    /* mono */
-    --mono-text-light:"Recursive Mono Text Light", "IBM Plex Mono", monospace;
-    --mono-text-regular:"Recursive Mono Text Regular", "IBM Plex Mono", monospace;
-    --mono-text-medium:"Recursive Mono Text Medium", "IBM Plex Mono", monospace;
-    --mono-text-bold:"Recursive Mono Text Bold", "IBM Plex Mono", monospace;
-    --mono-heading-light:"Recursive Mono Heading Light", "IBM Plex Mono", monospace;
-    --mono-heading-regular:"Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
-    --mono-heading-medium:"Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
-    --mono-heading-bold:"Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
-
-    /* mono italic */
-
-    --mono-heading-light-italic: "Recursive Mono Heading Light Italic", "IBM Plex Mono", monospace;
-    --mono-heading-regular-italic: "Recursive Mono Heading Regular Italic", "IBM Plex Mono", monospace;
-    --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
-    --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
-
-    /* sans */
-    --sans-text-light:"Recursive Sans Text Light", "IBM Plex Sans", monospace;
-    --sans-text-regular:"Recursive Sans Text Regular", "IBM Plex Sans", monospace;
-    --sans-text-medium:"Recursive Sans Text Medium", "IBM Plex Sans", monospace;
-    --sans-text-bold:"Recursive Sans Text Bold", "IBM Plex Sans", monospace;
-    --sans-heading-light:"Recursive Sans Heading Light", "IBM Plex Sans", monospace;
-    --sans-heading-regular:"Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
-    --sans-heading-medium:"Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
-    --sans-heading-bold:"Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
-
     --w-light: 200;
 
     /* padding */
@@ -65,100 +38,7 @@ body {
     /* font-family: "RecursiveMonov0.0.11-TextBold", Menlo; */
 }
 
-header {
-    position: fixed;
-    background-color: black;
-    color: #fff;
-    padding: 0 2rem;
-    margin-bottom: 4rem;
-    font-family: var(--sans-heading-bold);
-    /* display: grid;
-    grid-template-columns: 1fr auto; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* height: 3rem; */
-    grid-area: header;
-    z-index: 2;
-    border-bottom: 1px solid #444;
-}
 
-#sidebar {
-    grid-column: 1 / 2;
-    background-color: #000;
-    padding-top: 4rem;
-    font-family: var(--mono-heading-bold);
-    position: fixed;
-    width: var(--sidebar-width);
-    height: 100vh;
-    grid-area: sidebar;
-    overflow-y: auto;
-}
-#sidebar ul {
-    list-style: none;
-    padding: 0 2rem;
-}
-
-#sidebar ul ul {
-    margin-bottom: 1rem;
-}
-
-#sidebar li {
-    line-height: 1.5rem;
-}
-
-#sidebar li a {
-    text-decoration: none;
-    color: #ccc;
-    /* padding: 2rem 0; */
-    transition: .25s;
-    display: block;
-}
-
-#sidebar li a:hover {
-   color: #fff;
-   /* transform: skewX(9deg); */
-   transform: skewX(-18.43deg);
-}
-
-#sidebar ul li li a:before {
-    content: "▶";
-    /* position: fixed; */
-    margin-left: -1.5em;
-    padding-right:.5em;
-    font-size: .65em;
-    color: rgba(0,255,0,0);
-    transition: .75s;
-}
-#sidebar ul li li a:hover:before {
-
-    color: #888;
-    transition: .25s;
-}
-
-
-
-#sidebar li ul {
-    padding: 0 1rem;
-    font-family: var(--mono-text-regular);
-}
-
-#sidebar ul > li a.highlight {
-    color: var(--main-accent);
-    transition: .25s;
-}
-
-#sidebar ul li li a.highlight {
-    color: #fff;
-    text-shadow: none;
-    font-weight: 800;
-}
-
-#sidebar ul li li a.highlight:before {
-    color: rgba(0,255,0,1);
-    transition: .25s;
-}
 
 
 
@@ -208,23 +88,7 @@ nav li a {
     padding-top: 4rem;
 }
 
-@media print {
-    .print-only {
-        display: block;
-    }
-    body {
-        display: block;
-    }
-    header {
-        display: none;
-    }
-    #sidebar {
-        display: none;
-    }
-    #tests {
-        padding-top: 0;
-    }
-}
+ 
 
 .section-title {
     /* width: 100vw; */
@@ -235,7 +99,7 @@ nav li a {
     /* height: 10rem; */
     display: grid;
     align-items: center;
-    justify-items: flex-start;
+    // justify-items: flex-start;
 }
 
 .section-title-wrapper {
@@ -257,11 +121,23 @@ nav li a {
     color: #ddd;
 }
 
+
 .font-title {
     background: #ddd;
-    color: #000;
-    padding: var(--p-med);
+    color: #000;    
+    // padding: var(--p-med);
+    display: grid;
+    align-items: center;
 }
+
+.font-title-wrapper {
+    width:100%;
+    max-width: 1400px;
+    padding: var(--p-med);
+    margin: 0 auto;
+}
+
+
 
 .font-title h4 {
     font-size: 4vw;

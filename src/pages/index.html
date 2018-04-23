@@ -1,0 +1,51 @@
+<!-- index.nunjucks -->
+{% import "partials/font-tests.html" as fontTest %}
+
+{% extends "default.html" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+  
+{% include "partials/sidebar.html" %}
+
+
+<div id="tests">
+  <!-- later, use a macro to do this for each font file or name -->
+
+    <!-- 
+    lvl1_id, 
+    lvl1_title_fontStyle,
+    lvl1_title, 
+    lvl1_caption_fontStyle,
+    lvl1_caption,
+    lvl2_id,
+    lvl2_fontStyle,
+    lvl2_title 
+    -->
+
+    {{ fontTest.test(
+        'mono-heading', 
+        'mono-heading-bold', 
+        'Mono Heading',
+        'mono-heading-regular',
+        'For flavorful monospace headlines in markdown and for code snippets inside web headlines, around 16–72 px in size',
+        'mono-heading-bold',
+        'mono-heading-bold',
+        'Recursive Mono Heading Bold'
+        ) }}
+
+    {{ fontTest.test(
+        'mono-heading', 
+        'mono-heading-regular', 
+        'Mono Heading',
+        'mono-heading-regular',
+        'For flavorful monospace headlines in markdown and for code snippets inside web headlines, around 16–72 px in size',
+        'mono-heading-regular',
+        'mono-heading-regular',
+        'Recursive Mono Heading Regular'
+        ) }}
+
+</div>
+
+{% endblock %}
