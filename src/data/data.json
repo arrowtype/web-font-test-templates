@@ -1,16 +1,11 @@
 {
+    "familyName": "Recursive",
     "fonts": {
-        "families": [
-            {
-                "title": "Recursive Mono",
-                "id": "mono"
-            },
-            {
-                "title": "Recursive Sans",
-                "id": "sans"
-            }
-        ],
 		"params": {
+            "wdth": [
+                "Mono",
+                "Sans"
+            ],
             "opsz": [
                 "Heading",
                 "Text"

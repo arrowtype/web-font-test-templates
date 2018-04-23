@@ -1,26 +1,11 @@
 <!-- this should actually probably loop through JSON (or files?) to make everything based on font names -->
 
-{% macro test( 
-    lvlOne_id, 
-    lvlOne_title_fontStyle, 
-    lvlOne_title, 
-    lvlOne_caption_fontStyle, 
-    lvlOne_caption, 
-    lvlTwo_id, 
+{% macro testText( 
     lvlTwo_fontStyle,
     lvlTwo_title 
     ) %}
 <!-- maybe instead of style and css var, this should just use a font class... -->
 
-<div id="{{ lvlOne_id }}" class="font-section">
-	<div class="section-title {{ lvlOne_title_fontStyle }}">
-		<div class="section-title-wrapper">
-			<h3>{{ lvlOne_title }}</h3>
-			<p style="font-family:var({{ lvlOne_caption_fontStyle }});"> 
-                {{ lvlOne_caption }} 
-            </p>
-		</div>
-	</div>
 	<div id="{{ lvlTwo_id }}" class="font-section {{lvlTwo_fontStyle}}">
         <div class="font-title">
             <div class="font-title-wrapper">
@@ -50,7 +35,5 @@
                 </div>
             </div>
 	</div>
-	
-</div>
 
 {% endmacro %}

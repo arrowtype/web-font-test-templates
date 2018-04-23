@@ -26,6 +26,9 @@ header {
     background-color: #000;
     padding-top: 4rem;
     font-family: var(--mono-heading-bold);
+    // font-size: 1.25rem;
+    text-transform: uppercase;
+    // letter-spacing: .6em;
     position: fixed;
     width: var(--sidebar-width);
     height: 100vh;
@@ -42,12 +45,12 @@ header {
 }
 
 #sidebar li {
-    line-height: 1.5rem;
+    line-height: 1.25rem;
 }
 
 #sidebar li a {
     text-decoration: none;
-    color: #ccc;
+    color: #aaa;
     /* padding: 2rem 0; */
     transition: .25s;
     display: block;
@@ -62,7 +65,7 @@ header {
 #sidebar ul li li a:before {
     content: "▶";
     /* position: fixed; */
-    margin-left: -1.5em;
+    // margin-left: -1.5em;
     padding-right:.5em;
     font-size: .65em;
     color: rgba(0,255,0,0);
@@ -77,9 +80,26 @@ header {
 
 
 #sidebar li ul {
-    padding: 0 1rem;
-    font-family: var(--mono-text-regular);
+    margin-left: -1rem;
+    padding: 0 0rem;
+    font-family: var(--mono-text-bold);
+    // font-size: 1rem;
+    text-transform: none;
+    letter-spacing: 0;
+    border-left: 2px transparent solid;
 }
+#sidebar li ul li{
+    margin-left: 0;
+}
+#sidebar li ul ul {
+    margin-left: 0.9rem;
+    padding: 0 0.3rem;
+    font-family: var(--mono-text-regular);
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+
 
 #sidebar ul > li a.highlight {
     color: var(--main-accent);
@@ -89,10 +109,27 @@ header {
 #sidebar ul li li a.highlight {
     color: #fff;
     text-shadow: none;
-    font-weight: 800;
+    font-weight: bold;
+    // background-color: #222;
+    // border-radius: 100px;
 }
 
-#sidebar ul li li a.highlight:before {
+#sidebar ul li li a + ul{
+    border-left: 2px transparent solid;
+    transition: 1s ease;
+}
+
+#sidebar ul li li a.highlight + ul {
+    border-left: 2px #444 solid;
+    transition: 1s ease;
+}
+
+#sidebar ul li li li a,
+#sidebar ul li li li a.highlight {
+    border-left: none;
+}
+
+#sidebar ul li li li a.highlight:before {
     color: rgba(0,255,0,1);
     transition: .25s;
 }

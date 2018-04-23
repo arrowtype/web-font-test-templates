@@ -1,0 +1,21 @@
+<div id="sidebar"></div>
+    <ul>
+    {% for wdth in fonts.params.wdth %}
+        <h2>{{familyName}} {{ wdth }}</h2>
+        <ul>
+            {% for opsz in fonts.params.opsz %}
+                <li>
+                    <h3>{{ wdth | capitalize}} {{opsz}}</h3>
+                    <ul>
+                    {% for wght in fonts.params.wght %}
+                        {% for ital in fonts.params.ital %}
+                            <li>{{familyName}} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    </ul>
+</div>

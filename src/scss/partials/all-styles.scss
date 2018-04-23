@@ -91,19 +91,14 @@ nav li a {
  
 
 .section-title {
-    /* width: 100vw; */
-    /* width: calc(100% - var(--sidebar-width)); */
     background: #181818;
     color: var(--main-accent);
-    /* background: var(--main-accent); */
-    /* height: 10rem; */
     display: grid;
     align-items: center;
-    // justify-items: flex-start;
+
 }
 
 .section-title-wrapper {
-    /* padding: var(--p-med); */
     width:100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -119,6 +114,15 @@ nav li a {
     font-size: 20px;
     max-width: 20em;
     color: #ddd;
+}
+
+.width-section-title {
+    font-size: 12em;
+    background: var(--main-accent);
+    color: #000;
+    h2 {
+        margin: 0;
+    }
 }
 
 
