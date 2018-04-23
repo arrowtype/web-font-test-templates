@@ -31,9 +31,19 @@
                                 </div>
                                 <div class="page">
                                     <p class="print-only">{{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</p>
+                                    {% if wght == 'Bold' and opsz == 'Heading'%}
                                     <p class="alphabet">ABCDEFGHILMNOPRSTUVWYZ</p>
                                     <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
                                     <p class="alphabet">0123456789</p>
+                                    {% elif wght == 'Bold' and opsz == 'Heading'%}
+                                    <p class="alphabet">ABCDEFGHILMNOPRSTUVWYZ</p>
+                                    <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                    <p class="alphabet">0123456789</p>
+                                    {% else %}
+                                    <p class="alphabet">BCGRS</p>
+                                    <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                    {% endif %}
+                                    
                                 </div>
                                 <div class="page">
                                         <p class="print-only">{{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</p>

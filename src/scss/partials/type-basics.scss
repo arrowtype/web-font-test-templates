@@ -1,42 +1,31 @@
 :root {
     /* mono */
-    --mono-text-light:"Recursive Mono Text Light", "IBM Plex Mono", monospace;
-    --mono-text-regular:"Recursive Mono Text Regular", "IBM Plex Mono", monospace;
-    --mono-text-medium:"Recursive Mono Text Medium", "IBM Plex Mono", monospace;
-    --mono-text-bold:"Recursive Mono Text Bold", "IBM Plex Mono", monospace;
-    --mono-heading-light:"Recursive Mono Heading Light", "IBM Plex Mono", monospace;
-    --mono-heading-regular:"Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
-    --mono-heading-medium:"Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
-    --mono-heading-bold:"Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
-
+    --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
+    --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
+    --mono-text-medium: "Recursive Mono Text Medium", "IBM Plex Mono", monospace;
+    --mono-text-bold: "Recursive Mono Text Bold", "IBM Plex Mono", monospace;
+    --mono-heading-light: "Recursive Mono Heading Light", "IBM Plex Mono", monospace;
+    --mono-heading-regular: "Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
+    --mono-heading-medium: "Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
+    --mono-heading-bold: "Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
     /* mono italic */
-
+    --mono-text-light-italic: "Recursive Mono Text Light Italic", "IBM Plex Mono", monospace;
+    --mono-text-regular-italic: "Recursive Mono Text Regular Italic", "IBM Plex Mono", monospace;
+    --mono-text-medium-italic: "Recursive Mono Text Medium Italic", "IBM Plex Mono", monospace;
+    --mono-text-bold-italic: "Recursive Mono Text Bold Italic", "IBM Plex Mono", monospace;
     --mono-heading-light-italic: "Recursive Mono Heading Light Italic", "IBM Plex Mono", monospace;
     --mono-heading-regular-italic: "Recursive Mono Heading Regular Italic", "IBM Plex Mono", monospace;
     --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
     --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
-
     /* sans */
-    --sans-text-light:"Recursive Sans Text Light", "IBM Plex Sans", monospace;
-    --sans-text-regular:"Recursive Sans Text Regular", "IBM Plex Sans", monospace;
-    --sans-text-medium:"Recursive Sans Text Medium", "IBM Plex Sans", monospace;
-    --sans-text-bold:"Recursive Sans Text Bold", "IBM Plex Sans", monospace;
-    --sans-heading-light:"Recursive Sans Heading Light", "IBM Plex Sans", monospace;
-    --sans-heading-regular:"Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
-    --sans-heading-medium:"Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
-    --sans-heading-bold:"Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
-
-    // --w-light: 200;
-
-    // /* padding */
-    // --p-med: 2vw;
-
-    // /* sidebar */
-    // --sidebar-width: 20vw;
-
-    // /* colors */
-
-    // --main-accent: #00ff00;
+    --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", monospace;
+    --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", monospace;
+    --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", monospace;
+    --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", monospace;
+    --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", monospace;
+    --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
+    --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
+    --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
 }
 
 .mono-heading-bold {
@@ -44,4 +33,29 @@
 }
 .mono-heading-regular {
     font-family: var(--mono-heading-regular);
+}
+
+$wdth: mono, sans;
+$opsz: heading, text;
+$wght: bold, medium, regular, light;
+$ital: italic, roman;
+
+@each $width in $wdth {
+    @each $opsize in $opsz {
+        @each $weight in $wght {
+            @each $slope in $ital {
+                @if $slope == 'italic'{
+                    .#{$width}-#{$opsize}-#{$weight}-#{$slope} {
+                        font-family: var(--#{$width}-#{$opsize}-#{$weight}-#{$slope});
+                        font-style: italic;
+                    }
+                } @else {
+                    .#{$width}-#{$opsize}-#{$weight} {
+                        font-family: var(--#{$width}-#{$opsize}-#{$weight});
+                    }
+                }
+
+            }
+        }
+    }
 }

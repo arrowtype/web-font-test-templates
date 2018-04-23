@@ -100,9 +100,10 @@ gulp.task('img', function() {
 // Fonts
 // -----------------------------------------------------------------------------
 
+// GET THIS WORKING
 gulp.task('fonts', function() {
-  return gulp.src(['./fonts/**/*'])
-  .pipe(gulp.dest(siteOutput + '/fonts/'));
+  return gulp.src('./fonts/**/*')
+  .pipe(gulp.dest(siteOutput + '/fonts'));
 });
 
 

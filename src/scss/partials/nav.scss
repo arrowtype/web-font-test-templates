@@ -54,6 +54,11 @@ header {
     /* padding: 2rem 0; */
     transition: .25s;
     display: block;
+    margin-bottom: .5em;
+}
+
+#sidebar li li a {
+    margin-bottom: 0;
 }
 
 #sidebar li a:hover {
@@ -75,6 +80,7 @@ header {
 
     color: #888;
     transition: .25s;
+    
 }
 
 

@@ -67,22 +67,27 @@
 @font-face {
     font-family: "Recursive Mono Heading Light Italic";
     font-style: italic;
+    font-weight: 200;
     src: url("../fonts/otf/RecursiveMono-HeadingLightItalic.otf");
 }
 @font-face {
     font-family: "Recursive Mono Heading Regular Italic";
     font-style: italic;
+    font-weight: 400;
     src: url("../fonts/otf/RecursiveMono-HeadingRegularItalic.otf");
 }
 @font-face {
     font-family: "Recursive Mono Heading Medium Italic";
     font-style: italic;
+    font-weight: 600;
     src: url("../fonts/otf/RecursiveMono-HeadingMediumItalic.otf");
 }
 @font-face {
     font-family: "Recursive Mono Heading Bold Italic";
     font-style: italic;
+    font-weight: 800;
     src: url("../fonts/otf/RecursiveMono-HeadingBoldItalic.otf");
+
 }
 
 /* SANS */
