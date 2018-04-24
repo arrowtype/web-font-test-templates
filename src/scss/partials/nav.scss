@@ -140,20 +140,20 @@ header {
     transition: .25s;
 }
 
-@media print {
-    .print-only {
-        display: block;
-    }
-    body {
-        display: block;
-    }
-    // header {
-    //     display: none;
-    // }
-    #sidebar {
-        display: none;
-    }
-    #tests {
-        padding-top: 0;
-    }
-}
+// @media print {
+//     .print-only {
+//         display: block;
+//     }
+//     body {
+//         display: block;
+//     }
+//     // header {
+//     //     display: none;
+//     // }
+//     #sidebar {
+//         display: none;
+//     }
+//     #tests {
+//         padding-top: 0;
+//     }
+// }

@@ -16,8 +16,7 @@
         word-break: break-all;
         line-height: 1.125em;
         letter-spacing: .25em;
-        animation: scrollUp 3.75s infinite linear,
-        scrollUp2 2.25s infinite linear;
+        animation: scrollUp 3.75s infinite linear;
     }
     .name-wrapper{
         grid-column: 2 / 3;
@@ -31,25 +30,21 @@
         z-index: 1;
         text-align: center;
         font-size: 30vw;
+        line-height: 0.9em;
         color: white;
         margin: 0;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
 
 @keyframes scrollUp {
-    from {
+    0% {
         transform: translateY(0) scale(1.05);
     }
-    to {
+    100% {
         transform: translateY(-5.625em) scale(1.05);
-    }
-}
-
-@keyframes scrollUp2 {
-    from {
-        transform: translateY(0) scale(1.05);
-    }
-    to {
-        transform: translateY(-3.375em) scale(1.05);
     }
 }

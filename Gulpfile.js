@@ -69,7 +69,7 @@ gulp.task('scripts', function() {
 gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure([inputTemplates]);
   // Gets .html and .nunjucks files in pages
-  return gulp.src(inputPages)
+  return gulp.src([inputPages, inputTemplates])
   // Adding data to Nunjucks
   .pipe(data(function() {
     return require('./src/data/data.json')
@@ -133,7 +133,7 @@ gulp.task('watch', function() {
     gulp.watch('./js/*', ['scripts']).on('change', browserSync.reload);
 
     // Watch nunjuck templates and reload browser if change
-    gulp.watch(inputPages, ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
 
 });
 

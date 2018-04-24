@@ -1,0 +1,57 @@
+@page {
+    margin: 18pt;
+    size: landscape a4;
+}
+
+.page {
+    h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-family: var(--sans-heading-bold);
+    color: blue;
+    }
+    .page-label {
+        // color:red;
+        color: #888;
+        margin-bottom: 0;
+    }
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    .print-only {
+        display: block;
+    }
+    .screen-only {
+        display: none;
+    }
+    
+    .page {
+        border-bottom: none;
+        size: landscape;
+        page-break-after: always;
+    }
+
+    .section-title, .font-title {
+        display: none;
+    }
+
+    ///// nav
+
+
+    body {
+        display: block;
+    }
+    // header {
+    //     display: none;
+    // }
+    #sidebar {
+        display: none;
+    }
+    #tests {
+        padding-top: 0;
+    }
+}

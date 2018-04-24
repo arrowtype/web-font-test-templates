@@ -34,15 +34,6 @@ body {
     /* justify-content: stretch; */
 }
 
-* {
-    /* font-family: var(--micro-reg), Menlo, monospace; */
-    /* font-family: "RecursiveMonov0.0.11-TextBold", Menlo; */
-}
-
-
-
-
-
 
 #tests {
     /* grid-column: 2 / span 1; */
@@ -51,14 +42,9 @@ body {
     /* padding-left: var(--sidebar-width); */
 }
 
-.print-only {
-    display: none;
-}
 
-/* font weight reset until OTF files are properly style-linked */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
+
+
 
 header h1 {
     font-size: 1rem;
@@ -150,11 +136,7 @@ nav li a {
     margin: 10vh 0 0;
 }
 
-@media print {
-    .section-title, .font-title {
-        display: none;
-    }
-}
+
 
 
 /* PAGE */
@@ -187,14 +169,6 @@ nav li a {
     }
 }
 
-@media print {
-    .page {
-        border-bottom: none;
-        size: landscape;
-        page-break-after: always;
-    }
-}
-
 
 
 .page h2 {
@@ -202,6 +176,11 @@ nav li a {
     margin: 0;
     font-family: var(--sans-heading-bold);
     color: blue;
+}
+
+.alphabet-spec {
+    margin: 1rem 0 0;
+    grid-column: 1 / -1;
 }
 
 .alphabet {
@@ -243,6 +222,7 @@ nav li a {
     font-size: 14px;
     line-height: 1.5;
     color: rgb(32, 136, 0);
+    margin-bottom:0; 
 }
 
 
@@ -274,12 +254,3 @@ nav li a {
     max-width: 35em;
 }
 
-/* type styles */
-
-.bold {
-    font-weight: bold;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}

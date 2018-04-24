@@ -14,3 +14,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+// selection styles
+
+::selection { background: #00ff00; }

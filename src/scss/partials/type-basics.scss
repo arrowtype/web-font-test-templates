@@ -52,3 +52,18 @@ $ital: italic, roman;
         }
     }
 }
+
+/* type styles */
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* font weight reset until OTF files are properly style-linked */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
