@@ -1,4 +1,16 @@
 <header>
-    <h1>Recursive</h1>
-    <p>Type Tests - Apr 25, 2018</p>
+    <h1>Recursive - {{ versionDate }}</h1>
+    <nav>
+        <ul>
+            <li>
+                <a {%if page == "overview"%}class="highlight"{%endif%} href="index.html">Overview</a>
+            </li>
+            <li>
+                <a {%if page == "spec"%}class="highlight"{%endif%} href="specs.html">Type Specs</a>
+            </li>
+            <li>
+                <a {%if page == "tester"%}class="highlight"{%endif%} href="matrix.html">Type Tester</a>
+            </li>
+        </ul>
+    </nav>
 </header>

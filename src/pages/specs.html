@@ -1,15 +1,15 @@
 <!-- index.nunjucks -->
 
-{% set page = "overview" %}
+{% set page = "spec" %}
 
 <!-- components -->
 
 {% extends "default.html" %}
 
 {% block content %}
+  
+{% include "partials/sidebar.html" %}
 
-<div class="tests">
-    YOOOO
-</div>
+{% include "partials/font-tests.html" %}
 
 {% endblock %}

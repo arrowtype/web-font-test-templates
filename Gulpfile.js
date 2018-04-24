@@ -26,7 +26,7 @@ var input = './src/scss/**/*.scss';
 var inputMain = './src/scss/main.scss';
 var output = siteOutput + '/css';
 var inputPages = './src/pages/*.html';
-var inputData = './src/data/*.json';
+var inputData = './src/data/data.json';
 var inputTemplates = './src/templates/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
@@ -72,7 +72,7 @@ gulp.task('nunjucks', function() {
   return gulp.src([inputPages, inputTemplates])
   // Adding data to Nunjucks
   .pipe(data(function() {
-    return require('./src/data/data.json')
+    return require(inputData)
   }))
   // Renders template with nunjucks
   .pipe(nunjucksRender())
@@ -130,7 +130,11 @@ gulp.task('watch', function() {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 
+    //  reload on js change
     gulp.watch('./js/*', ['scripts']).on('change', browserSync.reload);
+
+    // reload on json data change
+    // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA
 
     // Watch nunjuck templates and reload browser if change
     gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
