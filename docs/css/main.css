@@ -828,9 +828,10 @@ nav li a {
 .matrix p {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  word-break: break-all;
+  text-align: center;
   line-height: 1.125em;
   letter-spacing: .25em;
+  word-spacing: -.75em;
   opacity: .75;
   animation: scrollUp 3.75s infinite linear;
 }
@@ -885,10 +886,10 @@ nav li a {
 
 @keyframes scrollUp {
   0% {
-    transform: translateY(0) scale(1.05);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(-5.625em) scale(1.05);
+    transform: translateY(-2.25em);
   }
 }
 
