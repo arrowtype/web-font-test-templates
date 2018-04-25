@@ -16,21 +16,25 @@ header {
     z-index: 2;
     border-bottom: 1px solid #444;
 
-    nav {
-        a {
-            text-decoration: none;
-            display: block;
-            transition: .25s ease;
 
-            &:hover {
-                transform: skewX(-18.43deg);
-            }
+    a {
+        text-decoration: none;
+        display: block;
+        transition: .25s ease;
+        font-size: 1rem;
+
+        &:hover {
+            transform: skewX(-18.43deg);
         }
-
-        .highlight {
-            color: var(--main-accent);
+        &:visited {
+            color: #fff;
         }
     }
+
+    .highlight {
+        color: var(--main-accent);
+    }
+
 
     @media print {
         display: none;

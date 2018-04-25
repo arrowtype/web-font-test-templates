@@ -1,10 +1,7 @@
 <header>
-    <h1>Recursive - {{ versionDate }}</h1>
+    <h1><a {%if page == "overview"%}class="highlight"{%endif%} href="index.html">Recursive - {{ versionDate }}</a></h1>
     <nav>
         <ul>
-            <li>
-                <a {%if page == "overview"%}class="highlight"{%endif%} href="index.html">Overview</a>
-            </li>
             <li>
                 <a {%if page == "spec"%}class="highlight"{%endif%} href="specs.html">Type Specs</a>
             </li>

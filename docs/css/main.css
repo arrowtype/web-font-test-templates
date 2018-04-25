@@ -417,17 +417,22 @@ header {
   border-bottom: 1px solid #444;
 }
 
-header nav a {
+header a {
   text-decoration: none;
   display: block;
   transition: .25s ease;
+  font-size: 1rem;
 }
 
-header nav a:hover {
+header a:hover {
   transform: skewX(-18.43deg);
 }
 
-header nav .highlight {
+header a:visited {
+  color: #fff;
+}
+
+header .highlight {
   color: var(--main-accent);
 }
 
@@ -650,8 +655,8 @@ nav li a {
 
 .width-section-title {
   font-size: 12em;
-  background: var(--main-accent);
-  color: #000;
+  background: #222;
+  color: var(--main-accent);
 }
 
 .width-section-title h2 {

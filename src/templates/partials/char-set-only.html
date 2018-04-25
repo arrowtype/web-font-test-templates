@@ -1,0 +1,64 @@
+<div id="tests">
+       
+        {% for wdth in fonts.params.wdth %}
+        <section id="{{wdth | lower}}" class="font-section {{wdth | lower}}-heading-bold">
+                <div class="section-title width-section-title {{ lvlOne_title_fontStyle }}">
+                    <div class="section-title-wrapper width-section-title-wrapper">
+                        <h2>{{ wdth }}</h2>
+                    </div>
+                </div>
+            <div>
+                {% for opsz in fonts.params.opsz %}
+                    <div id="{{ wdth | lower}}-{{ opsz | lower }}" class="font-section {{wdth | lower}}-{{ opsz | lower }}-bold">
+                        <div class="section-title {{ lvlOne_title_fontStyle }}">
+                            <div class="section-title-wrapper">
+                                <h3>{{ wdth }} {{opsz}}</h3>
+                            </div>
+                        </div>
+                        <div>
+                        {% for wght in fonts.params.wght %}
+                            {% for ital in fonts.params.ital %}
+                            {% if ital == 'Italic'%}
+                            <div id="{{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}-{{ ital | lower}}" class="font-section {{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}-{{ ital | lower}}">
+                            {% endif %}
+                            {% if ital == ''%}
+                            <div id="{{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" class="font-section {{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}">
+                            {% endif %}
+                                    <div class="font-title">
+                                        <div class="font-title-wrapper">
+                                            <h4>{{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</h4>
+                                        </div>
+                                    </div>
+                                    <div class="page">
+                                        <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
+                                        <div class="alphabet-spec">
+                                            
+                                            <p class="alphabet">ABCDEFGHILMNOPRSTUVWYZ</p>
+                                            <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                            
+                                            {% if wght == 'Bold' and opsz == 'Heading'%}
+                                            <p class="alphabet">0123456789</p>
+                                            {% elif wght == 'Light' and opsz == 'Heading'%}
+                                            <p class="alphabet">0123456789</p>
+                                            {%endif%}
+    
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+    
+                                </div>
+                                
+                            {% endfor %}
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    
+    
+    
+    </div>
