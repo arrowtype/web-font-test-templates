@@ -67,3 +67,17 @@ $ital: italic, roman;
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
+
+// type scale
+
+.f-1 {
+    font-size: 4rem;
+}
+
+.f-2 {
+    font-size: 3rem;
+
+    @media (max-width: 800px) {
+        font-size: 6vw;
+    }
+}

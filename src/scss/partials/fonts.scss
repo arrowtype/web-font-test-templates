@@ -18,27 +18,7 @@
 
 /* MONO */
 
-/* text */
-@font-face {
-    font-family: "Recursive Mono Text Light";
-    font-weight: 200;
-    src: url("../fonts/otf/RecursiveMono-TextLight.otf");
-}
-@font-face {
-    font-family: "Recursive Mono Text Regular";
-    font-weight: 400;
-    src: url("../fonts/otf/RecursiveMono-TextRegular.otf");
-}
-@font-face {
-    font-family: "Recursive Mono Text Medium";
-    font-weight: 600;
-    src: url("../fonts/otf/RecursiveMono-TextMedium.otf");
-}
-@font-face {
-    font-family: "Recursive Mono Text Bold";
-    font-weight: 800;
-    src: url("../fonts/otf/RecursiveMono-TextBold.otf");
-}
+
 
 /* heading */
 
@@ -87,6 +67,55 @@
     font-style: italic;
     font-weight: 800;
     src: url("../fonts/otf/RecursiveMono-HeadingBoldItalic.otf");
+
+}
+
+/* text */
+@font-face {
+    font-family: "Recursive Mono Text Light";
+    font-weight: 200;
+    src: url("../fonts/otf/RecursiveMono-TextLight.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Regular";
+    font-weight: 400;
+    src: url("../fonts/otf/RecursiveMono-TextRegular.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Medium";
+    font-weight: 600;
+    src: url("../fonts/otf/RecursiveMono-TextMedium.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Bold";
+    font-weight: 800;
+    src: url("../fonts/otf/RecursiveMono-TextBold.otf");
+}
+
+/* text italic */
+@font-face {
+    font-family: "Recursive Mono Text Light Italic";
+    font-style: italic;
+    font-weight: 200;
+    src: url("../fonts/otf/RecursiveMono-TextLightItalic.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Regular Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/otf/RecursiveMono-TextRegularItalic.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Medium Italic";
+    font-style: italic;
+    font-weight: 600;
+    src: url("../fonts/otf/RecursiveMono-TextMediumItalic.otf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Bold Italic";
+    font-style: italic;
+    font-weight: 800;
+    src: url("../fonts/otf/RecursiveMono-TextBoldItalic.otf");
 
 }
 

@@ -16,6 +16,7 @@
         word-break: break-all;
         line-height: 1.125em;
         letter-spacing: .25em;
+        opacity: .75;
         animation: scrollUp 3.75s infinite linear;
     }
     .name-wrapper{
@@ -28,14 +29,37 @@
         grid-column: 2 / 3;
         grid-row: 1 / -1;
         z-index: 1;
-        text-align: center;
-        font-size: 30vw;
+        text-align: left;
+        font-size: 20vw;
         line-height: 1.125em;
         color: white;
         margin: 0;
+        text-shadow: .125em .125em .5em black;
+        position: relative;
+        top: .5em;
+        font-weight: 800;
+
+        &:after {
+            content: "";
+            display: block;
+            position: relative;
+            box-shadow: .125em .125em .5em black;
+            top: -1.125em;
+            left: .125em;
+            float: right;
+            background: white;
+            width: .02em;
+            border-radius: 999px;
+            height: 1em;
+            opacity: 0;
+            animation: blink 0.35s linear 1s infinite alternate;
+        }
 
         &:focus {
             outline: none;
+        }
+        &:focus:after {
+            animation: none;
         }
     }
 }
@@ -46,5 +70,20 @@
     }
     100% {
         transform: translateY(-5.625em) scale(1.05);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
     }
 }

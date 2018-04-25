@@ -1,0 +1,11 @@
+.hero {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+}

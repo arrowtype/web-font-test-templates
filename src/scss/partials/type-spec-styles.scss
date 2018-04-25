@@ -32,6 +32,8 @@ body {
         "header     header"
         "sidebar    content";
     /* justify-content: stretch; */
+    background-color: #000;
+    color: white;
 }
 
 
@@ -78,8 +80,10 @@ nav li a {
  
 
 .section-title {
-    background: #181818;
-    color: var(--main-accent);
+    // background: #181818;
+    // color: var(--main-accent);
+    background: #efefef;
+    color: var(--secondary-accent);
     display: grid;
     align-items: center;
 
@@ -106,8 +110,10 @@ nav li a {
 .width-section-title {
     font-size: 12em;
     // background: var(--secondary-accent);
-    background: #0a0a0a;
-    color: #fff;
+    // background: #0a0a0a;
+    // color: #fff;
+    background: var(--main-accent);
+    color: #000;
     h2 {
         margin: 0;
     }
@@ -115,8 +121,10 @@ nav li a {
 
 
 .font-title {
-    background: #ddd;
-    color: #000;    
+    // background: #ddd;
+    // color: #000;    
+    background: var(--secondary-accent);
+    color: var(--main-accent);    
     // padding: var(--p-med);
     display: grid;
     align-items: center;
@@ -155,7 +163,7 @@ nav li a {
     /* grid-template-columns: repeat(auto-fit, 100px); */
     /* grid-template-rows: repeat(auto-fit, minmax(40px, auto)); */
     align-items: flex-start;
-    border-bottom: 1px #ccc solid;
+    // border-bottom: 1px #888 solid;
     /* font-family:  var(--sans-heading-bold); */
     font-weight: normal;
     max-width: 1400px;
@@ -223,6 +231,10 @@ nav li a {
     line-height: 1.5;
     color: rgb(32, 136, 0);
     margin-bottom:0; 
+}
+
+.caption ~ p {
+    margin-top: 0;
 }
 
 

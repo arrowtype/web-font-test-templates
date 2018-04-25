@@ -1,0 +1,27 @@
+// $black:#000;
+// $white:#000;
+// $main:#0f0;
+// $secondary:#004608;
+
+// $colors: $black, $white, $main, $secondary;
+
+// @each $color in $color {
+//     .bg-#{$color} {
+//         background-color: #{$color};
+//     }
+//     .#{$color} {
+//         color: #{$color}; 
+//     }
+// }
+
+.bg-black {
+    background-color: #000;
+}
+
+.c-main {
+    color: var(--main-accent);
+}
+
+.c-gray {
+    color: #aaa;
+}

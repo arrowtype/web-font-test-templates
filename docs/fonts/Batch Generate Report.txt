@@ -1,0 +1,610 @@
+Batch Generated Fonts:
+**********************
+
+Decompose:
+**********
+    Recursive Mono Heading Bold
+    Recursive Mono Text Light
+    Recursive Mono Heading Light
+    Recursive Mono Text Bold
+    Recursive Mono Text Bold
+    Recursive Mono Heading Bold
+    Recursive Mono Heading Light
+    Recursive Mono Text Light
+    Recursive Mono Text Regular
+    Recursive Mono Text Medium
+    Recursive Mono Heading Regular
+    Recursive Mono Heading Medium
+
+Remove Overlap:
+***************
+    Recursive Mono Heading Bold
+    Recursive Mono Text Light
+    Recursive Mono Heading Light
+    Recursive Mono Text Bold
+    Recursive Mono Text Bold
+    Recursive Mono Heading Bold
+    Recursive Mono Heading Light
+    Recursive Mono Text Light
+    Recursive Mono Text Regular
+    Recursive Mono Text Medium
+    Recursive Mono Heading Regular
+    Recursive Mono Heading Medium
+
+Generate:
+*********
+Recursive Mono Heading-Bold.ufo
+*******************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Heading-Bold.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingBold.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:16 2018.
+        .........................................
+        .........................................
+        ......................
+        Saving font file with new hints...Fri Apr 20 18:04:24 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] adding the style Bold from fontinfo keyword.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingBold.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingBold.otf'.
+        
+        --------------------
+
+Recursive Mono Text-Light.ufo
+*****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Text-Light.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextLight.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:25 2018.
+        .........................................
+        ....
+        Saving font file with new hints...Fri Apr 20 18:04:28 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextLight.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextLight.otf'.
+        
+        --------------------
+
+Recursive Mono Heading-Light.ufo
+********************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Heading-Light.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingLight.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:28 2018.
+        .........................................
+        ...........................
+        Saving font file with new hints...Fri Apr 20 18:04:32 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingLight.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingLight.otf'.
+        
+        --------------------
+
+Recursive Mono-Text Bold.ufo
+****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Bold.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextBold.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:33 2018.
+        .........................................
+        ......
+        Saving font file with new hints...Fri Apr 20 18:04:36 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextBold.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextBold.otf'.
+        
+        --------------------
+
+Recursive Mono-Text Bold.ufo
+****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Bold.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextBold.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:37 2018.
+        .........................................
+        ......
+        Saving font file with new hints...Fri Apr 20 18:04:40 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextBold.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextBold.otf'.
+        
+        --------------------
+
+Recursive Mono Heading-Bold.ufo
+*******************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Heading-Bold.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingBold.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:41 2018.
+        .........................................
+        .........................................
+        ......................
+        Saving font file with new hints...Fri Apr 20 18:04:48 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] adding the style Bold from fontinfo keyword.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingBold.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingBold.otf'.
+        
+        --------------------
+
+Recursive Mono Heading-Light.ufo
+********************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Heading-Light.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingLight.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:48 2018.
+        .........................................
+        ...........................
+        Saving font file with new hints...Fri Apr 20 18:04:53 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingLight.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingLight.otf'.
+        
+        --------------------
+
+Recursive Mono Text-Light.ufo
+*****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono Text-Light.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextLight.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:53 2018.
+        .........................................
+        ....
+        Saving font file with new hints...Fri Apr 20 18:04:57 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextLight.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextLight.otf'.
+        
+        --------------------
+
+RecursiveMono-TextRegular.ufo
+*****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-TextRegular.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextRegular.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:04:57 2018.
+        .....................................
+        Saving font file with new hints...Fri Apr 20 18:05:00 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextRegular.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextRegular.otf'.
+        
+        --------------------
+
+RecursiveMono-TextMedium.ufo
+****************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-TextMedium.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-TextMedium.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:05:01 2018.
+        .....................................
+        Saving font file with new hints...Fri Apr 20 18:05:03 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-TextMedium.otf'.\n" b'\n' Built development mode font 'RecursiveMono-TextMedium.otf'.
+        
+        --------------------
+
+RecursiveMono-HeadingRegular.ufo
+********************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-HeadingRegular.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingRegular.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:05:04 2018.
+        .....................................
+        Saving font file with new hints...Fri Apr 20 18:05:06 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingRegular.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingRegular.otf'.
+        
+        --------------------
+
+RecursiveMono-HeadingMedium.ufo
+*******************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-HeadingMedium.ufo
+
+Generate otf
+''''''''''''
+    path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/02-recursive-web-tests/src-041818/fonts/RecursiveMono-HeadingMedium.otf
+        --------------------
+        
+        autohint Report
+        
+        Hinting font font.otf. Start time: Fri Apr 20 18:05:07 2018.
+        .....................................
+        Saving font file with new hints...Fri Apr 20 18:05:09 2018
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 279, in _executeCommand
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontCompiler/tools/compileTools.py", line 331, in embedded_autohint
+          File "autohint.py", line 1325, in hintFile
+          File "BezTools.py", line 1193, in saveChanges
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 166, in save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 205, in _save
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 615, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 619, in _writeTable
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/ttFont.py", line 637, in getTableData
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/ttLib/tables/C_F_F_.py", line 20, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 108, in compile
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/cffLib/__init__.py", line 2340, in recalcFontBBox
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 984, in calcBounds
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 979, in draw
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 301, in execute
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 360, in op_hintmask
+          File "/Applications/RoboFont3.app/Contents/Resources/lib/python3.6/fontTools/misc/psCharStrings.py", line 1073, in getBytes
+        AssertionError
+        
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'RecursiveMono-HeadingMedium.otf'.\n" b'\n' Built development mode font 'RecursiveMono-HeadingMedium.otf'.
+        
+        --------------------

@@ -15,7 +15,7 @@ var data = require('gulp-data');
 var concat      = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var siteOutput = './dist';
+var siteOutput = './docs';
 
 
 // -----------------------------------------------------------------------------
@@ -102,7 +102,7 @@ gulp.task('img', function() {
 
 // GET THIS WORKING
 gulp.task('fonts', function() {
-  return gulp.src('./fonts/**/*')
+  return gulp.src(['./fonts/**/*'])
   .pipe(gulp.dest(siteOutput + '/fonts'));
 });
 

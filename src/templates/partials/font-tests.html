@@ -32,18 +32,16 @@
                                 <div class="page">
                                     <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                     <div class="alphabet-spec">
-                                        {% if wght == 'Bold' and opsz == 'Heading'%}
+                                        
                                         <p class="alphabet">ABCDEFGHILMNOPRSTUVWYZ</p>
                                         <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        
+                                        {% if wght == 'Bold' and opsz == 'Heading'%}
                                         <p class="alphabet">0123456789</p>
                                         {% elif wght == 'Light' and opsz == 'Heading'%}
-                                        <p class="alphabet">ABCDEFGHILMOPRST</p>
-                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
                                         <p class="alphabet">0123456789</p>
-                                        {% else %}
-                                        <p class="alphabet">BCGRS</p>
-                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
-                                        {% endif %}
+                                        {%endif%}
+
                                     </div>
                                 </div>
                                 <div class="page">
