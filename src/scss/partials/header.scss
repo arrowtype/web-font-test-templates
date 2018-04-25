@@ -26,14 +26,20 @@ header {
         &:hover {
             transform: skewX(-18.43deg);
         }
+        
+    }
+    .highlight {
+        color: var(--main-accent);
+    }
+
+    h1 a {
+        color: #fff;
         &:visited {
             color: #fff;
         }
     }
 
-    .highlight {
-        color: var(--main-accent);
-    }
+    
 
 
     @media print {

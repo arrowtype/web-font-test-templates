@@ -428,12 +428,16 @@ header a:hover {
   transform: skewX(-18.43deg);
 }
 
-header a:visited {
+header .highlight {
+  color: var(--main-accent);
+}
+
+header h1 a {
   color: #fff;
 }
 
-header .highlight {
-  color: var(--main-accent);
+header h1 a:visited {
+  color: #fff;
 }
 
 @media print {

@@ -14,9 +14,6 @@ function highlightNav() {
         console.log(section.offsetTop)
         if (scrollPos <= 100 && scrollPos + section.offsetHeight >= 100) {
             
-            // console.log(section.id, scrollPos, bottomPos, "in view")
-            // console.log(section)
-            
             for (var link of fontSectionLinks){
                 let linkHref = link.hash.replace('#','');
                 // console.log(linkHref);
@@ -38,12 +35,6 @@ function highlightNav() {
             }
         }
     }
-        // let sectionPos = section.offsetTop
-        // if fontSection offsetTop is <= 100
-            // for link in fontSectionLinks
-                // if link.hash == section.id
-                    // add class "highlight" to link
-
 }   
 
 highlightNav()
