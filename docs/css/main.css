@@ -34,6 +34,10 @@ html {
   color: #aaa;
 }
 
+.c-white {
+  color: #fff;
+}
+
 /* FONTS */
 @font-face {
   font-family: "Recursive Sans Heading Bold";
@@ -586,8 +590,8 @@ body {
       grid-template-rows: 3rem 1fr;
   grid-template-areas: "header     header" "sidebar    content";
   /* justify-content: stretch; */
-  background-color: #000;
-  color: white;
+  background-color: #fff;
+  color: black;
 }
 
 #tests {
@@ -834,6 +838,7 @@ nav li a {
   word-spacing: -.75em;
   opacity: .75;
   animation: scrollUp 3.75s infinite linear;
+  text-transform: uppercase;
 }
 
 .matrix .name-wrapper {
@@ -845,14 +850,17 @@ nav li a {
       align-items: center;
 }
 
-.matrix h1 {
+.matrix input {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
   z-index: 1;
   text-align: left;
   font-size: 20vw;
   line-height: 1.125em;
-  color: white;
+  width: 80vw;
+  background-color: transparent;
+  border: none;
+  color: white !important;
   margin: 0;
   text-shadow: .125em .125em .5em black;
   position: relative;
@@ -860,7 +868,7 @@ nav li a {
   font-weight: 800;
 }
 
-.matrix h1:after {
+.matrix input:after {
   content: "";
   display: block;
   position: relative;
@@ -876,11 +884,11 @@ nav li a {
   animation: blink 0.35s linear 1s infinite alternate;
 }
 
-.matrix h1:focus {
+.matrix input:focus {
   outline: none;
 }
 
-.matrix h1:focus:after {
+.matrix input:focus:after {
   animation: none;
 }
 

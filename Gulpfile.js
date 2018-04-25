@@ -28,6 +28,7 @@ var output = siteOutput + '/css';
 var inputPages = './src/pages/*.html';
 var inputData = './src/data/data.json';
 var inputTemplates = './src/templates/';
+var inputScripts = './src/js/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
@@ -54,7 +55,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src([
 	  	// './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-	  	'js/main.js'
+	  	inputScripts +'/*.js'
   	])
     .pipe(concat({ path: 'main.js'}))
     .pipe(browserSync.reload({stream:true}))

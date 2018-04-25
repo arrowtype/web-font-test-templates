@@ -20,6 +20,7 @@
         word-spacing: -.75em;
         opacity: .75;
         animation: scrollUp 3.75s infinite linear;
+        text-transform: uppercase;
         // writing-mode: vertical-lr;
     }
     .name-wrapper{
@@ -28,14 +29,17 @@
         display: grid;
         align-items: center; 
     }
-    h1 {
+    input {
         grid-column: 2 / 3;
         grid-row: 1 / -1;
         z-index: 1;
         text-align: left;
         font-size: 20vw;
         line-height: 1.125em;
-        color: white;
+        width: 80vw;
+        background-color: transparent;
+        border: none;
+        color: white !important;
         margin: 0;
         text-shadow: .125em .125em .5em black;
         position: relative;

@@ -6,11 +6,12 @@
 
 
     <div class="matrix mono-heading-bold">
-        <p class="mono-text-bold">
-            {%for i in range(0, 1800)%}RECURSIVE {% endfor %}
+        {# how might this copy the words typed into the tester?#}
+        <p class="mono-text-regular">
+            {%for i in range(0, 1800)%}<span class="matrix-word">RECURSIVE</span> {% endfor %}
         </p>
         <div class="name-wrapper" >
-            <h1 contenteditable="true">Type here</h1>
+            <input class="mono-heading-bold" type="text"  placeholder="type here" spellcheck="false">Type here</input>
         </div>
     </div>
 
