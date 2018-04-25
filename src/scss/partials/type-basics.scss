@@ -75,9 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .f-2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
 
-    @media (max-width: 800px) {
-        font-size: 6vw;
+    @media (max-width: 850px) {
+        font-size: 5vw;
     }
 }

@@ -385,12 +385,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .f-2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .f-2 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -910,6 +911,27 @@ nav li a {
 
 .hero h1 {
   margin-bottom: 0;
+}
+
+.hero pre {
+  counter-reset: line;
+}
+
+.hero code {
+  counter-increment: line;
+}
+
+.hero code:before {
+  content: counter(line);
+  font-family: var(--mono-heading-light);
+  color: #444;
+  padding: .5em .5em .5em 0;
+  margin: 0 .5em 0 -2em;
+  border-right: 0.01em solid var(--secondary-accent);
+}
+
+.hero code:before {
+  -webkit-user-select: none;
 }
 
 @page {

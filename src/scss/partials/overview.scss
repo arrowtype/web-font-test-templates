@@ -8,4 +8,23 @@
     h1 {
       margin-bottom: 0;
     }
+
+    pre{
+      counter-reset: line;
+    }
+    code{
+        counter-increment: line;
+    }
+    code:before{
+      content: counter(line);
+      font-family: var(--mono-heading-light);
+      color: #444;
+      padding: .5em .5em .5em 0;
+      margin: 0 .5em 0 -2em;
+      border-right: .01em solid var(--secondary-accent);
+    } 
+
+    code:before{
+      -webkit-user-select: none;
+    }
 }
