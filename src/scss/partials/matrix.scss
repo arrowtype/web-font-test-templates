@@ -22,7 +22,26 @@
         animation: scrollUp 3.75s infinite linear;
         text-transform: uppercase;
         // writing-mode: vertical-lr;
+
+        // span.matrix-word:nth-child(2){
+        //         transform: rotate(180deg);
+        //         color: red;
+        //     }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 20em;
+            background-color: red;
+            background: linear-gradient(rgba(#121,0), rgba(#121,1) 60%);
+            position: relative;
+            top:-15em;
+            // animation: scrollUp 3.75s infinite linear reverse;
+        }
     }
+
+    
     .name-wrapper{
         grid-column: 2 / 3;
         grid-row: 1 / -1;
@@ -33,7 +52,7 @@
         grid-column: 2 / 3;
         grid-row: 1 / -1;
         z-index: 1;
-        text-align: left;
+        text-align: center;
         font-size: 15vw;
         line-height: 1.125em;
         width: 90vw;
@@ -81,6 +100,7 @@
     }
     100% {
         transform: translateY(-2.25em);
+        // transform: translateY(-1.125em);
     }
 }
 

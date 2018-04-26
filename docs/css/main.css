@@ -841,6 +841,17 @@ nav li a {
   text-transform: uppercase;
 }
 
+.matrix p:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20em;
+  background-color: red;
+  background: linear-gradient(rgba(17, 34, 17, 0), #112211 60%);
+  position: relative;
+  top: -15em;
+}
+
 .matrix .name-wrapper {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
@@ -854,7 +865,7 @@ nav li a {
   grid-column: 2 / 3;
   grid-row: 1 / -1;
   z-index: 1;
-  text-align: left;
+  text-align: center;
   font-size: 15vw;
   line-height: 1.125em;
   width: 90vw;
