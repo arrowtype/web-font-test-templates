@@ -9,7 +9,7 @@
     justify-content: center;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 3rem 1fr;
     p {
         grid-column: 1 / -1;
         grid-row: 1 / -1;
@@ -44,11 +44,13 @@
     
     .name-wrapper{
         grid-column: 2 / 3;
-        grid-row: 1 / -1;
+        grid-row: 2 / -1;
         display: grid;
         align-items: center; 
     }
-    input {
+    textarea {
+    // h2.typer {
+        display: block;
         grid-column: 2 / 3;
         grid-row: 1 / -1;
         z-index: 1;
@@ -56,14 +58,20 @@
         font-size: 15vw;
         line-height: 1.125em;
         width: 90vw;
+        height: 1.125em;
         background-color: transparent;
         border: none;
         color: white !important;
         margin: 0;
         text-shadow: .05em .05em .5em black;
         position: relative;
-        top: .25em;
+        // top: .25em;
         font-weight: 800;
+        // display: grid;
+        // align-content: center;
+        // justify-content: center;
+        resize: none;
+        animation: none;
 
         ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
             color: white;
@@ -74,7 +82,7 @@
             display: block;
             position: relative;
             box-shadow: .125em .125em .5em black;
-            top: -1.125em;
+            // top: -1.125em;
             left: .125em;
             float: right;
             background: white;

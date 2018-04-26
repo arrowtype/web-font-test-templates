@@ -825,8 +825,8 @@ nav li a {
       align-content: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: 3rem 1fr;
+      grid-template-rows: 3rem 1fr;
 }
 
 .matrix p {
@@ -854,14 +854,15 @@ nav li a {
 
 .matrix .name-wrapper {
   grid-column: 2 / 3;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   display: -ms-grid;
   display: grid;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.matrix input {
+.matrix textarea {
+  display: block;
   grid-column: 2 / 3;
   grid-row: 1 / -1;
   z-index: 1;
@@ -869,26 +870,27 @@ nav li a {
   font-size: 15vw;
   line-height: 1.125em;
   width: 90vw;
+  height: 1.125em;
   background-color: transparent;
   border: none;
   color: white !important;
   margin: 0;
   text-shadow: .05em .05em .5em black;
   position: relative;
-  top: .25em;
   font-weight: 800;
+  resize: none;
+  animation: none;
 }
 
-.matrix input ::-webkit-input-placeholder, .matrix input ::-moz-placeholder, .matrix input :-ms-input-placeholder, .matrix input :-moz-placeholder {
+.matrix textarea ::-webkit-input-placeholder, .matrix textarea ::-moz-placeholder, .matrix textarea :-ms-input-placeholder, .matrix textarea :-moz-placeholder {
   color: white;
 }
 
-.matrix input:after {
+.matrix textarea:after {
   content: "";
   display: block;
   position: relative;
   box-shadow: .125em .125em .5em black;
-  top: -1.125em;
   left: .125em;
   float: right;
   background: white;
@@ -899,11 +901,11 @@ nav li a {
   animation: blink 0.35s linear 1s infinite alternate;
 }
 
-.matrix input:focus {
+.matrix textarea:focus {
   outline: none;
 }
 
-.matrix input:focus:after {
+.matrix textarea:focus:after {
   animation: none;
 }
 

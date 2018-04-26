@@ -57,11 +57,13 @@ window.addEventListener('load', addTypeSpecListeners);
 /////////////////////////////////////////////////////////
 
 const matrixWords = document.querySelectorAll(".matrix-word")
-const typeTesterInput = document.querySelector(".matrix input")
+const typeTesterInput = document.querySelector(".matrix .typer")
 
 
 function typeTestMatrix() {
-    console.log(this.value);
+    console.log(this);
+    // console.log(this.value);
+    console.log(this.innerHTML);
     for (var word of matrixWords) {
         var newWord = this.value;
         word.innerHTML = newWord;
