@@ -34,17 +34,21 @@
         grid-row: 1 / -1;
         z-index: 1;
         text-align: left;
-        font-size: 20vw;
+        font-size: 15vw;
         line-height: 1.125em;
-        width: 80vw;
+        width: 90vw;
         background-color: transparent;
         border: none;
         color: white !important;
         margin: 0;
-        text-shadow: .125em .125em .5em black;
+        text-shadow: .05em .05em .5em black;
         position: relative;
-        top: .5em;
+        top: .25em;
         font-weight: 800;
+
+        ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
+            color: white;
+        }
 
         &:after {
             content: "";

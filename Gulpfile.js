@@ -53,13 +53,10 @@ gulp.task('sass', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('scripts', function() {
-  return gulp.src([
-	  	// './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
-	  	inputScripts +'/*.js'
-  	])
+  return gulp.src(inputScripts + '*.js')
     .pipe(concat({ path: 'main.js'}))
     .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest(siteOutput + '/js'));
+    .pipe(gulp.dest(siteOutput + '/js/'));
 });
 
 
@@ -103,7 +100,7 @@ gulp.task('img', function() {
 
 // GET THIS WORKING
 gulp.task('fonts', function() {
-  return gulp.src(['./fonts/**/*'])
+  return gulp.src(['./src/fonts/**/*'])
   .pipe(gulp.dest(siteOutput + '/fonts'));
 });
 
@@ -132,7 +129,7 @@ gulp.task('watch', function() {
     });
 
     //  reload on js change
-    gulp.watch('./js/*', ['scripts']).on('change', browserSync.reload);
+    gulp.watch(inputScripts + '/*', ['scripts']).on('change', browserSync.reload);
 
     // reload on json data change
     // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA
