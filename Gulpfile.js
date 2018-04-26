@@ -101,7 +101,7 @@ gulp.task('img', function() {
 // GET THIS WORKING
 gulp.task('fonts', function() {
   return gulp.src(['./src/fonts/**/*'])
-  .pipe(gulp.dest(siteOutput + '/fonts'));
+  .pipe(gulp.dest(siteOutput + '/fonts/'));
 });
 
 
