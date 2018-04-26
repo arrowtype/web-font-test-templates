@@ -32,11 +32,11 @@
             content: "";
             display: block;
             width: 100%;
-            height: 20em;
+            height: 35vh;
             background-color: red;
             background: linear-gradient(rgba(#121,0), rgba(#121,1) 60%);
             position: relative;
-            top:-15em;
+            top:-30vh;
             // animation: scrollUp 3.75s infinite linear reverse;
         }
     }
@@ -104,10 +104,10 @@
 
 @keyframes scrollUp {
     0% {
-        transform: translateY(0);
+        transform: translateY(0rem);
     }
     100% {
-        transform: translateY(-2.25em);
+        transform: translateY(-2.25rem);
         // transform: translateY(-1.125em);
     }
 }

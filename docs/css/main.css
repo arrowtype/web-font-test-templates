@@ -845,11 +845,11 @@ nav li a {
   content: "";
   display: block;
   width: 100%;
-  height: 20em;
+  height: 35vh;
   background-color: red;
   background: linear-gradient(rgba(17, 34, 17, 0), #112211 60%);
   position: relative;
-  top: -15em;
+  top: -30vh;
 }
 
 .matrix .name-wrapper {
@@ -911,10 +911,10 @@ nav li a {
 
 @keyframes scrollUp {
   0% {
-    transform: translateY(0);
+    transform: translateY(0rem);
   }
   100% {
-    transform: translateY(-2.25em);
+    transform: translateY(-2.25rem);
   }
 }
 
