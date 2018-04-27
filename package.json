@@ -1,5 +1,5 @@
 {
-  "name": "web font tester",
+  "name": "web-font-tester",
   "version": "1.0.0",
   "description": "web font tester",
   "main": "index.html",
@@ -11,9 +11,9 @@
     "url": "nope"
   },
   "keywords": [
-    "insurance"
+    "type design"
   ],
-  "author": "eric motil",
+  "author": "stephen nixon",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.9.11",

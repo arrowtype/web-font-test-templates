@@ -1,6 +1,6 @@
 .matrix {
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 2;
     background-color: #121;
     color: var(--main-accent);
     // color: #060;
@@ -12,7 +12,6 @@
     grid-template-rows: 3rem 1fr;
     p {
         grid-column: 1 / -1;
-        grid-row: 1 / -1;
         text-align: center;
         // word-break: break-all;
         line-height: 1.125em;
@@ -21,6 +20,8 @@
         opacity: .75;
         animation: scrollUp 3.75s infinite linear;
         text-transform: uppercase;
+        position: relative;
+        top:-2em;
         // writing-mode: vertical-lr;
 
         // span.matrix-word:nth-child(2){
@@ -44,7 +45,7 @@
     
     .name-wrapper{
         grid-column: 2 / 3;
-        grid-row: 2 / -1;
+        grid-row: 2;
         display: grid;
         align-items: center; 
     }
@@ -52,7 +53,7 @@
     // h2.typer {
         display: block;
         grid-column: 2 / 3;
-        grid-row: 1 / -1;
+        grid-row: 1;
         z-index: 1;
         text-align: center;
         font-size: 15vw;

@@ -15,13 +15,16 @@ var data = require('gulp-data');
 var concat      = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var siteOutput = './docs';
+// var jsonSass = require('gulp-json-sass')
+
+
 
 
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
 
+var siteOutput = './docs';
 var input = './src/scss/**/*.scss';
 var inputMain = './src/scss/main.scss';
 var output = siteOutput + '/css';
@@ -40,6 +43,9 @@ var sassdocOptions = { dest: siteOutput + '/sassdoc' };
 
 gulp.task('sass', function() {
   return gulp
+    // .src(inputData, inputMain)
+    // .pipe(jsonSass({sass: false}))
+    // .pipe(concat('output.scss'))
     .src(inputMain)
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))

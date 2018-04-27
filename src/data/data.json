@@ -22,5 +22,10 @@
                 "Italic"
             ]
         }
-    }
+    },
+    "color": [
+        "red",
+        "green",
+        "blue"
+    ]
 }

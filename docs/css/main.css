@@ -55,25 +55,25 @@ html {
 @font-face {
   font-family: "Recursive Mono Heading Light";
   font-weight: 200;
-  src: url("../fonts/otf/RecursiveMono-HeadingLight.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingLight.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Regular";
   font-weight: 400;
-  src: url("../fonts/otf/RecursiveMono-HeadingRegular.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingRegular.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Medium";
   font-weight: 600;
-  src: url("../fonts/otf/RecursiveMono-HeadingMedium.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingMedium.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Bold";
   font-weight: 800;
-  src: url("../fonts/otf/RecursiveMono-HeadingBold.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingBold.otf");
 }
 
 /* heading italic */
@@ -109,25 +109,25 @@ html {
 @font-face {
   font-family: "Recursive Mono Text Light";
   font-weight: 200;
-  src: url("../fonts/otf/RecursiveMono-TextLight.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-TextLight.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Regular";
   font-weight: 400;
-  src: url("../fonts/otf/RecursiveMono-TextRegular.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-TextRegular.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Medium";
   font-weight: 600;
-  src: url("../fonts/otf/RecursiveMono-TextMedium.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-TextMedium.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Bold";
   font-weight: 800;
-  src: url("../fonts/otf/RecursiveMono-TextBold.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-TextBold.otf");
 }
 
 /* text italic */
@@ -813,7 +813,8 @@ nav li a {
 
 .matrix {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  -ms-grid-row: 2;
+      grid-row: 2;
   background-color: #121;
   color: var(--main-accent);
   overflow: hidden;
@@ -831,7 +832,6 @@ nav li a {
 
 .matrix p {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
   text-align: center;
   line-height: 1.125em;
   letter-spacing: .25em;
@@ -839,6 +839,8 @@ nav li a {
   opacity: .75;
   animation: scrollUp 3.75s infinite linear;
   text-transform: uppercase;
+  position: relative;
+  top: -2em;
 }
 
 .matrix p:after {
@@ -854,7 +856,8 @@ nav li a {
 
 .matrix .name-wrapper {
   grid-column: 2 / 3;
-  grid-row: 2 / -1;
+  -ms-grid-row: 2;
+      grid-row: 2;
   display: -ms-grid;
   display: grid;
   -ms-flex-align: center;
@@ -864,7 +867,8 @@ nav li a {
 .matrix textarea {
   display: block;
   grid-column: 2 / 3;
-  grid-row: 1 / -1;
+  -ms-grid-row: 1;
+      grid-row: 1;
   z-index: 1;
   text-align: center;
   font-size: 15vw;
@@ -935,7 +939,8 @@ nav li a {
 
 .hero {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  -ms-grid-row: 2;
+      grid-row: 2;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
