@@ -54,26 +54,22 @@ html {
 /* heading */
 @font-face {
   font-family: "Recursive Mono Heading Light";
-  font-weight: 200;
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingLight.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingLight.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Regular";
-  font-weight: 400;
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingRegular.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingRegular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Medium";
-  font-weight: 600;
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingMedium.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingMedium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Bold";
-  font-weight: 800;
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingBold.otf");
+  src: url("../fonts/otf-042718/RecursiveMono-HeadingBold.otf") format("opentype");
 }
 
 /* heading italic */
@@ -108,25 +104,21 @@ html {
 /* text */
 @font-face {
   font-family: "Recursive Mono Text Light";
-  font-weight: 200;
   src: url("../fonts/otf-042718/RecursiveMono-TextLight.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Regular";
-  font-weight: 400;
   src: url("../fonts/otf-042718/RecursiveMono-TextRegular.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Medium";
-  font-weight: 600;
   src: url("../fonts/otf-042718/RecursiveMono-TextMedium.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Bold";
-  font-weight: 800;
   src: url("../fonts/otf-042718/RecursiveMono-TextBold.otf");
 }
 
@@ -715,12 +707,6 @@ nav li a {
   max-width: 1400px;
   margin: 0 auto;
   /* width: calc(100% - var(--sidebar-width)); */
-}
-
-@media (max-width: 1000px) {
-  .page {
-    /* grid-template-columns: repeat(8, minmax(80px, 1fr)); */
-  }
 }
 
 .page h2 {
