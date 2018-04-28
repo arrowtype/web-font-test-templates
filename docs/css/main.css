@@ -54,22 +54,22 @@ html {
 /* heading */
 @font-face {
   font-family: "Recursive Mono Heading Light";
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingLight.otf") format("opentype");
+  src: url("../fonts/woff2-042718/Recursive_Mono-Heading_Light.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Regular";
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingRegular.otf") format("opentype");
+  src: url("../fonts/woff2-042718/Recursive_Mono-Heading_Regular.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Medium";
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingMedium.otf") format("opentype");
+  src: url("../fonts/woff2-042718/Recursive_Mono-Heading_Medium.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Heading Bold";
-  src: url("../fonts/otf-042718/RecursiveMono-HeadingBold.otf") format("opentype");
+  src: url("../fonts/woff2-042718/Recursive_Mono-Heading_Bold.woff2");
 }
 
 /* heading italic */
@@ -104,22 +104,22 @@ html {
 /* text */
 @font-face {
   font-family: "Recursive Mono Text Light";
-  src: url("../fonts/otf-042718/RecursiveMono-TextLight.otf");
+  src: url("../fonts/otf/RecursiveMono-TextLight.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Regular";
-  src: url("../fonts/otf-042718/RecursiveMono-TextRegular.otf");
+  src: url("../fonts/otf/RecursiveMono-TextRegular.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Medium";
-  src: url("../fonts/otf-042718/RecursiveMono-TextMedium.otf");
+  src: url("../fonts/otf/RecursiveMono-TextMedium.otf");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Bold";
-  src: url("../fonts/otf-042718/RecursiveMono-TextBold.otf");
+  src: url("../fonts/otf/RecursiveMono-TextBold.otf");
 }
 
 /* text italic */
