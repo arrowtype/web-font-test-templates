@@ -393,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   position: fixed;
+  z-index: 3;
   background-color: black;
   color: #fff;
   padding: 0 2rem;
@@ -409,7 +410,6 @@ header {
   width: 100%;
   /* height: 3rem; */
   grid-area: header;
-  z-index: 2;
   border-bottom: var(--border);
 }
 
@@ -955,11 +955,34 @@ nav li a {
 }
 
 .hide-sm {
-  display: inherit;
+  display: block;
 }
 
 .show-sm {
   display: none;
+}
+
+.hide-lg {
+  display: none;
+}
+
+.show-lg {
+  display: block;
+}
+
+#sidebar-button {
+  background: none;
+  color: white;
+  border: none;
+  font-family: var(--mono-header-bold);
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .25s;
+}
+
+#sidebar-button:hover {
+  cursor: pointer;
+  color: var(--main-accent);
 }
 
 @media (max-width: 1160px) {
@@ -976,6 +999,7 @@ nav li a {
     /* padding-left: var(--sidebar-width); */
   }
   #sidebar {
+    z-index: 2;
     position: fixed;
     width: 240px;
     right: 0;

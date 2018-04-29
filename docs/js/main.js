@@ -61,16 +61,17 @@ const sidebarDrawer = document.querySelector("#sidebar");
 
 
 function toggleSidebar() {
-    console.log("button clicked");
+    // console.log("button clicked");
     sidebarDrawer.classList.toggle("revealed");
-    sidebarButton.classList.toggle("show-sm");
-    // mobileNav.classList.toggle("show-sm");
-    // desktopNav.classList.toggle("hide-sm");
+    sidebarButton.classList.add("show-sm");
+    mobileNav.classList.add("show-sm");
+    desktopNav.classList.add("hide-sm");
 }
 
 // function addSidebarButtonListener(){
 // }
 sidebarButton.addEventListener('click', toggleSidebar)
+sidebarButton.addEventListener('touchstart', toggleSidebar)
 
 // window.addEventListener('load', addSidebarButtonListener);
 

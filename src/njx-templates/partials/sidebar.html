@@ -2,6 +2,7 @@
     <div id="mobile-nav" class="show-sm">
         {% include "partials/nav.html" %}
     </div>  
+    {%if page == "spec"%}
     <ul>
         {% for wdth in fonts.params.wdth %}
             <li>
@@ -31,4 +32,8 @@
             </li>
         {% endfor %}
     </ul>
+    {%endif%}
+    {%if page == "tester"%}
+        <p>type!</p>
+    {%endif%}
 </div>
