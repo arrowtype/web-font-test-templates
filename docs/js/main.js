@@ -61,10 +61,6 @@ const sidebarDrawer = document.querySelector("#sidebar");
 
 
 function toggleSidebar(evt) {
-    // console.log("button clicked");
-    // console.log(this)
-    // if (evt.touches.length > 1 || (evt.type == "touchend" && evt.touches.length > 0))
-    //     return;
     sidebarDrawer.classList.toggle("revealed");
     sidebarButton.classList.add("show-sm");
     mobileNav.classList.add("show-sm");
@@ -74,8 +70,6 @@ function toggleSidebar(evt) {
 // how can you do this only on the correct page?
 function addSidebarButtonListener(){
     sidebarButton.addEventListener('click', toggleSidebar)
-    // sidebarButton.addEventListener('touchstart', toggleSidebar)
-    // sidebarButton.addEventListener('touchend', toggleSidebar)
 }
 
 window.addEventListener('load', addSidebarButtonListener);

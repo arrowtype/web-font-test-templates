@@ -15,11 +15,15 @@ html {
 }
 
 ::-moz-selection {
-  background: #00ff00;
+  background: var(--main-accent);
 }
 
 ::selection {
-  background: #00ff00;
+  background: var(--main-accent);
+}
+
+*:focus {
+  outline: 2px solid var(--main-accent);
 }
 
 .bg-black {
@@ -458,7 +462,7 @@ header h1 a:visited {
   text-transform: uppercase;
   position: fixed;
   width: var(--sidebar-width);
-  height: 100vh;
+  max-height: 100vh;
   grid-area: sidebar;
   overflow-y: auto;
   border-right: var(--border);
@@ -571,7 +575,7 @@ header h1 a:visited {
   /* padding */
   --p-med: 2vw;
   /* sidebar */
-  --sidebar-width: 280px;
+  --sidebar-width: 220px;
   /* colors */
   --main-accent: #00ff00;
   --secondary-accent: #00280a;
@@ -971,11 +975,11 @@ nav li a {
 
 .hero code:before {
   content: counter(line);
-  font-family: var(--mono-heading-light);
+  font-family: var(--mono-text-light);
   color: #444;
   padding: .5em .5em .5em 0;
   margin: 0 .5em 0 -2em;
-  border-right: 0.01em solid var(--secondary-accent);
+  border-right: 2px solid var(--secondary-accent);
 }
 
 .hero code:before {
@@ -1031,7 +1035,7 @@ nav li a {
   #sidebar {
     z-index: 2;
     position: fixed;
-    width: 280px;
+    width: 250px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.96);
     border-right: none;

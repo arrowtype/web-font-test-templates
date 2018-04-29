@@ -18,11 +18,11 @@
     }
     code:before{
       content: counter(line);
-      font-family: var(--mono-heading-light);
+      font-family: var(--mono-text-light);
       color: #444;
       padding: .5em .5em .5em 0;
       margin: 0 .5em 0 -2em;
-      border-right: .01em solid var(--secondary-accent);
+      border-right: 2px solid var(--secondary-accent);
     } 
 
     code:before{

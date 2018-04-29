@@ -17,6 +17,10 @@ html {
 
 // selection styles
 
-::selection { background: #00ff00; }
+::selection { background: var(--main-accent); }
 
 $small-screen: 1160px;
+
+*:focus {
+	outline: 2px solid var(--main-accent);
+}

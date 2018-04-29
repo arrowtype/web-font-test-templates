@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div id="sidebar" {%if page == "overview"%}class="show-sm"{%endif%}>
     <div id="mobile-nav" class="show-sm">
         {% include "partials/nav.html" %}
     </div>  
@@ -33,7 +33,5 @@
         {% endfor %}
     </ul>
     {%endif%}
-    {%if page == "tester"%}
-        <p>type!</p>
-    {%endif%}
+    
 </div>
