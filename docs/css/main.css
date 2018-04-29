@@ -456,6 +456,10 @@ header h1 a:visited {
   border-right: var(--border);
 }
 
+#specimen-nav {
+  margin-top: 1rem;
+}
+
 #sidebar ul {
   list-style: none;
   padding: 0 2rem;

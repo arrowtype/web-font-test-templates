@@ -3,7 +3,7 @@
         {% include "partials/nav.html" %}
     </div>  
     {%if page == "spec"%}
-    <ul>
+    <ul id="specimen-nav">
         {% for wdth in fonts.params.wdth %}
             <li>
                 <a href="#{{ wdth | lower}}">{{familyName}} {{ wdth }}</a>
