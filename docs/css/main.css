@@ -104,22 +104,22 @@ html {
 /* text */
 @font-face {
   font-family: "Recursive Mono Text Light";
-  src: url("../fonts/otf/RecursiveMono-TextLight.otf");
+  src: url("../fonts/woff2-042718/RecursiveMono-TextLight.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Regular";
-  src: url("../fonts/otf/RecursiveMono-TextRegular.otf");
+  src: url("../fonts/woff2-042718/RecursiveMono-TextRegular.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Medium";
-  src: url("../fonts/otf/RecursiveMono-TextMedium.otf");
+  src: url("../fonts/woff2-042718/RecursiveMono-TextMedium.woff2");
 }
 
 @font-face {
   font-family: "Recursive Mono Text Bold";
-  src: url("../fonts/otf/RecursiveMono-TextBold.otf");
+  src: url("../fonts/woff2-042718/RecursiveMono-TextBold.woff2");
 }
 
 /* text italic */
@@ -565,23 +565,17 @@ header h1 a:visited {
   --secondary-accent: #00280a;
 }
 
-/* html {
-    width: 100vw;
-} */
 body {
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
-  /* font-family:  var(--sans-heading-bold); */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: var(--sidebar-width) 1fr;
       grid-template-columns: var(--sidebar-width) 1fr;
-  /* grid-template-columns: 1fr 3fr; */
   -ms-grid-rows: 3rem 1fr;
       grid-template-rows: 3rem 1fr;
   grid-template-areas: "header     header" "sidebar    content";
-  /* justify-content: stretch; */
   background-color: #fff;
   color: black;
 }

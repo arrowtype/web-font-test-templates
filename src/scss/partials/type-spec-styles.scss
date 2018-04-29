@@ -10,30 +10,20 @@
     --sidebar-width: 20vw;
 
     /* colors */
-
     --main-accent: #00ff00;
     --secondary-accent: rgb(0,40,10);
 }
-
-/* html {
-    width: 100vw;
-} */
 
 body {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
-    /* font-family:  var(--sans-heading-bold); */
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;
-    /* grid-template-columns: 1fr 3fr; */
     grid-template-rows: 3rem 1fr;
     grid-template-areas:
         "header     header"
         "sidebar    content";
-    /* justify-content: stretch; */
-    // background-color: #000;
-    // color: white;
     background-color: #fff;
     color: black;
 }

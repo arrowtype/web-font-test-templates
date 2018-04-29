@@ -1,0 +1,342 @@
+Web Fonts:
+**********
+
+Recursive Mono-Heading Bold.ufo
+-------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Heading Bold.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Heading_Bold.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] adding the style Bold from fontinfo keyword.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp67wyb772.ttf'.\n" b'\n' Built release mode font 'tmp67wyb772.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Text Bold.ufo
+----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Bold.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Bold.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpize2h_dz.ttf'.\n" b'\n' Built release mode font 'tmpize2h_dz.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Heading Light.ufo
+--------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Heading Light.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Heading_Light.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpyudj5bkh.ttf'.\n" b'\n' Built release mode font 'tmpyudj5bkh.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Text Light.ufo
+-----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Light.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Light.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp69o36dwj.ttf'.\n" b'\n' Built release mode font 'tmp69o36dwj.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Text Bold.ufo
+----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Bold.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Bold.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp5iudyi5o.ttf'.\n" b'\n' Built release mode font 'tmp5iudyi5o.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Heading Bold.ufo
+-------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Heading Bold.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Heading_Bold.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] adding the style Bold from fontinfo keyword.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp3q9hfytn.ttf'.\n" b'\n' Built release mode font 'tmp3q9hfytn.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Heading Light.ufo
+--------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Heading Light.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Heading_Light.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpvc532uv2.ttf'.\n" b'\n' Built release mode font 'tmpvc532uv2.ttf' Revision 1.013
+        
+        --------------------
+
+
+Recursive Mono-Text Light.ufo
+-----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/Recursive Mono-Text Light.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Light.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpp83dx69_.ttf'.\n" b'\n' Built release mode font 'tmpp83dx69_.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MicroRegular.ufo
+------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MicroRegular.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Micro_Regular.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmps0_s14xc.ttf'.\n" b'\n' Built release mode font 'tmps0_s14xc.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MicroMedium.ufo
+-----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MicroMedium.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Micro_Medium.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpedbuqof_.ttf'.\n" b'\n' Built release mode font 'tmpedbuqof_.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-TextRegular.ufo
+-----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-TextRegular.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Regular.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpd7slahcb.ttf'.\n" b'\n' Built release mode font 'tmpd7slahcb.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-TextMedium.ufo
+----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-TextMedium.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Text_Medium.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpw1xyzd8r.ttf'.\n" b'\n' Built release mode font 'tmpw1xyzd8r.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MidwayBold.ufo
+----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MidwayBold.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Midway_Bold.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpr53wce2u.ttf'.\n" b'\n' Built release mode font 'tmpr53wce2u.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MidwayMedium.ufo
+------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MidwayMedium.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Midway_Medium.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp3gru1ku1.ttf'.\n" b'\n' Built release mode font 'tmp3gru1ku1.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MidwayRegular.ufo
+-------------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MidwayRegular.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Midway_Regular.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmp4lrxvnfu.ttf'.\n" b'\n' Built release mode font 'tmp4lrxvnfu.ttf' Revision 1.013
+        
+        --------------------
+
+
+RecursiveMono-MidwayLight.ufo
+-----------------------------
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances/RecursiveMono-MidwayLight.ufo
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/stephennixon/code/02-recursive-web-test-template/src/fonts/woff2-042718/Recursive_Mono-Midway_Light.woff2
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        b"makeotfexe [NOTE] Wrote new font file 'tmpk97vey9c.ttf'.\n" b'\n' Built release mode font 'tmpk97vey9c.ttf' Revision 1.013
+        
+        --------------------
+
+
+
+TTFAutohint options:
+********************
+addTTFAutoHintInfo     = False
+dwClearType            = False
+fallbackScript         = False
+gdiClearType           = True
+grayScale              = False
+hintRangeMaximum       = 50
+hintRangeMinimum       = 8
+hintingLimit           = 200
+noHintingLimit         = False
+noXHeightIncreaseLimit = False
+overRideFontLicense    = False
+preHinting             = False
+symbolFont             = False
+xHeightIncreaseLimit   = 14
