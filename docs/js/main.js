@@ -58,18 +58,30 @@ const desktopNav = document.querySelector("#desktop-nav");
 const mobileNav = document.querySelector("#mobile-nav");
 const sidebarButton = document.querySelector("#sidebar-button");
 const sidebarDrawer = document.querySelector("#sidebar");
+const typeSpecimen = document.querySelector("#tests");
 
 
 function toggleSidebar(evt) {
-    sidebarDrawer.classList.toggle("revealed");
+    
     sidebarButton.classList.add("show-sm");
     mobileNav.classList.add("show-sm");
     desktopNav.classList.add("hide-sm");
+
+    if (this.id == "sidebar-button") {
+        sidebarDrawer.classList.toggle("revealed");
+    }
+    else if (this.id == "tests") {
+        sidebarDrawer.classList.remove("revealed");
+    }
 }
 
 // how can you do this only on the correct page?
 function addSidebarButtonListener(){
+
     sidebarButton.addEventListener('click', toggleSidebar)
+    if (typeSpecimen != null) {
+        typeSpecimen.addEventListener('click', toggleSidebar)
+    }
 }
 
 window.addEventListener('load', addSidebarButtonListener);
@@ -98,7 +110,9 @@ function typeTestMatrix(e) {
 
 // how can you do this only on the correct page?
 function addMatrixListeners(){
-    typeTesterInput.addEventListener('input', typeTestMatrix);
+    if (typeTesterInput != null) {
+        typeTesterInput.addEventListener('input', typeTestMatrix);
+    }
 }
 
 window.addEventListener('load', addMatrixListeners);

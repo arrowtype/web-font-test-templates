@@ -19,10 +19,10 @@
     code:before{
       content: counter(line);
       font-family: var(--mono-text-light);
-      color: #444;
+      color: var(--dark-gray);
       padding: .5em .5em .5em 0;
       margin: 0 .5em 0 -2em;
-      border-right: 2px solid var(--secondary-accent);
+      border-right: 2px solid var(--dark-gray);
     } 
 
     code:before{

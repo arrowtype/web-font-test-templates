@@ -26,6 +26,19 @@ html {
   outline: 2px solid var(--main-accent);
 }
 
+:root {
+  --w-light: 200;
+  /* padding */
+  --p-med: 2vw;
+  /* sidebar */
+  --sidebar-width: 280px;
+  /* colors */
+  --main-accent: #00ff00;
+  --secondary-accent: #00280a;
+  --dark-gray: #444;
+  --border: 1px solid #444;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -976,10 +989,10 @@ nav li a {
 .hero code:before {
   content: counter(line);
   font-family: var(--mono-text-light);
-  color: #444;
+  color: var(--dark-gray);
   padding: .5em .5em .5em 0;
   margin: 0 .5em 0 -2em;
-  border-right: 2px solid var(--secondary-accent);
+  border-right: 2px solid var(--dark-gray);
 }
 
 .hero code:before {

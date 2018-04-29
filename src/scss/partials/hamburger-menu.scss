@@ -63,6 +63,19 @@
 
         &.revealed {
             transform: translateX(0%);
+
+            // &:after {
+            //     content: '';
+            //     z-index: -1;
+            //     width: 100vw;
+            //     height: 100vh;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     background: rgba(255,255,255,.5);
+            // }
         }
     }
 
