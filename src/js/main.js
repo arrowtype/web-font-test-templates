@@ -71,7 +71,7 @@ function toggleSidebar() {
 // function addSidebarButtonListener(){
 // }
 sidebarButton.addEventListener('click', toggleSidebar)
-sidebarButton.addEventListener('touchstart', toggleSidebar)
+// sidebarButton.addEventListener('touchstart', toggleSidebar)
 
 // window.addEventListener('load', addSidebarButtonListener);
 
