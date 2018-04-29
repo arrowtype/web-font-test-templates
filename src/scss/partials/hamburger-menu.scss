@@ -21,6 +21,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     transition: .25s;
+    padding: 0;
 }
 
 #sidebar-button:hover {
@@ -28,7 +29,7 @@
     color: var(--main-accent);
 }
 
-@media (max-width: 1160px) {
+@media (max-width: $small-screen) {
 
     body {
         grid-template-columns:  1fr;
@@ -43,13 +44,15 @@
         // grid-area: "sidebar" / "content";
         grid-column: 1 span 2;
         /* padding-left: var(--sidebar-width); */
+        width: 100vw;
     }
+
 
     #sidebar {
         // display: none;
         z-index: 2;
         position: fixed;
-        width: 240px;
+        width: 280px;
         right:0;
         background-color: rgba(0,0,0,.96);
         border-right: none;
@@ -105,11 +108,11 @@
                 content: "";
                 display: block;
                 // width:3rem;
-                height: 5px;
+                height: 3px;
                 background: var(--main-accent);
                 align-self: flex-end;
                 position: relative;
-                top: .5rem;
+                top: .6rem;
 
                 // position: relative;
                 // top: 1rem;

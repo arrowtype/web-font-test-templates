@@ -7,7 +7,8 @@
     --p-med: 2vw;
 
     /* sidebar */
-    --sidebar-width: 20vw;
+    // --sidebar-width: 20vw;
+    --sidebar-width: 280px;
 
     /* colors */
     --main-accent: #00ff00;
@@ -21,7 +22,7 @@
 body {
     margin: 0;
     width: 100vw;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;
     grid-template-rows: 3rem 1fr;
@@ -37,6 +38,8 @@ body {
     /* grid-column: 2 / span 1; */
     grid-column-end: -1;
     grid-area: content;
+    max-width: 100vw;
+    // width: 100%;
     /* padding-left: var(--sidebar-width); */
 }
 
@@ -95,6 +98,9 @@ nav li a {
     /* font-family: var(--text-bold); */
     font-size: 6vw;
     margin: 0;
+    @media (max-width: $small-screen) {
+        font-size: 10vw;
+    }
 }
 
 .section-title p {
@@ -112,6 +118,10 @@ nav li a {
     color: var(--main-accent);
     h2 {
         margin: 0;
+    }
+
+    @media (max-width: $small-screen) {
+        font-size: 20vw;
     }
 }
 
@@ -138,6 +148,9 @@ nav li a {
 .font-title h4 {
     font-size: 4vw;
     margin: 10vh 0 0;
+    @media (max-width: $small-screen) {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -165,7 +178,12 @@ nav li a {
     max-width: 1400px;
     margin: 0 auto;
     /* width: calc(100% - var(--sidebar-width)); */
+
+    p, div {
+        max-width: 100vw;
+    }
 }
+
 
 // @media (max-width:1000px) {
 //     .page {
@@ -231,13 +249,6 @@ nav li a {
 
 .caption ~ p {
     margin-top: 0;
-}
-
-
-@media (max-width: 600px) {
-    .section-title h3 {
-        font-size: 5vw;
-    }
 }
 
 .waterfall {

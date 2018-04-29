@@ -60,20 +60,25 @@ const sidebarButton = document.querySelector("#sidebar-button");
 const sidebarDrawer = document.querySelector("#sidebar");
 
 
-function toggleSidebar() {
+function toggleSidebar(evt) {
     // console.log("button clicked");
+    // console.log(this)
+    // if (evt.touches.length > 1 || (evt.type == "touchend" && evt.touches.length > 0))
+    //     return;
     sidebarDrawer.classList.toggle("revealed");
     sidebarButton.classList.add("show-sm");
     mobileNav.classList.add("show-sm");
     desktopNav.classList.add("hide-sm");
 }
 
-// function addSidebarButtonListener(){
-// }
-sidebarButton.addEventListener('click', toggleSidebar)
-// sidebarButton.addEventListener('touchstart', toggleSidebar)
+// how can you do this only on the correct page?
+function addSidebarButtonListener(){
+    sidebarButton.addEventListener('click', toggleSidebar)
+    // sidebarButton.addEventListener('touchstart', toggleSidebar)
+    // sidebarButton.addEventListener('touchend', toggleSidebar)
+}
 
-// window.addEventListener('load', addSidebarButtonListener);
+window.addEventListener('load', addSidebarButtonListener);
 
 
 /////////////////////////////////////////////////////////
@@ -84,8 +89,8 @@ const matrixWords = document.querySelectorAll(".matrix-word")
 const typeTesterInput = document.querySelector(".matrix .typer")
 
 
-function typeTestMatrix() {
-    console.log(this);
+function typeTestMatrix(e) {
+    console.log(e);
     // console.log(this.value);
     console.log(this.innerHTML);
     for (var word of matrixWords) {
@@ -97,6 +102,7 @@ function typeTestMatrix() {
 
 // typeTesterInput.addEventListener('change', typeTestMatrix);
 
+// how can you do this only on the correct page?
 function addMatrixListeners(){
     typeTesterInput.addEventListener('input', typeTestMatrix);
 }
