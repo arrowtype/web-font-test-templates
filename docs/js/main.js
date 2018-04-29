@@ -50,6 +50,29 @@ window.addEventListener('load', addTypeSpecListeners);
 
 
 
+/////////////////////////////////////////////////////////////
+////////////////////// Hamburger menu ///////////////////////
+////////////////////////////////////////////////////////////
+
+const desktopNav = document.querySelector("#desktop-nav");
+const mobileNav = document.querySelector("#mobile-nav");
+const sidebarButton = document.querySelector("#sidebar-button");
+const sidebarDrawer = document.querySelector("#sidebar");
+
+
+function toggleSidebar() {
+    console.log("button clicked");
+    sidebarDrawer.classList.toggle("revealed");
+    sidebarButton.classList.toggle("show-sm");
+    // mobileNav.classList.toggle("show-sm");
+    // desktopNav.classList.toggle("hide-sm");
+}
+
+// function addSidebarButtonListener(){
+// }
+sidebarButton.addEventListener('click', toggleSidebar)
+
+// window.addEventListener('load', addSidebarButtonListener);
 
 
 /////////////////////////////////////////////////////////

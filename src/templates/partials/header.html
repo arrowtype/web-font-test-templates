@@ -1,13 +1,9 @@
 <header>
     <h1><a {%if page == "overview"%}class="highlight"{%endif%} href="index.html">Recursive - {{ versionDate }}</a></h1>
-    <nav>
-        <ul>
-            <li>
-                <a {%if page == "spec"%}class="highlight"{%endif%} href="specs.html">Type Specs</a>
-            </li>
-            <li>
-                <a {%if page == "tester"%}class="highlight"{%endif%} href="matrix.html">Type Tester</a>
-            </li>
-        </ul>
-    </nav>
+    
+    <div id="desktop-nav" class="hide-sm">
+        {% include "partials/nav.html" %}
+    </div>
+
+    <button id="sidebar-button" class="show-sm">Menu</button>
 </header>

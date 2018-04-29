@@ -1,7 +1,7 @@
 #sidebar {
     grid-column: 1 / 2;
     background-color: #000;
-    padding-top: 4rem;
+    padding-top: 3rem;
     font-family: var(--mono-heading-bold);
     // font-size: 1.25rem;
     text-transform: uppercase;
@@ -11,7 +11,7 @@
     height: 100vh;
     grid-area: sidebar;
     overflow-y: auto;
-    border-right: 1px solid #444;
+    border-right: var(--border);
 }
 #sidebar ul {
     list-style: none;
@@ -135,3 +135,4 @@
 //         padding-top: 0;
 //     }
 // }
+

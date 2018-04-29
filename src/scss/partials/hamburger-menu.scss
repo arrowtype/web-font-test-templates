@@ -1,0 +1,107 @@
+// // responsive sidebar
+
+.hide-sm {
+    display: inherit;
+}
+.show-sm {
+    display: none;
+}
+
+
+
+@media (max-width: 1160px) {
+
+    body {
+        grid-template-columns:  1fr;
+    }
+
+    header {
+        height: 3rem;
+    }
+
+    #tests {
+        // grid-column-end: -1;
+        // grid-area: "sidebar" / "content";
+        grid-column: 1 span 2;
+        /* padding-left: var(--sidebar-width); */
+    }
+
+    #sidebar {
+        // display: none;
+        position: fixed;
+        width: 240px;
+        right:0;
+        background-color: rgba(0,0,0,.96);
+        border-right: none;
+        border-left: var(--border);
+        // box-shadow: -10px 10px 10px rgba(0,255,0,.5);
+        transform: translateX(100%);
+        transition: .25s ease-out;
+
+        &.revealed {
+            transform: translateX(0%);
+        }
+    }
+
+    #mobile-nav {
+        border-bottom: var(--border);
+        width: 100%;
+        height: 3rem;
+        display: grid;
+        align-content: stretch;
+
+        ul {
+            // padding: 0;
+            justify-content: space-between;
+            margin: 0;
+            height: 100%;
+        }
+
+        li {
+            padding: 0;
+            display: grid;
+            // align-content: stretch;
+            align-content: center;
+
+            a {
+                margin: 0;
+                // display: flex;
+                // flex-direction: row;
+                // align-items: center;
+                display: grid;
+                align-content: center;
+                // box-sizing: content-box;
+            }
+
+            a:hover {
+                transform: none;
+            }
+            a.highlight {
+                position: relative;
+                top: 2.5px;
+                // border-bottom: 5px solid var(--main-accent);
+            }
+            a.highlight:after {
+                content: "";
+                display: block;
+                // width:3rem;
+                height: 5px;
+                background: var(--main-accent);
+                align-self: flex-end;
+                position: relative;
+                top: .5rem;
+
+                // position: relative;
+                // top: 1rem;
+            }
+        }
+    }
+
+    .hide-sm {
+        display: none;
+    }
+    .show-sm {
+        display: block;
+    }
+
+}

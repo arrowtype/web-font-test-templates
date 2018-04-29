@@ -14,7 +14,7 @@ header {
     /* height: 3rem; */
     grid-area: header;
     z-index: 2;
-    border-bottom: 1px solid #444;
+    border-bottom: var(--border);
 
 
     a {
