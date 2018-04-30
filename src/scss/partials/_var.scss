@@ -1,21 +1,4 @@
-// $black:#000;
-// $white:#000;
-// $main:#0f0;
-// $secondary:#004608;
-
-// $colors: $black, $white, $main, $secondary;
-
-// @each $color in $color {
-//     .bg-#{$color} {
-//         background-color: #{$color};
-//     }
-//     .#{$color} {
-//         color: #{$color}; 
-//     }
-// }
-
 :root {
-    
 
     --w-light: 200;
 
@@ -24,10 +7,11 @@
 
     /* sidebar */
     // --sidebar-width: 20vw;
-    --sidebar-width: 280px;
+    --sidebar-width: 260px;
 
     /* colors */
     --main-accent: #00ff00;
+    // --main-accent: #00ffff;
     --secondary-accent: rgb(0,40,10);
     --dark-gray: #444;
 
@@ -51,6 +35,4 @@
     color: #fff;
 }
 
-// .color-blue {
-//     color: $color-blue;
-// }
+$small-screen: 1160px;

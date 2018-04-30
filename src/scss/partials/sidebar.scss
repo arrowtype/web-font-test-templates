@@ -97,7 +97,7 @@
 #sidebar ul li li a.highlight {
     color: #fff;
     text-shadow: none;
-    font-weight: bold;
+    // font-weight: bold;
     // background-color: #222;
     // border-radius: 100px;
 }
@@ -108,7 +108,7 @@
 }
 
 #sidebar ul li li a.highlight + ul {
-    border-left: 2px #444 solid;
+    border-left: var(--border);
     transition: 1s ease;
 }
 
@@ -118,25 +118,7 @@
 }
 
 #sidebar ul li li li a.highlight:before {
-    color: rgba(0,255,0,1);
+    color: var(--main-accent);
     transition: .25s;
 }
-
-// @media print {
-//     .print-only {
-//         display: block;
-//     }
-//     body {
-//         display: block;
-//     }
-//     // header {
-//     //     display: none;
-//     // }
-//     #sidebar {
-//         display: none;
-//     }
-//     #tests {
-//         padding-top: 0;
-//     }
-// }
 
