@@ -855,6 +855,7 @@ nav li a {
   text-transform: uppercase;
   position: relative;
   top: -2em;
+  cursor: move;
 }
 
 .matrix p:after {

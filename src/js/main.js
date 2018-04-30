@@ -130,7 +130,7 @@ function varFontSlide(e) {
 
     // get a 0–1 value for mouse position, X and Y
     let wghtRatio = mouseX / winX
-    let opszRatio = mouseY / winY
+    let opszRatio = (winY - mouseY) / winY
 
     // weight axis
     let wghtMin = 0
