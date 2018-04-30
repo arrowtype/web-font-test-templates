@@ -62,10 +62,11 @@ html {
   src: url("../fonts/Recursive Sans Heading-Bold.otf");
 }
 
-/* @font-face {
-    font-family: "Recursive Mono Heading Bold";
-    src: url("../fonts/Recursive Mono Heading-Bold.otf");
-} */
+@font-face {
+  font-family: "Recursive Mono Var";
+  src: url("../fonts/var/Recursive-mono-optical-sizes-VF.ttf");
+}
+
 /* FONTS */
 /* MONO */
 /* heading */
@@ -214,6 +215,8 @@ html {
 }
  */
 :root {
+  /* mono var */
+  --mono-var: "Recursive Mono Var", "IBM Plex Mono", monospace;
   /* mono */
   --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
   --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
@@ -385,6 +388,10 @@ html {
 
 .sans-text-light {
   font-family: var(--sans-text-light);
+}
+
+.mono-var {
+  font-family: var(--mono-var);
 }
 
 /* type styles */
@@ -881,7 +888,7 @@ nav li a {
   font-size: 15vw;
   line-height: 1.125em;
   width: 90vw;
-  height: 1.125em;
+  height: 1.25em;
   background-color: transparent;
   border: none;
   color: white !important;

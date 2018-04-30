@@ -1,4 +1,6 @@
 :root {
+    /* mono var */
+    --mono-var: "Recursive Mono Var", "IBM Plex Mono", monospace;
     /* mono */
     --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
     --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
@@ -51,6 +53,10 @@ $ital: italic, roman;
             }
         }
     }
+}
+
+.mono-var {
+    font-family: var(--mono-var);
 }
 
 /* type styles */

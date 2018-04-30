@@ -117,3 +117,59 @@ function addMatrixListeners(){
 
 window.addEventListener('load', addMatrixListeners);
 
+
+function varFontSlide(e) {
+    // console.log(e);
+    let mouseX = e.clientX
+    let mouseY = e.clientY
+    let winX = window.innerWidth
+    let winY = window.innerHeight
+
+    // console.log(mouseX, mouseY);
+    // console.log(window.innerWidth, window.innerHeight);
+
+    // get a 0–1 value for mouse position, X and Y
+    let wghtRatio = mouseX / winX
+    let opszRatio = mouseY / winY
+
+    // weight axis
+    let wghtMin = 0
+    let wghtMax = 1000
+
+    // optical size axis
+    let opszMin = 6
+    let opszMax = 72
+
+    // calculate ranges
+    let wghtAxisRange = wghtMax - wghtMin    // 1000
+    let opszAxisRange = opszMax - opszMin      // 66
+
+    // calculate setting based on ratio of mouse position (a slider would work, too)
+    let wght = wghtRatio * wghtAxisRange + wghtMin
+    let opsz = opszRatio * opszAxisRange + opszMin
+
+    console.log("wght is " + wght)
+    console.log("opsz is " + opsz)
+
+    let fontVarSettings = `font-variation-settings: 'opsz' ${opsz}, 'wght' ${wght}`
+
+    typeTesterInput.setAttribute("style", fontVarSettings)
+}
+
+function addMousePosListener(){
+    if (typeTesterInput != null) {
+        console.log("loggingmouse")
+        // window.addEventListener('onmousemove', varFontSlide);
+        window.onmousemove = varFontSlide;
+    }
+}
+
+window.addEventListener('load', addMousePosListener);
+
+// window.onmousemove = logMouseMove;
+
+// function logMouseMove(e) {
+// 	// e = event || window.event;	
+// 	mousePos = { x: e.clientX, y: e.clientY };
+// 	console.log(mousePos);
+// }
