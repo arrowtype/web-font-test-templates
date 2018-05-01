@@ -92,6 +92,7 @@ window.addEventListener('load', addSidebarButtonListener);
 /////////////////////////////////////////////////////////
 
 const matrixWords = document.querySelectorAll(".matrix-word")
+const matrixWordsContainer = document.querySelector(".matrix p")
 const typeTesterInput = document.querySelector(".matrix .typer")
 
 
@@ -130,7 +131,7 @@ function varFontSlide(e) {
 
     // get a 0–1 value for mouse position, X and Y
     let wghtRatio = mouseX / winX
-    let opszRatio = (winY - mouseY) / winY
+    let opszRatio = (winY - mouseY) / winY // using (winY - mouseY) to set lower values at bottom of window
 
     // weight axis
     let wghtMin = 0
@@ -153,13 +154,19 @@ function varFontSlide(e) {
 
     let fontVarSettings = `font-variation-settings: 'opsz' ${opsz}, 'wght' ${wght}`
 
-    typeTesterInput.setAttribute("style", fontVarSettings)
+    typeTesterInput.setAttribute("style", fontVarSettings);
+
+    let wghtInverse = (1 - wghtRatio) * wghtAxisRange + wghtMin
+    let opszInverse = (1 - opszRatio) * opszAxisRange + opszMin
+
+    let fontVarSettingsInverse = `font-variation-settings: 'opsz' ${opszInverse}, 'wght' ${wghtInverse}`
+
+    matrixWordsContainer.setAttribute("style", fontVarSettingsInverse);
 }
 
 function addMousePosListener(){
     if (typeTesterInput != null) {
-        console.log("loggingmouse")
-        // window.addEventListener('onmousemove', varFontSlide);
+        // console.log("loggingmouse")
         window.onmousemove = varFontSlide;
     }
 }

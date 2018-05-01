@@ -894,7 +894,7 @@ nav li a {
   border: none;
   color: white !important;
   margin: 0;
-  text-shadow: .05em .05em .5em black;
+  text-shadow: .05em .05em .25em black,.05em .05em .25em black;
   position: relative;
   resize: none;
   animation: none;
