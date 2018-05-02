@@ -889,12 +889,12 @@ nav li a {
   font-size: 15vw;
   line-height: 1.125em;
   width: 90vw;
-  height: 1.25em;
+  height: 80vh;
   background-color: transparent;
   border: none;
   color: white !important;
   margin: 0;
-  text-shadow: .05em .05em .25em black,.05em .05em .25em black;
+  text-shadow: .05em .05em .25em black;
   position: relative;
   resize: none;
   animation: none;
