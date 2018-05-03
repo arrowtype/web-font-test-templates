@@ -64,6 +64,11 @@ html {
 
 @font-face {
   font-family: "Recursive Mono Var";
+  src: url("../fonts/var/Recursive-mono-optical-sizes-ext-VF.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Var Fallback";
   src: url("../fonts/var/Recursive-mono-optical-sizes-VF.ttf");
 }
 
@@ -216,7 +221,7 @@ html {
  */
 :root {
   /* mono var */
-  --mono-var: "Recursive Mono Var", "IBM Plex Mono", monospace;
+  --mono-var: "Recursive Mono Var", "Recursive Mono Var Fallback", "IBM Plex Mono", monospace;
   /* mono */
   --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
   --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;

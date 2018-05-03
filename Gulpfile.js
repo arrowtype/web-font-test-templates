@@ -35,6 +35,7 @@ var inputScripts = './src/js/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
+var inputFonts = './src/fonts/**/*';
 
 
 // -----------------------------------------------------------------------------
@@ -105,7 +106,7 @@ gulp.task('img', function() {
 // -----------------------------------------------------------------------------
 
 gulp.task('fonts', function() {
-  return gulp.src(['./src/fonts/**/*'])
+  return gulp.src([inputFonts])
   .pipe(gulp.dest(siteOutput + '/fonts/'));
 });
 
@@ -135,6 +136,9 @@ gulp.task('watch', function() {
 
     //  reload on js change
     gulp.watch(inputScripts + '/*', ['scripts']).on('change', browserSync.reload);
+    
+    //  reload on font change
+    gulp.watch(inputFonts, ['fonts']).on('change', browserSync.reload);
 
     // reload on json data change
     // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA

@@ -134,7 +134,7 @@ function varFontSlide(e) {
     let opszRatio = (winY - mouseY) / winY // using (winY - mouseY) to set lower values at bottom of window
 
     // weight axis
-    let wghtMin = 0
+    let wghtMin = 200
     let wghtMax = 1000
 
     // optical size axis
