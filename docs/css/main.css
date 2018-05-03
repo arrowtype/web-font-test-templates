@@ -980,10 +980,8 @@ nav li a {
 .hero #lineDrawing {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  max-width: 80vw;
-  max-height: 80vh;
+  width: 80vw;
   position: relative;
-  top: -1.5rem;
 }
 
 .hero h1 {
