@@ -852,12 +852,10 @@ nav li a {
 .matrix p {
   grid-column: 1 / -1;
   text-align: center;
-  line-height: 1.125em;
-  letter-spacing: .25em;
-  word-spacing: -.75em;
+  line-height: 1;
+  word-spacing: -.6em;
   opacity: .75;
   animation: scrollUp 3.75s infinite linear;
-  text-transform: uppercase;
   position: relative;
   top: -2em;
   cursor: move;
@@ -937,7 +935,7 @@ nav li a {
     transform: translateY(0rem);
   }
   100% {
-    transform: translateY(-2.25rem);
+    transform: translateY(-2rem);
   }
 }
 
