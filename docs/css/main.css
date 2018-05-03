@@ -980,8 +980,15 @@ nav li a {
 .hero #lineDrawing {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  width: 80vw;
+  width: 75%;
   position: relative;
+  transition: .5s;
+}
+
+@media (max-width: 1200px) {
+  .hero #lineDrawing {
+    width: 95%;
+  }
 }
 
 .hero h1 {
@@ -998,7 +1005,7 @@ nav li a {
 
 .hero code:before {
   content: counter(line);
-  font-family: var(--mono-text-light);
+  font-family: var(--mono-heading-regular);
   color: var(--dark-gray);
   padding-right: .1em;
   margin: 0 .5em 0 -2em;

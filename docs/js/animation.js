@@ -7,14 +7,21 @@ basicTimeline
     targets: '#lineDrawing .lines path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1250,
+    duration: 1750,
     stroke: [
       {value: '#0f0'},
-      {value: '#121212'}
+      {value: 'rgba(20,20,20,0.25)'}
     ],
     delay: function(el, i) { return i * 250 },
     direction: 'alternate',
     loop: true
+  })
+  .add({
+    targets: '#lineDrawing g',
+    fill: ["rgba(0,0,0,0)","rgba(20,20,20,0.5)"],
+    easing: 'easeInOutSine',
+    duration: 1500,
+    offset: '-=2000'
   })
   .add({
     targets: '.greeting',
