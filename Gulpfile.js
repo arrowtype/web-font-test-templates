@@ -61,7 +61,7 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
   return gulp.src(inputScripts + '*.js')
-    .pipe(concat({ path: 'main.js'}))
+    // .pipe(concat({ path: 'main.js'}))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest(siteOutput + '/js/'));
 });

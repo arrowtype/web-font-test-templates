@@ -962,10 +962,30 @@ nav li a {
       grid-row: 2;
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.hero .greeting {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: relative;
+}
+
+.hero #lineDrawing {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-width: 80vw;
+  max-height: 80vh;
+  position: relative;
+  top: -1.5rem;
 }
 
 .hero h1 {
@@ -984,9 +1004,8 @@ nav li a {
   content: counter(line);
   font-family: var(--mono-text-light);
   color: var(--dark-gray);
-  padding: .5em .5em .5em 0;
+  padding-right: .1em;
   margin: 0 .5em 0 -2em;
-  border-right: 2px solid var(--dark-gray);
 }
 
 .hero code:before {

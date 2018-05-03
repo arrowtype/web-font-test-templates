@@ -27,5 +27,8 @@
     "gulp-sass": "^2.1.0",
     "imagemin-pngquant": "^4.2.0",
     "sassdoc": "^2.1.15"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0"
   }
 }
