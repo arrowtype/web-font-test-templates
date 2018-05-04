@@ -34,7 +34,7 @@ basicTimeline
   })
   .add({
     targets: '#lineDrawing g',
-    fill: ["rgba(0,0,0,0)","rgba(10,20,10,0.5)"],
+    fill: ["rgba(0,0,0,0)","rgba(10,40,10,0.5)"],
     strokeWidth: [
       ".5",
       "0"],
