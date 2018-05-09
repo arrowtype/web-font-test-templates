@@ -7,7 +7,9 @@
 
   {% include "partials/header.html" %}
 
-  {% include "partials/sidebar.html" %}
+  {% if page == "spec" %}
+  {% include "partials/sidebar-roman.html" %}
+  {% endif %}
 
   {% block content %}{% endblock %}
 

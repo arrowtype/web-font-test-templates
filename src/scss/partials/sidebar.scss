@@ -8,7 +8,7 @@
     // letter-spacing: .6em;
     position: fixed;
     width: var(--sidebar-width);
-    max-height: 100vh;
+    height: 100vh;
     grid-area: sidebar;
     overflow-y: auto;
     border-right: var(--border);

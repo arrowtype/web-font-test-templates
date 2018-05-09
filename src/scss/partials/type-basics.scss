@@ -5,11 +5,20 @@
     --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
     --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
     --mono-text-medium: "Recursive Mono Text Medium", "IBM Plex Mono", monospace;
+    --mono-text-semibold: "Recursive Mono Text SemiBold", "IBM Plex Mono", monospace;
     --mono-text-bold: "Recursive Mono Text Bold", "IBM Plex Mono", monospace;
+    --mono-text-extrabold: "Recursive Mono Text ExtraBold", "IBM Plex Mono", monospace;
+    --mono-text-black: "Recursive Mono Text Black", "IBM Plex Mono", monospace;
+    --mono-text-heavy: "Recursive Mono Text Heavy", "IBM Plex Mono", monospace;
+
     --mono-heading-light: "Recursive Mono Heading Light", "IBM Plex Mono", monospace;
     --mono-heading-regular: "Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
     --mono-heading-medium: "Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
+    --mono-heading-semibold: "Recursive Mono Heading SemiBold", "IBM Plex Mono", monospace;
     --mono-heading-bold: "Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
+    --mono-heading-extrabold: "Recursive Mono Heading ExtraBold", "IBM Plex Mono", monospace;
+    --mono-heading-black: "Recursive Mono Heading Black", "IBM Plex Mono", monospace;
+    --mono-heading-heavy: "Recursive Mono Heading Heavy", "IBM Plex Mono", monospace;
     /* mono italic */
     --mono-text-light-italic: "Recursive Mono Text Light Italic", "IBM Plex Mono", monospace;
     --mono-text-regular-italic: "Recursive Mono Text Regular Italic", "IBM Plex Mono", monospace;
@@ -19,20 +28,32 @@
     --mono-heading-regular-italic: "Recursive Mono Heading Regular Italic", "IBM Plex Mono", monospace;
     --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
     --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
+
+    /* mono var */
+    --sans-var: "Recursive Sans Var", "Recursive Mono Var Fallback", "IBM Plex Sans", monospace;
     /* sans */
     --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", monospace;
     --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", monospace;
     --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", monospace;
+    --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", monospace;
     --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", monospace;
+    --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", monospace;
+    --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", monospace;
+    --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", monospace;
+
     --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", monospace;
     --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
     --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
+    --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", monospace;
     --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
+    --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", monospace;
+    --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", monospace;
+    --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", monospace;
 }
 
 $wdth: mono, sans;
 $opsz: heading, text;
-$wght: bold, medium, regular, light;
+$wght: heavy, black, extrabold, bold, semibold, medium, regular, light;
 $ital: italic, roman;
 
 @each $width in $wdth {
@@ -58,6 +79,9 @@ $ital: italic, roman;
 .mono-var {
     font-family: var(--mono-var);
 }
+.sans-var {
+    font-family: var(--sans-var);
+}
 
 /* type styles */
 
@@ -67,6 +91,10 @@ $ital: italic, roman;
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.wordbreak {
+    word-break: break-all;
 }
 
 /* font weight reset until OTF files are properly style-linked */

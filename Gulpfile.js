@@ -35,7 +35,7 @@ var inputScripts = './src/js/';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
-var inputFonts = './src/fonts/**/*';
+var inputFonts = './src/fonts/**/*.*';
 
 
 // -----------------------------------------------------------------------------
