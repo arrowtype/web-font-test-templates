@@ -19,14 +19,14 @@
                     {% for wght in fonts.params.wght %}
                         
                     
-                        <div id="{{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" class=" font-section {{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}">
+                        <div id="{{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" class=" font-section {{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" >
                             
                                 <div class="font-title">
                                     <div class="font-title-wrapper">
                                         <h4>{{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</h4>
                                     </div>
                                 </div>
-                                <div class="page">
+                                <div class="page" contenteditable="true" spellcheck="false">
                                     <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                     <div class="alphabet-spec">
                                         
@@ -36,7 +36,7 @@
 
                                     </div>
                                 </div>
-                                <div class="page">
+                                <div class="page" contenteditable="true" spellcheck="false">
                                     <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                     <div class="very-large-text">
                                         <p class="caption">
@@ -67,7 +67,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="page uppercase">
+                                <div class="page uppercase" contenteditable="true" spellcheck="false">
                                     <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                     <div class="very-large-text">
                                         <p class="caption">
@@ -100,7 +100,7 @@
 
                                 <!-- NUMBERS -->
                                 {% if wdth == 'Mono'%}
-                                <div class="page wordbreak">
+                                <div class="page wordbreak" contenteditable="true" spellcheck="false" >
                                     <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                     <div class="very-large-text">
                                         <p class="caption">

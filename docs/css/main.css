@@ -1185,7 +1185,6 @@ nav li a {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  overflow: hidden;
 }
 
 .hero .greeting {
@@ -1206,6 +1205,10 @@ nav li a {
   .hero #lineDrawing {
     width: 95%;
   }
+}
+
+.hero #lineDrawing #lineDrawing svg g {
+  transform-origin: 50% 50%;
 }
 
 .hero h1 {
