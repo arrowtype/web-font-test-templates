@@ -9,17 +9,17 @@ var gulp            = require('gulp');
 
 // Nunjucks Templating
 var data            = require('gulp-data');
-var nunjucks        = require('nunjucks');
+// var nunjucks        = require('nunjucks');
 // var markdown        = require('nunjucks-markdown');
 // var marked          = require('marked');
 // var gulpNunjucks    = require('gulp-nunjucks');
 
-const tap = require('gulp-tap');
+// const tap = require('gulp-tap');
 const nunjucksRender = require('gulp-nunjucks-render');
-const markdown = require('gulp-markdownit');
-const grayMatter = require('gulp-gray-matter');
-const path = require('path');
-const fs = require('fs');
+// const markdown = require('gulp-markdownit');
+// const grayMatter = require('gulp-gray-matter');
+// const path = require('path');
+// const fs = require('fs');
 
 // SCSS
 var sass            = require('gulp-sass');
