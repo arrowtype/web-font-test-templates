@@ -9,14 +9,13 @@ var gulp            = require('gulp');
 
 // Nunjucks Templating
 var data            = require('gulp-data');
-// var nunjucks        = require('nunjucks');
+var nunjucks        = require('nunjucks');
 // var markdown        = require('nunjucks-markdown');
 // var marked          = require('marked');
 // var gulpNunjucks    = require('gulp-nunjucks');
-// var nunjucksRender  = require('gulp-nunjucks-render');
 
 const tap = require('gulp-tap');
-const nunjucks = require('gulp-nunjucks-render');
+const nunjucksRender = require('gulp-nunjucks-render');
 const markdown = require('gulp-markdownit');
 const grayMatter = require('gulp-gray-matter');
 const path = require('path');
@@ -47,9 +46,15 @@ var siteOutput      = './docs';
 
 var inputData       = './src/data/data.json';
 
-var inputNunjucks   = './src/nunjucks/**/*.html';
-var inputPages      = './src/nunjucks/pages/*.html';
-var inputTemplates  = './src/nunjucks/templates/**/*.html';
+// var inputNunjucks   = './src/nunjucks/**/*.html';
+// var inputPages      = './src/nunjucks/pages/*.html';
+// var inputTemplates  = './src/nunjucks/templates/';
+// var inputPages      = './src/njx-pages/*.html';
+// var inputTemplates  = './src/njx-templates/';
+// var inputMarkdown  = './src/nunjucks/pages/**/*.md';
+
+var inputPages = './src/njx-pages/*.html';
+var inputTemplates = './src/njx-templates/';
 
 var inputScss       = './src/scss/**/*.scss';
 var inputScssMain   = './src/scss/main.scss';
@@ -62,55 +67,66 @@ var inputScripts    = './src/js/';
 
 var inputFonts      = './src/fonts/**/*.*';
 
-var CONTENT         = 'src/content/**/*.md';
-var TEMPLATES       = 'src/nunjucks/templates/';
+// var CONTENT         = 'src/content/**/*.md';
+// var TEMPLATES       = 'src/nunjucks/templates/';
 
 
 // Moves content to {{ content }} and writes template to file
-function useTemplate(file) {
-  const { data } = file,
-        template = fs.readFileSync(path.resolve(TEMPLATES, data.template));
+// function useTemplate(file) {
+//   const { data } = file,
+//         // template = fs.readFileSync(path.resolve(TEMPLATES, data.template));
+//         template = fs.readFileSync(path.resolve(TEMPLATES, data.template));
   
-  data.contents = file.contents;
-  file.contents = Buffer.from(template);
-  return;
-}
+//   data.contents = file.contents;
+//   file.contents = Buffer.from(template);
+//   return;
+// }
 
 
 // -----------------------------------------------------------------------------
 // Templating
 // -----------------------------------------------------------------------------
 
+// gulp.task('nunjucks', () => {
+//   // nunjucksRender.nunjucks.configure([inputNunjucks]);
+//   // return gulp.src([inputNunjucks + '/templates/*.html', inputNunjucks + '/**/*.html', CONTENT])
+//   // return gulp.src([inputNunjucks + '/templates/*.html', inputNunjucks + '/**/*.html'])
+//   return gulp.src([inputNunjucks, inputMarkdown])
+//   // return gulp.src(inputNunjucks)
+//     // .pipe(data(function() {
+//     //   return require(inputData)
+//     // }))
+//     .pipe(grayMatter())
+//     .pipe(markdown())
+//     .pipe(tap(useTemplate))
+//     .pipe(nunjucksRender({ path: inputTemplates }))
+//     // .pipe(nunjucksRender())
+//     .pipe(gulp.dest(siteOutput));
+// });
 gulp.task('nunjucks', function() {
-  // Gets .html files. see file layout at bottom
-  return gulp
-    // .src([inputPages, inputTemplates])
-    .src([inputNunjucks + '/templates/*.html', inputNunjucks + '/**/*.html'])
-    .pipe(data(function() {
-      return require(inputData)
-    }))
-    // Renders template with nunjucks and marked
-    // .pipe(gulpNunjucks.compile("", {manageEnv: env}))
-    .pipe(gulpNunjucks.compile("", {env: env}))
-    // .pipe(nunjucksRender({manageEnv: env}))
-    // .pipe(nunjucksRender({ path: inputNunjucks}))
-
-    
-    // .pipe(gulpNunjucks({manageEnv: env}))
-    // Uncomment the following if your source pages are something other than *.html. 
-    // .pipe(rename(function (path) { path.extname=".html" }))
-    // output files in dist folder
-    .pipe(gulp.dest(siteOutput))
+  nunjucksRender.nunjucks.configure([inputTemplates]);
+  // Gets .html and .nunjucks files in pages
+  return gulp.src([inputPages, inputTemplates])
+  // Adding data to Nunjucks
+  .pipe(data(function() {
+    return require(inputData)
+  }))
+  // Renders template with nunjucks
+  .pipe(nunjucksRender())
+  // output files in dist folder
+  .pipe(gulp.dest(siteOutput))
 });
 
-gulp.task('nunjucks', () => {
-  return gulp.src(CONTENT)
-    .pipe(grayMatter())
-    .pipe(markdown())
-    .pipe(tap(useTemplate))
-    .pipe(nunjucks({ path: TEMPLATES }))
-    .pipe(gulp.dest(siteOutput));
-});
+// gulp.task('markdown', () => {
+//   return gulp.src(inputMarkdown)
+//     .pipe(grayMatter())
+//     .pipe(markdown())
+//     .pipe(tap(useTemplate))
+//     .pipe(nunjucksRender({ path: TEMPLATES }))
+//     .pipe(gulp.dest(siteOutput));
+// });
+
+// should there just be a separate markdown function?
 
 
 // -----------------------------------------------------------------------------
@@ -203,7 +219,8 @@ gulp.task('watch', function() {
     // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA
 
     // Watch nunjuck templates and reload browser if change
-    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
+    // gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch([inputPages, inputTemplates, inputMarkdown], ['nunjucks']).on('change', browserSync.reload);
 
 });
 
@@ -225,4 +242,5 @@ gulp.task('browser-sync', function() {
 // Default task
 // -----------------------------------------------------------------------------
 
+// gulp.task('default', ['fonts','sass', 'nunjucks', 'markdown', 'img', 'scripts', 'watch', 'browser-sync']);
 gulp.task('default', ['fonts','sass', 'nunjucks', 'img', 'scripts', 'watch', 'browser-sync']);
