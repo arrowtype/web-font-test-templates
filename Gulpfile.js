@@ -60,7 +60,6 @@ function useTemplate(file) {
   return;
 }
 
-//// WORKS FINE without nunjucks task, but not with it
 //// Generates static site from markdown 
 gulp.task('markdown', () => {
   return gulp.src(CONTENT)
@@ -72,38 +71,9 @@ gulp.task('markdown', () => {
 });
 
 
-// COMBINED?
-// gulp.task('markdown', () => {
-//   return gulp.src([inputPages, CONTENT])
-//     .pipe(data(function() {
-//       return require(inputData)
-//     }))
-//     .pipe(grayMatter())
-//     .pipe(markdown())
-//     .pipe(tap(useTemplate))
-//     .pipe(nunjucksRender({ path: inputTemplates }))
-//     .pipe(gulp.dest(siteOutput));
-// });
-
-
 // -----------------------------------------------------------------------------
 // Nunjucks
 // -----------------------------------------------------------------------------
-
-
-// gulp.task('nunjucks', function() {
-//   nunjucksRender.nunjucks.configure([inputTemplates]);
-//   // Gets .html and .nunjucks files in pages
-//   return gulp.src([inputPages, inputTemplates])
-//   // Adding data to Nunjucks
-//   .pipe(data(function() {
-//     return require(inputData)
-//   }))
-//   // Renders template with nunjucks
-//   .pipe(nunjucksRender())
-//   // output files in dist folder
-//   .pipe(gulp.dest(siteOutput))
-// });
 
 gulp.task('pages', () => {
   return gulp.src(inputPages)
