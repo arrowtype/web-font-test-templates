@@ -29,6 +29,9 @@
     "sassdoc": "^2.1.15"
   },
   "dependencies": {
-    "animejs": "^2.2.0"
+    "animejs": "^2.2.0",
+    "gulp-nunjucks": "^4.0.0",
+    "nunjucks": "^3.1.2",
+    "nunjucks-markdown": "^2.0.1"
   }
 }
