@@ -1,10 +1,10 @@
 ---
-title: My page
+title: Introduction
 description: Isn't it great?
-template: default.html
+template: thesis-template.html
 ---
 
-## My page
+## My intro
 Some content for the page
 
-*hello
+*hello and welcome

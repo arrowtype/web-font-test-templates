@@ -77,6 +77,9 @@ gulp.task('markdown', () => {
 
 gulp.task('pages', () => {
   return gulp.src(inputPages)
+    .pipe(data(function() {
+      return require(inputData)
+    }))
     .pipe(nunjucksRender({ path: inputTemplates }))
     .pipe(gulp.dest(siteOutput));
 });
@@ -172,7 +175,7 @@ gulp.task('watch', function() {
     // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA
 
     // Watch nunjuck templates and reload browser if change
-    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['pages']).on('change', browserSync.reload);
 
 });
 
