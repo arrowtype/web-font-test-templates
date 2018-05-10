@@ -9,11 +9,18 @@ var gulp            = require('gulp');
 
 // Nunjucks Templating
 var data            = require('gulp-data');
-var nunjucks        = require('nunjucks');
-var markdown        = require('nunjucks-markdown');
-var marked          = require('marked');
-var gulpNunjucks    = require('gulp-nunjucks');
+// var nunjucks        = require('nunjucks');
+// var markdown        = require('nunjucks-markdown');
+// var marked          = require('marked');
+// var gulpNunjucks    = require('gulp-nunjucks');
 // var nunjucksRender  = require('gulp-nunjucks-render');
+
+const tap = require('gulp-tap');
+const nunjucks = require('gulp-nunjucks-render');
+const markdown = require('gulp-markdownit');
+const grayMatter = require('gulp-gray-matter');
+const path = require('path');
+const fs = require('fs');
 
 // SCSS
 var sass            = require('gulp-sass');
@@ -55,32 +62,20 @@ var inputScripts    = './src/js/';
 
 var inputFonts      = './src/fonts/**/*.*';
 
-
-// var dist = 'dist'; //Set this as your target you be compiling into
-// var src = 'src'; //Set this as the location of your source files
-// var templates = src + '/templates'; //Set this as the folder that contains your nunjuck files
+var CONTENT         = 'src/content/**/*.md';
+var TEMPLATES       = 'src/nunjucks/templates/';
 
 
-// Create an new nunjuck enviroment. Needs the FileSystemLoader to work.
-// The templates folder tells the nunjuck renderer where to find any *.njk files you source in your *.html files. 
-// var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(inputNunjucks));
-var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(inputNunjucks));
+// Moves content to {{ content }} and writes template to file
+function useTemplate(file) {
+  const { data } = file,
+        template = fs.readFileSync(path.resolve(TEMPLATES, data.template));
+  
+  data.contents = file.contents;
+  file.contents = Buffer.from(template);
+  return;
+}
 
-// all of the following is optional and this will all work just find if you don't include any of it. included it here just in case you need to configure it. 
-marked.setOptions({
-    renderer: new marked.Renderer(),
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: true,
-    smartLists: true,
-    smartypants: false
-});
-
-// This takes the freshly created nunjucks environment object (env) and passes it to nunjucks-markdown to have the custom tag registered to the env object.
-// The second is the marked library. anything that can be called to render markdown can be passed here. 
-markdown.register(env, marked);
 
 // -----------------------------------------------------------------------------
 // Templating
@@ -106,6 +101,15 @@ gulp.task('nunjucks', function() {
     // .pipe(rename(function (path) { path.extname=".html" }))
     // output files in dist folder
     .pipe(gulp.dest(siteOutput))
+});
+
+gulp.task('nunjucks', () => {
+  return gulp.src(CONTENT)
+    .pipe(grayMatter())
+    .pipe(markdown())
+    .pipe(tap(useTemplate))
+    .pipe(nunjucks({ path: TEMPLATES }))
+    .pipe(gulp.dest(siteOutput));
 });
 
 
