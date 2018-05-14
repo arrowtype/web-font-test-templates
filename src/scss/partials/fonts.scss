@@ -37,6 +37,12 @@
     src: url("../fonts/ttf/Recursive Mono-Heading Regular.ttf");
 }
 @font-face {
+    font-family: "Recursive Mono Heading Text";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Mono-Heading_Regular.woff2");
+    src: url("../fonts/ttf/Recursive Mono-Heading Text.ttf");
+}
+@font-face {
     font-family: "Recursive Mono Heading Medium";
     font-weight: 500;
     // src: url("../fonts/woff2/Recursive_Mono-Heading_Medium.woff2");
@@ -88,6 +94,18 @@
     src: url("../fonts/ttf/Recursive Mono-Text Regular.ttf");
 }
 @font-face {
+    font-family: "Recursive Mono Text Text";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Mono-Text_Text.woff2");
+    src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+@font-face {
+    font-family: "Recursive Mono Text Text";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Mono-Text.woff2");
+    src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+@font-face {
     font-family: "Recursive Mono Text Medium";
     font-weight: 500;
     // src: url("../fonts/woff2/Recursive_Mono-Text_Medium.woff2");
@@ -134,6 +152,18 @@
 }
 @font-face {
     font-family: "Recursive Sans Heading Regular";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Sans-Heading_Regular.woff2");
+    src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
+}
+@font-face {
+    font-family: "Recursive Sans Heading Text";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Sans-Heading_Text.woff2");
+    src: url("../fonts/ttf/Recursive Sans-Heading Text.ttf");
+}
+@font-face {
+    font-family: "Recursive Sans Heading Text";
     font-weight: 400;
     // src: url("../fonts/woff2/Recursive_Sans-Heading_Regular.woff2");
     src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
@@ -188,6 +218,12 @@
     font-weight: 400;
     // src: url("../fonts/woff2/Recursive_Sans-Text_Regular.woff2");
     src: url("../fonts/ttf/Recursive Sans-Text Regular.ttf");
+}
+@font-face {
+    font-family: "Recursive Sans Text Text";
+    font-weight: 400;
+    // src: url("../fonts/woff2/Recursive_Sans-Text_Text.woff2");
+    src: url("../fonts/ttf/Recursive Sans-Text Text.ttf");
 }
 @font-face {
     font-family: "Recursive Sans Text Medium";

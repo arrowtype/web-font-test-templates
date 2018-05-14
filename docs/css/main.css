@@ -85,6 +85,12 @@ html {
 }
 
 @font-face {
+  font-family: "Recursive Mono Heading Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Heading Text.ttf");
+}
+
+@font-face {
   font-family: "Recursive Mono Heading Medium";
   font-weight: 500;
   src: url("../fonts/ttf/Recursive Mono-Heading Medium.ttf");
@@ -134,6 +140,18 @@ html {
 }
 
 @font-face {
+  font-family: "Recursive Mono Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+
+@font-face {
   font-family: "Recursive Mono Text Medium";
   font-weight: 500;
   src: url("../fonts/ttf/Recursive Mono-Text Medium.ttf");
@@ -178,6 +196,18 @@ html {
 
 @font-face {
   font-family: "Recursive Sans Heading Regular";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Heading Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Text";
   font-weight: 400;
   src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
 }
@@ -232,6 +262,12 @@ html {
 }
 
 @font-face {
+  font-family: "Recursive Sans Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Text Text.ttf");
+}
+
+@font-face {
   font-family: "Recursive Sans Text Medium";
   font-weight: 500;
   src: url("../fonts/ttf/Recursive Sans-Text Medium.ttf");
@@ -273,6 +309,7 @@ html {
   /* mono */
   --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
   --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
+  --mono-text-text: "Recursive Mono Text Text", "IBM Plex Mono", monospace;
   --mono-text-medium: "Recursive Mono Text Medium", "IBM Plex Mono", monospace;
   --mono-text-semibold: "Recursive Mono Text SemiBold", "IBM Plex Mono", monospace;
   --mono-text-bold: "Recursive Mono Text Bold", "IBM Plex Mono", monospace;
@@ -281,6 +318,7 @@ html {
   --mono-text-heavy: "Recursive Mono Text Heavy", "IBM Plex Mono", monospace;
   --mono-heading-light: "Recursive Mono Heading Light", "IBM Plex Mono", monospace;
   --mono-heading-regular: "Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
+  --mono-heading-text: "Recursive Mono Heading Text", "IBM Plex Mono", monospace;
   --mono-heading-medium: "Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
   --mono-heading-semibold: "Recursive Mono Heading SemiBold", "IBM Plex Mono", monospace;
   --mono-heading-bold: "Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
@@ -299,22 +337,24 @@ html {
   /* mono var */
   --sans-var: "Recursive Sans Var", "Recursive Mono Var Fallback", "IBM Plex Sans", monospace;
   /* sans */
-  --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", monospace;
-  --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", monospace;
-  --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", monospace;
-  --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", monospace;
-  --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", monospace;
-  --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", monospace;
-  --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", monospace;
-  --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", monospace;
-  --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", monospace;
-  --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
-  --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
-  --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", monospace;
-  --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
-  --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", monospace;
-  --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", monospace;
-  --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", monospace;
+  --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", sans-serif;
+  --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", sans-serif;
+  --sans-text-text: "Recursive Sans Text Text", "IBM Plex Sans", sans-serif;
+  --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", sans-serif;
+  --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", sans-serif;
+  --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", sans-serif;
+  --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", sans-serif;
+  --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", sans-serif;
+  --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", sans-serif;
+  --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", sans-serif;
+  --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", sans-serif;
+  --sans-heading-text: "Recursive Sans Heading Text", "IBM Plex Sans", sans-serif;
+  --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", sans-serif;
+  --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", sans-serif;
+  --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", sans-serif;
+  --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", sans-serif;
+  --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", sans-serif;
+  --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", sans-serif;
 }
 
 .mono-heading-heavy-italic {
@@ -369,6 +409,15 @@ html {
 
 .mono-heading-medium {
   font-family: var(--mono-heading-medium);
+}
+
+.mono-heading-text-italic {
+  font-family: var(--mono-heading-text-italic);
+  font-style: italic;
+}
+
+.mono-heading-text {
+  font-family: var(--mono-heading-text);
 }
 
 .mono-heading-regular-italic {
@@ -443,6 +492,15 @@ html {
   font-family: var(--mono-text-medium);
 }
 
+.mono-text-text-italic {
+  font-family: var(--mono-text-text-italic);
+  font-style: italic;
+}
+
+.mono-text-text {
+  font-family: var(--mono-text-text);
+}
+
 .mono-text-regular-italic {
   font-family: var(--mono-text-regular-italic);
   font-style: italic;
@@ -515,6 +573,15 @@ html {
   font-family: var(--sans-heading-medium);
 }
 
+.sans-heading-text-italic {
+  font-family: var(--sans-heading-text-italic);
+  font-style: italic;
+}
+
+.sans-heading-text {
+  font-family: var(--sans-heading-text);
+}
+
 .sans-heading-regular-italic {
   font-family: var(--sans-heading-regular-italic);
   font-style: italic;
@@ -585,6 +652,15 @@ html {
 
 .sans-text-medium {
   font-family: var(--sans-text-medium);
+}
+
+.sans-text-text-italic {
+  font-family: var(--sans-text-text-italic);
+  font-style: italic;
+}
+
+.sans-text-text {
+  font-family: var(--sans-text-text);
 }
 
 .sans-text-regular-italic {
@@ -732,7 +808,7 @@ header h1 a:visited {
   text-decoration: none;
   color: #aaa;
   /* padding: 2rem 0; */
-  transition: .25s;
+  transition: .35s;
   display: block;
   margin-bottom: .5em;
 }
@@ -744,7 +820,7 @@ header h1 a:visited {
 #sidebar li a:hover {
   color: #fff;
   /* transform: skewX(9deg); */
-  transform: skewX(-18.43deg);
+  font-variation-settings: "wght" 700, "opsz" 10;
 }
 
 #sidebar ul li li a:before {
@@ -764,7 +840,8 @@ header h1 a:visited {
 #sidebar li ul {
   margin-left: -1rem;
   padding: 0 0rem;
-  font-family: var(--mono-text-bold);
+  font-family: var(--sans-var);
+  font-variation-settings: "wght" 700, "opsz" 10;
   text-transform: none;
   letter-spacing: 0;
   border-left: 2px transparent solid;
@@ -777,13 +854,15 @@ header h1 a:visited {
 #sidebar li ul ul {
   margin-left: 0.9rem;
   padding: 0 0.3rem;
-  font-family: var(--mono-text-regular);
+  font-family: var(--sans-var);
+  font-variation-settings: "wght" 400, "opsz" 10;
   text-transform: none;
   letter-spacing: 0;
 }
 
 #sidebar ul > li a.highlight {
   color: var(--main-accent);
+  font-variation-settings: "wght" 800, "opsz" 10;
   transition: .25s;
 }
 

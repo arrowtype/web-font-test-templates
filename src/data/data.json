@@ -14,11 +14,18 @@
             "wght": [
                 "Light",
                 "Regular",
+                "Text",
                 "Medium",
                 "SemiBold",
                 "Bold",
                 "ExtraBold",
                 "Black",
+                "Heavy"
+            ],
+            "printWght": [
+                "Light",
+                "Text",
+                "Bold",
                 "Heavy"
             ],
             "ital": [

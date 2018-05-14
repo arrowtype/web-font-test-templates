@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% set page = "thesis" %}
 
-{% include "partials/head.html" %}
+<!-- components -->
 
-<body>
+{% extends "default.html" %}
 
-  {% include "partials/header.html" %}
+{% import "partials/sidebar-thesis.html" as sidebar %}
 
-  <h1>{{ title }}</h1>
+{% block content %}
 
-  {{ contents | safe }}
+<h1>{{ title }}</h1>
 
-  {% include "partials/end.html" %}
+{{ sidebar.thesisSidebar('hey its a link') }}
 
-</body>
-</html>
+{{ contents | safe }}
+
+{% endblock content %}

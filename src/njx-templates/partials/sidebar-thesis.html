@@ -1,11 +1,3 @@
-<div id="sidebar">
-    <div id="mobile-nav" class="show-sm">
-        {% include "partials/nav.html" %}
-    </div>  
-    {%if page == "thesis"%}
-    <ul id="specimen-nav">
-        
-    </ul>
-    {%endif%}
-    
-</div>
+{% macro thesisSidebar(pageTitle) %}
+<p>{{pageTitle}}</p>
+{% endmacro %}
