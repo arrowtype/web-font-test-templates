@@ -16,6 +16,7 @@
 
 #specimen-nav {
     margin-top:1rem;
+    min-height: 100vh;
 }
 #sidebar ul {
     list-style: none;
@@ -34,7 +35,8 @@
     text-decoration: none;
     color: #aaa;
     /* padding: 2rem 0; */
-    transition: .25s;
+    // transition: .25s;
+    transition: .35s;
     display: block;
     margin-bottom: .5em;
 }
@@ -46,7 +48,8 @@
 #sidebar li a:hover {
    color: #fff;
    /* transform: skewX(9deg); */
-   transform: skewX(-18.43deg);
+//    transform: skewX(-18.43deg);
+   font-variation-settings: "wght" 700, "opsz" 10;
 }
 
 #sidebar ul li li a:before {
@@ -70,7 +73,9 @@
 #sidebar li ul {
     margin-left: -1rem;
     padding: 0 0rem;
-    font-family: var(--mono-text-bold);
+    // font-family: var(--mono-text-bold);
+    font-family: var(--sans-var);
+    font-variation-settings: "wght" 700, "opsz" 10;
     // font-size: 1rem;
     text-transform: none;
     letter-spacing: 0;
@@ -82,7 +87,9 @@
 #sidebar li ul ul {
     margin-left: 0.9rem;
     padding: 0 0.3rem;
-    font-family: var(--mono-text-regular);
+    // font-family: var(--mono-text-regular);
+    font-family: var(--sans-var);
+    font-variation-settings: "wght" 400, "opsz" 10;
     text-transform: none;
     letter-spacing: 0;
 }
@@ -91,6 +98,7 @@
 
 #sidebar ul > li a.highlight {
     color: var(--main-accent);
+    font-variation-settings: "wght" 800, "opsz" 10;
     transition: .25s;
 }
 

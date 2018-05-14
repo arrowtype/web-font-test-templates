@@ -1,0 +1,35 @@
+<div id="sidebar" {%if page == "overview"%}class="show-sm"{%endif%}>
+    <div id="mobile-nav" class="show-sm">
+        {% include "partials/nav.html" %}
+    </div>  
+    {%if page == "spec"%}
+    <ul id="specimen-nav">
+        {% for wdth in fonts.params.wdth %}
+            <li>
+                <a href="#{{ wdth | lower}}">{{familyName}} {{ wdth }}</a>
+                <ul>
+                    {% for opsz in fonts.params.opsz %}
+                        <li>
+                            <a href="#{{ wdth | lower }}-{{opsz | lower }}">{{ opsz }}</a>
+                            <ul>
+                                {% for wght in fonts.params.printWght %}
+                                
+                                <li>
+                                
+                                
+                                    <a href="#{{ wdth | lower }}-{{opsz | lower }}-{{wght | lower}}">{{wght}}</a>   
+                                    
+                                </li>
+                                
+                                
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    {%endif%}
+    
+</div>

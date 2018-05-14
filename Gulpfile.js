@@ -5,17 +5,23 @@
 // Dependencies
 // -----------------------------------------------------------------------------
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sassdoc = require('sassdoc');
-var browserSync = require('browser-sync').create();
-var nunjucksRender = require('gulp-nunjucks-render');
-var data = require('gulp-data');
-var concat      = require('gulp-concat');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
+var gulp                = require('gulp');
+var sass                = require('gulp-sass');
+var autoprefixer        = require('gulp-autoprefixer');
+var sassdoc             = require('sassdoc');
+var browserSync         = require('browser-sync').create();
+var nunjucksRender      = require('gulp-nunjucks-render');
+var data                = require('gulp-data');
+var concat              = require('gulp-concat');
+var imagemin            = require('gulp-imagemin');
+var pngquant            = require('imagemin-pngquant');
 // var jsonSass = require('gulp-json-sass')
+
+const tap = require('gulp-tap');
+const markdown = require('gulp-markdownit');
+const grayMatter = require('gulp-gray-matter');
+const path = require('path');
+const fs = require('fs');
 
 
 
@@ -24,18 +30,59 @@ var pngquant = require('imagemin-pngquant');
 // Configuration
 // -----------------------------------------------------------------------------
 
-var siteOutput = './docs';
-var input = './src/scss/**/*.scss';
-var inputMain = './src/scss/main.scss';
-var output = siteOutput + '/css';
-var inputPages = './src/njx-pages/*.html';
-var inputData = './src/data/data.json';
-var inputTemplates = './src/njx-templates/';
-var inputScripts = './src/js/';
-var sassOptions = { outputStyle: 'expanded' };
+var siteOutput          = './docs';
+var input               = './src/scss/**/*.scss';
+var inputMain           = './src/scss/main.scss';
+var output              = siteOutput + '/css';
+var inputPages          = './src/njx-pages/*.html';
+var inputData           = './src/data/data.json';
+var inputTemplates      = './src/njx-templates';
+var inputScripts        = './src/js/';
+var sassOptions         = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
-var sassdocOptions = { dest: siteOutput + '/sassdoc' };
-var inputFonts = './src/fonts/**/*.*';
+var sassdocOptions      = { dest: siteOutput + '/sassdoc' };
+var inputFonts          = './src/fonts/**/*.*';
+
+
+// -----------------------------------------------------------------------------
+// Markdown
+// -----------------------------------------------------------------------------
+
+const CONTENT = 'src/markdown/**/*.md';
+
+// Moves content to {{ content }} and writes template to file
+function useTemplate(file) {
+  const { data } = file,
+        template = fs.readFileSync(path.resolve(inputTemplates, data.template));
+  
+  data.contents = file.contents;
+  file.contents = Buffer.from(template);
+  return;
+}
+
+//// Generates static site from markdown 
+gulp.task('markdown', () => {
+  return gulp.src(CONTENT)
+    .pipe(grayMatter())
+    .pipe(markdown())
+    .pipe(tap(useTemplate))
+    .pipe(nunjucksRender({ path: inputTemplates }))
+    .pipe(gulp.dest(siteOutput));
+});
+
+
+// -----------------------------------------------------------------------------
+// Nunjucks
+// -----------------------------------------------------------------------------
+
+gulp.task('pages', () => {
+  return gulp.src(inputPages)
+    .pipe(data(function() {
+      return require(inputData)
+    }))
+    .pipe(nunjucksRender({ path: inputTemplates }))
+    .pipe(gulp.dest(siteOutput));
+});
 
 
 // -----------------------------------------------------------------------------
@@ -67,23 +114,7 @@ gulp.task('scripts', function() {
 });
 
 
-// -----------------------------------------------------------------------------
-// Templating
-// -----------------------------------------------------------------------------
 
-gulp.task('nunjucks', function() {
-  nunjucksRender.nunjucks.configure([inputTemplates]);
-  // Gets .html and .nunjucks files in pages
-  return gulp.src([inputPages, inputTemplates])
-  // Adding data to Nunjucks
-  .pipe(data(function() {
-    return require(inputData)
-  }))
-  // Renders template with nunjucks
-  .pipe(nunjucksRender())
-  // output files in dist folder
-  .pipe(gulp.dest(siteOutput))
-});
 
 
 // -----------------------------------------------------------------------------
@@ -144,7 +175,7 @@ gulp.task('watch', function() {
     // gulp.watch([inputData], ['nunjucks']).on('change', browserSync.reload); // NOT WORKING TO INJECT NEW DATA
 
     // Watch nunjuck templates and reload browser if change
-    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['nunjucks']).on('change', browserSync.reload);
+    gulp.watch([inputPages,inputTemplates + '**/*.html'], ['pages']).on('change', browserSync.reload);
 
 });
 
@@ -166,4 +197,4 @@ gulp.task('browser-sync', function() {
 // Default task
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['fonts','sass', 'nunjucks', 'img', 'scripts', 'watch', 'browser-sync']);
+gulp.task('default', ['fonts','sass', 'markdown', 'pages', 'img', 'scripts', 'watch', 'browser-sync']);

@@ -1,0 +1,17 @@
+{% set page = "thesis" %}
+
+<!-- components -->
+
+{% extends "default.html" %}
+
+{% import "partials/sidebar-thesis.html" as sidebar %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{{ sidebar.thesisSidebar('hey its a link') }}
+
+{{ contents | safe }}
+
+{% endblock content %}

@@ -4,6 +4,7 @@
     /* mono */
     --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
     --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
+    --mono-text-text: "Recursive Mono Text Text", "IBM Plex Mono", monospace;
     --mono-text-medium: "Recursive Mono Text Medium", "IBM Plex Mono", monospace;
     --mono-text-semibold: "Recursive Mono Text SemiBold", "IBM Plex Mono", monospace;
     --mono-text-bold: "Recursive Mono Text Bold", "IBM Plex Mono", monospace;
@@ -13,6 +14,7 @@
 
     --mono-heading-light: "Recursive Mono Heading Light", "IBM Plex Mono", monospace;
     --mono-heading-regular: "Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
+    --mono-heading-text: "Recursive Mono Heading Text", "IBM Plex Mono", monospace;
     --mono-heading-medium: "Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
     --mono-heading-semibold: "Recursive Mono Heading SemiBold", "IBM Plex Mono", monospace;
     --mono-heading-bold: "Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
@@ -32,28 +34,30 @@
     /* mono var */
     --sans-var: "Recursive Sans Var", "Recursive Mono Var Fallback", "IBM Plex Sans", monospace;
     /* sans */
-    --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", monospace;
-    --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", monospace;
-    --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", monospace;
-    --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", monospace;
-    --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", monospace;
-    --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", monospace;
-    --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", monospace;
-    --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", monospace;
+    --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", sans-serif;
+    --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", sans-serif;
+    --sans-text-text: "Recursive Sans Text Text", "IBM Plex Sans", sans-serif;
+    --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", sans-serif;
+    --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", sans-serif;
+    --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", sans-serif;
+    --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", sans-serif;
+    --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", sans-serif;
+    --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", sans-serif;
 
-    --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", monospace;
-    --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", monospace;
-    --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", monospace;
-    --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", monospace;
-    --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", monospace;
-    --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", monospace;
-    --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", monospace;
-    --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", monospace;
+    --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", sans-serif;
+    --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", sans-serif;
+    --sans-heading-text: "Recursive Sans Heading Text", "IBM Plex Sans", sans-serif;
+    --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", sans-serif;
+    --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", sans-serif;
+    --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", sans-serif;
+    --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", sans-serif;
+    --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", sans-serif;
+    --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", sans-serif;
 }
 
 $wdth: mono, sans;
 $opsz: heading, text;
-$wght: heavy, black, extrabold, bold, semibold, medium, regular, light;
+$wght: heavy, black, extrabold, bold, semibold, medium, text, regular, light;
 $ital: italic, roman;
 
 @each $width in $wdth {
