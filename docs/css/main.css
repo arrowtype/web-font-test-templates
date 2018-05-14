@@ -789,6 +789,7 @@ header h1 a:visited {
 
 #specimen-nav {
   margin-top: 1rem;
+  min-height: 100vh;
 }
 
 #sidebar ul {
