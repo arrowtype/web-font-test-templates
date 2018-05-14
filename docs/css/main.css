@@ -1,0 +1,1481 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+  background: var(--main-accent);
+}
+
+::selection {
+  background: var(--main-accent);
+}
+
+*:focus {
+  outline: 2px solid var(--main-accent);
+}
+
+:root {
+  --w-light: 200;
+  /* padding */
+  --p-med: 2vw;
+  /* sidebar */
+  --sidebar-width: 260px;
+  /* colors */
+  --main-accent: #00ff00;
+  --secondary-accent: #00280a;
+  --dark-gray: #444;
+  --border: 1px solid #444;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.c-main {
+  color: var(--main-accent);
+}
+
+.c-gray {
+  color: #aaa;
+}
+
+.c-white {
+  color: #fff;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Recursive Mono Var";
+  src: url("../fonts/var/Recursive-mono-optical-sizes-ext-VF-050818.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Var Fallback";
+  src: url("../fonts/var/Recursive-mono-optical-sizes-VF.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Var";
+  src: url("../fonts/var/Recursive-sans-optical-sizes-ext-VF.ttf");
+}
+
+/* heading */
+@font-face {
+  font-family: "Recursive Mono Heading Light";
+  font-weight: 300;
+  src: url("../fonts/ttf/Recursive Mono-Heading Light.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Regular";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Heading Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Heading Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Medium";
+  font-weight: 500;
+  src: url("../fonts/ttf/Recursive Mono-Heading Medium.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading SemiBold";
+  font-weight: 600;
+  src: url("../fonts/ttf/Recursive Mono-Heading SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Bold";
+  font-weight: 700;
+  src: url("../fonts/ttf/Recursive Mono-Heading Bold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/ttf/Recursive Mono-Heading ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Black";
+  font-weight: 900;
+  src: url("../fonts/ttf/Recursive Mono-Heading Black.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Heading Heavy";
+  font-weight: 1000;
+  src: url("../fonts/ttf/Recursive Mono-Heading Heavy.ttf");
+}
+
+/* text */
+@font-face {
+  font-family: "Recursive Mono Text Light";
+  font-weight: 300;
+  src: url("../fonts/ttf/Recursive Mono-Text Light.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Regular";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Text Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Mono-Text Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Medium";
+  font-weight: 500;
+  src: url("../fonts/ttf/Recursive Mono-Text Medium.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text SemiBold";
+  font-weight: 600;
+  src: url("../fonts/ttf/Recursive Mono-Text SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Bold";
+  font-weight: 700;
+  src: url("../fonts/ttf/Recursive Mono-Text Bold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/ttf/Recursive Mono-Text ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Black";
+  font-weight: 900;
+  src: url("../fonts/ttf/Recursive Mono-Text Black.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Text Heavy";
+  font-weight: 1000;
+  src: url("../fonts/ttf/Recursive Mono-Text Heavy.ttf");
+}
+
+/* heading */
+@font-face {
+  font-family: "Recursive Sans Heading Light";
+  font-weight: 300;
+  src: url("../fonts/ttf/Recursive Sans-Heading Light.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Regular";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Heading Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Heading Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Medium";
+  font-weight: 500;
+  src: url("../fonts/ttf/Recursive Sans-Heading Medium.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading SemiBold";
+  font-weight: 600;
+  src: url("../fonts/ttf/Recursive Sans-Heading SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Bold";
+  font-weight: 700;
+  src: url("../fonts/ttf/Recursive Sans-Heading Bold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/ttf/Recursive Sans-Heading ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Black";
+  font-weight: 900;
+  src: url("../fonts/ttf/Recursive Sans-Heading Black.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Heading Heavy";
+  font-weight: 1000;
+  src: url("../fonts/ttf/Recursive Sans-Heading Heavy.ttf");
+}
+
+/* text */
+@font-face {
+  font-family: "Recursive Sans Text Light";
+  font-weight: 300;
+  src: url("../fonts/ttf/Recursive Sans-Text Light.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Regular";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Text Regular.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Text";
+  font-weight: 400;
+  src: url("../fonts/ttf/Recursive Sans-Text Text.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Medium";
+  font-weight: 500;
+  src: url("../fonts/ttf/Recursive Sans-Text Medium.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text SemiBold";
+  font-weight: 600;
+  src: url("../fonts/ttf/Recursive Sans-Text SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Bold";
+  font-weight: 700;
+  src: url("../fonts/ttf/Recursive Sans-Text Bold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text ExtraBold";
+  font-weight: 800;
+  src: url("../fonts/ttf/Recursive Sans-Text ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Black";
+  font-weight: 900;
+  src: url("../fonts/ttf/Recursive Sans-Text Black.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Sans Text Heavy";
+  font-weight: 1000;
+  src: url("../fonts/ttf/Recursive Sans-Text Heavy.ttf");
+}
+
+:root {
+  /* mono var */
+  --mono-var: "Recursive Mono Var", "Recursive Mono Var Fallback", "IBM Plex Mono", monospace;
+  /* mono */
+  --mono-text-light: "Recursive Mono Text Light", "IBM Plex Mono", monospace;
+  --mono-text-regular: "Recursive Mono Text Regular", "IBM Plex Mono", monospace;
+  --mono-text-text: "Recursive Mono Text Text", "IBM Plex Mono", monospace;
+  --mono-text-medium: "Recursive Mono Text Medium", "IBM Plex Mono", monospace;
+  --mono-text-semibold: "Recursive Mono Text SemiBold", "IBM Plex Mono", monospace;
+  --mono-text-bold: "Recursive Mono Text Bold", "IBM Plex Mono", monospace;
+  --mono-text-extrabold: "Recursive Mono Text ExtraBold", "IBM Plex Mono", monospace;
+  --mono-text-black: "Recursive Mono Text Black", "IBM Plex Mono", monospace;
+  --mono-text-heavy: "Recursive Mono Text Heavy", "IBM Plex Mono", monospace;
+  --mono-heading-light: "Recursive Mono Heading Light", "IBM Plex Mono", monospace;
+  --mono-heading-regular: "Recursive Mono Heading Regular", "IBM Plex Mono", monospace;
+  --mono-heading-text: "Recursive Mono Heading Text", "IBM Plex Mono", monospace;
+  --mono-heading-medium: "Recursive Mono Heading Medium", "IBM Plex Mono", monospace;
+  --mono-heading-semibold: "Recursive Mono Heading SemiBold", "IBM Plex Mono", monospace;
+  --mono-heading-bold: "Recursive Mono Heading Bold", "IBM Plex Mono", monospace;
+  --mono-heading-extrabold: "Recursive Mono Heading ExtraBold", "IBM Plex Mono", monospace;
+  --mono-heading-black: "Recursive Mono Heading Black", "IBM Plex Mono", monospace;
+  --mono-heading-heavy: "Recursive Mono Heading Heavy", "IBM Plex Mono", monospace;
+  /* mono italic */
+  --mono-text-light-italic: "Recursive Mono Text Light Italic", "IBM Plex Mono", monospace;
+  --mono-text-regular-italic: "Recursive Mono Text Regular Italic", "IBM Plex Mono", monospace;
+  --mono-text-medium-italic: "Recursive Mono Text Medium Italic", "IBM Plex Mono", monospace;
+  --mono-text-bold-italic: "Recursive Mono Text Bold Italic", "IBM Plex Mono", monospace;
+  --mono-heading-light-italic: "Recursive Mono Heading Light Italic", "IBM Plex Mono", monospace;
+  --mono-heading-regular-italic: "Recursive Mono Heading Regular Italic", "IBM Plex Mono", monospace;
+  --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
+  --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
+  /* mono var */
+  --sans-var: "Recursive Sans Var", "Recursive Mono Var Fallback", "IBM Plex Sans", monospace;
+  /* sans */
+  --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", sans-serif;
+  --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", sans-serif;
+  --sans-text-text: "Recursive Sans Text Text", "IBM Plex Sans", sans-serif;
+  --sans-text-medium: "Recursive Sans Text Medium", "IBM Plex Sans", sans-serif;
+  --sans-text-semibold: "Recursive Sans Text SemiBold", "IBM Plex Sans", sans-serif;
+  --sans-text-bold: "Recursive Sans Text Bold", "IBM Plex Sans", sans-serif;
+  --sans-text-extrabold: "Recursive Sans Text ExtraBold", "IBM Plex Sans", sans-serif;
+  --sans-text-black: "Recursive Sans Text Black", "IBM Plex Sans", sans-serif;
+  --sans-text-heavy: "Recursive Sans Text Heavy", "IBM Plex Sans", sans-serif;
+  --sans-heading-light: "Recursive Sans Heading Light", "IBM Plex Sans", sans-serif;
+  --sans-heading-regular: "Recursive Sans Heading Regular", "IBM Plex Sans", sans-serif;
+  --sans-heading-text: "Recursive Sans Heading Text", "IBM Plex Sans", sans-serif;
+  --sans-heading-medium: "Recursive Sans Heading Medium", "IBM Plex Sans", sans-serif;
+  --sans-heading-semibold: "Recursive Sans Heading SemiBold", "IBM Plex Sans", sans-serif;
+  --sans-heading-bold: "Recursive Sans Heading Bold", "IBM Plex Sans", sans-serif;
+  --sans-heading-extrabold: "Recursive Sans Heading ExtraBold", "IBM Plex Sans", sans-serif;
+  --sans-heading-black: "Recursive Sans Heading Black", "IBM Plex Sans", sans-serif;
+  --sans-heading-heavy: "Recursive Sans Heading Heavy", "IBM Plex Sans", sans-serif;
+}
+
+.mono-heading-heavy-italic {
+  font-family: var(--mono-heading-heavy-italic);
+  font-style: italic;
+}
+
+.mono-heading-heavy {
+  font-family: var(--mono-heading-heavy);
+}
+
+.mono-heading-black-italic {
+  font-family: var(--mono-heading-black-italic);
+  font-style: italic;
+}
+
+.mono-heading-black {
+  font-family: var(--mono-heading-black);
+}
+
+.mono-heading-extrabold-italic {
+  font-family: var(--mono-heading-extrabold-italic);
+  font-style: italic;
+}
+
+.mono-heading-extrabold {
+  font-family: var(--mono-heading-extrabold);
+}
+
+.mono-heading-bold-italic {
+  font-family: var(--mono-heading-bold-italic);
+  font-style: italic;
+}
+
+.mono-heading-bold {
+  font-family: var(--mono-heading-bold);
+}
+
+.mono-heading-semibold-italic {
+  font-family: var(--mono-heading-semibold-italic);
+  font-style: italic;
+}
+
+.mono-heading-semibold {
+  font-family: var(--mono-heading-semibold);
+}
+
+.mono-heading-medium-italic {
+  font-family: var(--mono-heading-medium-italic);
+  font-style: italic;
+}
+
+.mono-heading-medium {
+  font-family: var(--mono-heading-medium);
+}
+
+.mono-heading-text-italic {
+  font-family: var(--mono-heading-text-italic);
+  font-style: italic;
+}
+
+.mono-heading-text {
+  font-family: var(--mono-heading-text);
+}
+
+.mono-heading-regular-italic {
+  font-family: var(--mono-heading-regular-italic);
+  font-style: italic;
+}
+
+.mono-heading-regular {
+  font-family: var(--mono-heading-regular);
+}
+
+.mono-heading-light-italic {
+  font-family: var(--mono-heading-light-italic);
+  font-style: italic;
+}
+
+.mono-heading-light {
+  font-family: var(--mono-heading-light);
+}
+
+.mono-text-heavy-italic {
+  font-family: var(--mono-text-heavy-italic);
+  font-style: italic;
+}
+
+.mono-text-heavy {
+  font-family: var(--mono-text-heavy);
+}
+
+.mono-text-black-italic {
+  font-family: var(--mono-text-black-italic);
+  font-style: italic;
+}
+
+.mono-text-black {
+  font-family: var(--mono-text-black);
+}
+
+.mono-text-extrabold-italic {
+  font-family: var(--mono-text-extrabold-italic);
+  font-style: italic;
+}
+
+.mono-text-extrabold {
+  font-family: var(--mono-text-extrabold);
+}
+
+.mono-text-bold-italic {
+  font-family: var(--mono-text-bold-italic);
+  font-style: italic;
+}
+
+.mono-text-bold {
+  font-family: var(--mono-text-bold);
+}
+
+.mono-text-semibold-italic {
+  font-family: var(--mono-text-semibold-italic);
+  font-style: italic;
+}
+
+.mono-text-semibold {
+  font-family: var(--mono-text-semibold);
+}
+
+.mono-text-medium-italic {
+  font-family: var(--mono-text-medium-italic);
+  font-style: italic;
+}
+
+.mono-text-medium {
+  font-family: var(--mono-text-medium);
+}
+
+.mono-text-text-italic {
+  font-family: var(--mono-text-text-italic);
+  font-style: italic;
+}
+
+.mono-text-text {
+  font-family: var(--mono-text-text);
+}
+
+.mono-text-regular-italic {
+  font-family: var(--mono-text-regular-italic);
+  font-style: italic;
+}
+
+.mono-text-regular {
+  font-family: var(--mono-text-regular);
+}
+
+.mono-text-light-italic {
+  font-family: var(--mono-text-light-italic);
+  font-style: italic;
+}
+
+.mono-text-light {
+  font-family: var(--mono-text-light);
+}
+
+.sans-heading-heavy-italic {
+  font-family: var(--sans-heading-heavy-italic);
+  font-style: italic;
+}
+
+.sans-heading-heavy {
+  font-family: var(--sans-heading-heavy);
+}
+
+.sans-heading-black-italic {
+  font-family: var(--sans-heading-black-italic);
+  font-style: italic;
+}
+
+.sans-heading-black {
+  font-family: var(--sans-heading-black);
+}
+
+.sans-heading-extrabold-italic {
+  font-family: var(--sans-heading-extrabold-italic);
+  font-style: italic;
+}
+
+.sans-heading-extrabold {
+  font-family: var(--sans-heading-extrabold);
+}
+
+.sans-heading-bold-italic {
+  font-family: var(--sans-heading-bold-italic);
+  font-style: italic;
+}
+
+.sans-heading-bold {
+  font-family: var(--sans-heading-bold);
+}
+
+.sans-heading-semibold-italic {
+  font-family: var(--sans-heading-semibold-italic);
+  font-style: italic;
+}
+
+.sans-heading-semibold {
+  font-family: var(--sans-heading-semibold);
+}
+
+.sans-heading-medium-italic {
+  font-family: var(--sans-heading-medium-italic);
+  font-style: italic;
+}
+
+.sans-heading-medium {
+  font-family: var(--sans-heading-medium);
+}
+
+.sans-heading-text-italic {
+  font-family: var(--sans-heading-text-italic);
+  font-style: italic;
+}
+
+.sans-heading-text {
+  font-family: var(--sans-heading-text);
+}
+
+.sans-heading-regular-italic {
+  font-family: var(--sans-heading-regular-italic);
+  font-style: italic;
+}
+
+.sans-heading-regular {
+  font-family: var(--sans-heading-regular);
+}
+
+.sans-heading-light-italic {
+  font-family: var(--sans-heading-light-italic);
+  font-style: italic;
+}
+
+.sans-heading-light {
+  font-family: var(--sans-heading-light);
+}
+
+.sans-text-heavy-italic {
+  font-family: var(--sans-text-heavy-italic);
+  font-style: italic;
+}
+
+.sans-text-heavy {
+  font-family: var(--sans-text-heavy);
+}
+
+.sans-text-black-italic {
+  font-family: var(--sans-text-black-italic);
+  font-style: italic;
+}
+
+.sans-text-black {
+  font-family: var(--sans-text-black);
+}
+
+.sans-text-extrabold-italic {
+  font-family: var(--sans-text-extrabold-italic);
+  font-style: italic;
+}
+
+.sans-text-extrabold {
+  font-family: var(--sans-text-extrabold);
+}
+
+.sans-text-bold-italic {
+  font-family: var(--sans-text-bold-italic);
+  font-style: italic;
+}
+
+.sans-text-bold {
+  font-family: var(--sans-text-bold);
+}
+
+.sans-text-semibold-italic {
+  font-family: var(--sans-text-semibold-italic);
+  font-style: italic;
+}
+
+.sans-text-semibold {
+  font-family: var(--sans-text-semibold);
+}
+
+.sans-text-medium-italic {
+  font-family: var(--sans-text-medium-italic);
+  font-style: italic;
+}
+
+.sans-text-medium {
+  font-family: var(--sans-text-medium);
+}
+
+.sans-text-text-italic {
+  font-family: var(--sans-text-text-italic);
+  font-style: italic;
+}
+
+.sans-text-text {
+  font-family: var(--sans-text-text);
+}
+
+.sans-text-regular-italic {
+  font-family: var(--sans-text-regular-italic);
+  font-style: italic;
+}
+
+.sans-text-regular {
+  font-family: var(--sans-text-regular);
+}
+
+.sans-text-light-italic {
+  font-family: var(--sans-text-light-italic);
+  font-style: italic;
+}
+
+.sans-text-light {
+  font-family: var(--sans-text-light);
+}
+
+.mono-var {
+  font-family: var(--mono-var);
+}
+
+.sans-var {
+  font-family: var(--sans-var);
+}
+
+/* type styles */
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.wordbreak {
+  word-break: break-all;
+}
+
+/* font weight reset until OTF files are properly style-linked */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.f-1 {
+  font-size: 4rem;
+}
+
+.f-2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .f-2 {
+    font-size: 5vw;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  background-color: black;
+  color: #fff;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+  font-family: var(--sans-heading-bold);
+  /* display: grid;
+    grid-template-columns: 1fr auto; */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  /* height: 3rem; */
+  grid-area: header;
+  border-bottom: var(--border);
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  transition: .25s ease;
+  font-size: 1rem;
+}
+
+header a:hover {
+  transform: skewX(-18.43deg);
+}
+
+header .highlight {
+  color: var(--main-accent);
+}
+
+header h1 a {
+  color: #fff;
+}
+
+header h1 a:visited {
+  color: #fff;
+}
+
+@media print {
+  header {
+    display: none;
+  }
+}
+
+#sidebar {
+  grid-column: 1 / 2;
+  background-color: #000;
+  padding-top: 3rem;
+  font-family: var(--mono-heading-bold);
+  text-transform: uppercase;
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100vh;
+  grid-area: sidebar;
+  overflow-y: auto;
+  border-right: var(--border);
+}
+
+#specimen-nav {
+  margin-top: 1rem;
+  min-height: 100vh;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0 2rem;
+}
+
+#sidebar ul ul {
+  margin-bottom: 1rem;
+}
+
+#sidebar li {
+  line-height: 1.25rem;
+}
+
+#sidebar li a {
+  text-decoration: none;
+  color: #aaa;
+  /* padding: 2rem 0; */
+  transition: .35s;
+  display: block;
+  margin-bottom: .5em;
+}
+
+#sidebar li li a {
+  margin-bottom: 0;
+}
+
+#sidebar li a:hover {
+  color: #fff;
+  /* transform: skewX(9deg); */
+  font-variation-settings: "wght" 700, "opsz" 10;
+}
+
+#sidebar ul li li a:before {
+  content: "▶";
+  /* position: fixed; */
+  padding-right: .5em;
+  font-size: .65em;
+  color: rgba(0, 255, 0, 0);
+  transition: .75s;
+}
+
+#sidebar ul li li a:hover:before {
+  color: #888;
+  transition: .25s;
+}
+
+#sidebar li ul {
+  margin-left: -1rem;
+  padding: 0 0rem;
+  font-family: var(--sans-var);
+  font-variation-settings: "wght" 700, "opsz" 10;
+  text-transform: none;
+  letter-spacing: 0;
+  border-left: 2px transparent solid;
+}
+
+#sidebar li ul li {
+  margin-left: 0;
+}
+
+#sidebar li ul ul {
+  margin-left: 0.9rem;
+  padding: 0 0.3rem;
+  font-family: var(--sans-var);
+  font-variation-settings: "wght" 400, "opsz" 10;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+#sidebar ul > li a.highlight {
+  color: var(--main-accent);
+  font-variation-settings: "wght" 800, "opsz" 10;
+  transition: .25s;
+}
+
+#sidebar ul li li a.highlight {
+  color: #fff;
+  text-shadow: none;
+}
+
+#sidebar ul li li a + ul {
+  border-left: 2px transparent solid;
+  transition: 1s ease;
+}
+
+#sidebar ul li li a.highlight + ul {
+  border-left: var(--border);
+  transition: 1s ease;
+}
+
+#sidebar ul li li li a,
+#sidebar ul li li li a.highlight {
+  border-left: none;
+}
+
+#sidebar ul li li li a.highlight:before {
+  color: var(--main-accent);
+  transition: .25s;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--sidebar-width) 1fr;
+      grid-template-columns: var(--sidebar-width) 1fr;
+  -ms-grid-rows: 3rem 1fr;
+      grid-template-rows: 3rem 1fr;
+  grid-template-areas: "header     header" "sidebar    content";
+  background-color: #fff;
+  color: black;
+}
+
+#tests {
+  /* grid-column: 2 / span 1; */
+  grid-column-end: -1;
+  grid-area: content;
+  max-width: 100vw;
+  /* padding-left: var(--sidebar-width); */
+}
+
+header h1 {
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+nav li:last-of-type {
+  padding-right: 0;
+}
+
+nav li a {
+  color: white;
+  font-family: var(--sans-heading-bold);
+}
+
+.tests {
+  padding-top: 4rem;
+}
+
+.section-title {
+  background: #efefef;
+  color: var(--secondary-accent);
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.section-title-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6vw var(--p-med);
+}
+
+.section-title h3 {
+  /* font-family: var(--text-bold); */
+  font-size: 6vw;
+  margin: 0;
+}
+
+@media (max-width: 1160px) {
+  .section-title h3 {
+    font-size: 10vw;
+  }
+}
+
+.section-title p {
+  font-size: 20px;
+  max-width: 20em;
+  color: #ddd;
+}
+
+.width-section-title {
+  font-size: 12em;
+  background: #222;
+  color: var(--main-accent);
+}
+
+.width-section-title h2 {
+  margin: 0;
+}
+
+@media (max-width: 1160px) {
+  .width-section-title {
+    font-size: 20vw;
+  }
+}
+
+.font-title {
+  background: var(--secondary-accent);
+  color: var(--main-accent);
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.font-title-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  padding: var(--p-med);
+  margin: 0 auto;
+}
+
+.font-title h4 {
+  font-size: 3vw;
+  margin: 10vh 0 0;
+}
+
+@media (max-width: 1160px) {
+  .font-title h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* PAGE */
+@page {
+  margin: 18pt;
+  size: landscape a4;
+}
+
+.page {
+  padding: var(--p-med);
+  /* overflow-x: hidden; */
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0 15px;
+  -ms-grid-columns: (minmax(460px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  font-weight: normal;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page p, .page div {
+  max-width: 100vw;
+}
+
+.page h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--sans-heading-bold);
+  color: blue;
+}
+
+.alphabet-spec {
+  margin: 1rem 0 0;
+  grid-column: 1 / -1;
+}
+
+.alphabet {
+  font-size: 7.5rem;
+  line-height: 8rem;
+  margin: 0rem 0;
+  grid-column: 1 / -1;
+  word-wrap: break-word;
+}
+
+.very-large-text {
+  /* font-size: 40pt;
+    line-height: 45pt; */
+  font-size: 50px;
+  line-height: 50px;
+  grid-column: 1 / -1;
+}
+
+.large-text {
+  /* font-size: 20pt; */
+  font-size: 30px;
+  line-height: 1.25;
+  /* grid-column: 1 / span 5; */
+}
+
+.very-large-text p:last-of-type, .large-text p:last-of-type {
+  margin: 0;
+}
+
+.small-text {
+  /* font-size: 10pt; */
+  font-size: 16px;
+  line-height: 1.5;
+  /* grid-column: auto / span 5; */
+}
+
+.caption {
+  font-family: var(--mono-text-medium);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #208800;
+  margin-bottom: 0;
+}
+
+.caption ~ p {
+  margin-top: 0;
+}
+
+.waterfall {
+  margin: 0;
+  grid-column: 1 / -1;
+  /* text-transform: lowercase; */
+}
+
+.size-1 {
+  font-size: 36px;
+  line-height: 1.25;
+  max-width: 27.5em;
+}
+
+.size-2 {
+  font-size: 24px;
+  line-height: 1.25;
+  max-width: 30em;
+}
+
+.size-3 {
+  font-size: 18px;
+  line-height: 1.25;
+  max-width: 35em;
+}
+
+.matrix {
+  grid-column: 1 / -1;
+  -ms-grid-row: 2;
+      grid-row: 2;
+  background-color: #121;
+  color: var(--main-accent);
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 3rem 1fr;
+      grid-template-rows: 3rem 1fr;
+}
+
+.matrix p {
+  grid-column: 1 / -1;
+  text-align: center;
+  line-height: 1;
+  word-spacing: -.6em;
+  opacity: .75;
+  position: relative;
+  top: -2em;
+  cursor: move;
+}
+
+.matrix p:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 35vh;
+  background-color: red;
+  background: linear-gradient(rgba(17, 34, 17, 0), #112211 60%);
+  position: relative;
+  top: -30vh;
+}
+
+.matrix .name-wrapper {
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+      grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.matrix textarea {
+  display: block;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+      grid-row: 1;
+  z-index: 1;
+  text-align: center;
+  font-size: 15vw;
+  line-height: 1.125em;
+  width: 90vw;
+  height: 80vh;
+  background-color: transparent;
+  border: none;
+  color: white !important;
+  margin: 0;
+  text-shadow: .05em .05em .25em black;
+  position: relative;
+  resize: none;
+  animation: none;
+}
+
+.matrix textarea ::-webkit-input-placeholder, .matrix textarea ::-moz-placeholder, .matrix textarea :-ms-input-placeholder, .matrix textarea :-moz-placeholder {
+  color: white;
+}
+
+.matrix textarea:after {
+  content: "";
+  display: block;
+  position: relative;
+  box-shadow: .125em .125em .5em black;
+  left: .125em;
+  float: right;
+  background: white;
+  width: .02em;
+  border-radius: 999px;
+  height: 1em;
+  opacity: 0;
+  animation: blink 0.35s linear 1s infinite alternate;
+}
+
+.matrix textarea:focus {
+  outline: none;
+}
+
+.matrix textarea:focus:after {
+  animation: none;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero {
+  grid-column: 1 / -1;
+  -ms-grid-row: 2;
+      grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.hero .greeting {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: relative;
+}
+
+.hero #lineDrawing {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 75%;
+  position: relative;
+  transition: .5s;
+}
+
+@media (max-width: 1200px) {
+  .hero #lineDrawing {
+    width: 95%;
+  }
+}
+
+.hero #lineDrawing #lineDrawing svg g {
+  transform-origin: 50% 50%;
+}
+
+.hero h1 {
+  margin-bottom: 0;
+}
+
+.hero pre {
+  counter-reset: line;
+}
+
+.hero code {
+  counter-increment: line;
+}
+
+.hero code:before {
+  content: counter(line);
+  font-family: var(--mono-heading-regular);
+  color: var(--dark-gray);
+  padding-right: .1em;
+  margin: 0 .5em 0 -2em;
+}
+
+.hero code:before {
+  -webkit-user-select: none;
+}
+
+.hide-sm {
+  display: block;
+}
+
+.show-sm {
+  display: none;
+}
+
+.hide-lg {
+  display: none;
+}
+
+.show-lg {
+  display: block;
+}
+
+#sidebar-button {
+  background: none;
+  color: white;
+  border: none;
+  font-family: var(--mono-header-bold);
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .25s;
+  padding: 0;
+}
+
+#sidebar-button:hover {
+  cursor: pointer;
+  color: var(--main-accent);
+}
+
+@media (max-width: 1160px) {
+  body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header {
+    height: 3rem;
+  }
+  #tests {
+    -ms-grid-column: 1 span 2;
+        grid-column: 1 span 2;
+    /* padding-left: var(--sidebar-width); */
+    width: 100vw;
+  }
+  #sidebar {
+    z-index: 2;
+    position: fixed;
+    width: 250px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.96);
+    border-right: none;
+    border-left: var(--border);
+    transform: translateX(100%);
+    transition: .25s ease-out;
+  }
+  #sidebar.revealed {
+    transform: translateX(0%);
+  }
+  #mobile-nav {
+    border-bottom: var(--border);
+    width: 100%;
+    height: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  #mobile-nav ul {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 0;
+    height: 100%;
+  }
+  #mobile-nav li {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #mobile-nav li a {
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #mobile-nav li a:hover {
+    transform: none;
+  }
+  #mobile-nav li a.highlight {
+    position: relative;
+    top: 2.5px;
+  }
+  #mobile-nav li a.highlight:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--main-accent);
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: relative;
+    top: .6rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .show-sm {
+    display: block;
+  }
+}
+
+@page {
+  margin: 18pt;
+  size: landscape a4;
+}
+
+.page h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--sans-heading-bold);
+  color: blue;
+}
+
+.page .page-label {
+  color: #888;
+  margin-bottom: 0;
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  .print-only {
+    display: block;
+  }
+  .screen-only {
+    display: none;
+  }
+  .page {
+    border-bottom: none;
+    size: landscape;
+    page-break-after: always;
+  }
+  .section-title, .font-title {
+    display: none;
+  }
+  body {
+    display: block;
+  }
+  #sidebar {
+    display: none;
+  }
+  #tests {
+    padding-top: 0;
+  }
+}
