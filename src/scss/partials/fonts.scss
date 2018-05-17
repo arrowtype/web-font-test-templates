@@ -14,12 +14,17 @@
 
 @font-face {
     font-family: "Recursive Mono Var Fallback";
-    src: url("../fonts/var/Recursive-mono-optical-sizes-VF.ttf");
+    src: url("../fonts/var/Recursive-mono-optical-sizes-core-VF.ttf");
 } 
 
 @font-face {
     font-family: "Recursive Sans Var";
     src: url("../fonts/var/Recursive-sans-optical-sizes-ext-VF.ttf");
+} 
+@font-face {
+    font-family: "Recursive Mono Var Fallback";
+    font-family: "Recursive Sans Var ";
+    src: url("../fonts/var/Recursive-sans-optical-sizes-core-VF.ttf");
 } 
 
 /* heading */

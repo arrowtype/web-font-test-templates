@@ -63,12 +63,18 @@ html {
 
 @font-face {
   font-family: "Recursive Mono Var Fallback";
-  src: url("../fonts/var/Recursive-mono-optical-sizes-VF.ttf");
+  src: url("../fonts/var/Recursive-mono-optical-sizes-core-VF.ttf");
 }
 
 @font-face {
   font-family: "Recursive Sans Var";
   src: url("../fonts/var/Recursive-sans-optical-sizes-ext-VF.ttf");
+}
+
+@font-face {
+  font-family: "Recursive Mono Var Fallback";
+  font-family: "Recursive Sans Var ";
+  src: url("../fonts/var/Recursive-sans-optical-sizes-core-VF.ttf");
 }
 
 /* heading */
@@ -335,7 +341,7 @@ html {
   --mono-heading-medium-italic: "Recursive Mono Heading Medium Italic", "IBM Plex Mono", monospace;
   --mono-heading-bold-italic: "Recursive Mono Heading Bold Italic", "IBM Plex Mono", monospace;
   /* mono var */
-  --sans-var: "Recursive Sans Var", "Recursive Mono Var Fallback", "IBM Plex Sans", monospace;
+  --sans-var: "Recursive Sans Var", "Recursive Sans Var Fallback", "IBM Plex Sans", monospace;
   /* sans */
   --sans-text-light: "Recursive Sans Text Light", "IBM Plex Sans", sans-serif;
   --sans-text-regular: "Recursive Sans Text Regular", "IBM Plex Sans", sans-serif;
@@ -722,6 +728,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+p {
+  margin-bottom: .5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
   position: fixed;
   z-index: 3;
@@ -781,7 +799,6 @@ header h1 a:visited {
   text-transform: uppercase;
   position: fixed;
   width: var(--sidebar-width);
-  height: 100vh;
   grid-area: sidebar;
   overflow-y: auto;
   border-right: var(--border);
@@ -1128,6 +1145,10 @@ nav li a {
   max-width: 35em;
 }
 
+.grid-full-width {
+  grid-column: 1 / -1;
+}
+
 .matrix {
   grid-column: 1 / -1;
   -ms-grid-row: 2;
@@ -1468,6 +1489,10 @@ nav li a {
   }
   .section-title, .font-title {
     display: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
   body {
     display: block;

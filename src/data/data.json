@@ -1,6 +1,6 @@
 {
     "familyName": "Recursive",
-    "versionDate": "15 May, 2018",
+    "versionDate": "17 May, 2018",
     "fonts": {
 		"params": {
             "wdth": [
@@ -14,7 +14,6 @@
             "wght": [
                 "Light",
                 "Regular",
-                "Text",
                 "Medium",
                 "SemiBold",
                 "Bold",
@@ -22,9 +21,15 @@
                 "Black",
                 "Heavy"
             ],
+            "coreWght": [
+                "Light",
+                "Medium",
+                "Bold",
+                "Heavy"
+            ],
             "printWght": [
                 "Light",
-                "Text",
+                "Regular",
                 "Bold",
                 "Heavy"
             ],

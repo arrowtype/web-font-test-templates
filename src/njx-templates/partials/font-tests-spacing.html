@@ -1,0 +1,107 @@
+<div id="tests">
+       
+    {% for wdth in fonts.params.wdth %}
+    <section id="{{wdth | lower}}" class="font-section {{wdth | lower}}-heading-bold">
+            <div class="section-title width-section-title {{ lvlOne_title_fontStyle }}">
+                <div class="section-title-wrapper width-section-title-wrapper">
+                    <h2>{{ wdth }}</h2>
+                </div>
+            </div>
+        <div>
+            {% for opsz in fonts.params.opsz %}
+                <div id="{{ wdth | lower}}-{{ opsz | lower }}" class="font-section {{wdth | lower}}-{{ opsz | lower }}-bold">
+                    <div class="section-title {{ lvlOne_title_fontStyle }}">
+                        <div class="section-title-wrapper">
+                            <h3>{{ wdth }} {{opsz}}</h3>
+                        </div>
+                    </div>
+                    <div>
+                    {% for wght in fonts.params.coreWght %}
+                        
+                    
+                        <div id="{{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" class=" font-section {{wdth | lower}}-{{ opsz | lower }}-{{wght | lower}}" >
+                            
+                            <div class="font-title">
+                                <div class="font-title-wrapper">
+                                    <h4>{{ wdth }} {{ opsz }} {{ wght }} {{ ital }}</h4>
+                                </div>
+                            </div>
+
+                            <div class="page">
+                                <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
+                                <div class="large-text grid-full-width">
+                                    <p class="caption">
+                                            <span class="screen-only">Size: 30px // Line Height: 37.5px</span> <span class="print-only">Size: 22.5pt // Line Height: 28.125pt</span>
+                                    </p>
+                                    <p>
+                                        HHHOOO HOHOHO HAHOAO HBHOBO HCHOCO HDHODO HEHOEO HFHOFO HGHOGO HHHOHO HIHOIO HJHOJO HKHOKO HLHOLO HMHOMO HNHONO HOHOOO HPHOPO HQHOQO HRHORO HSHOSO HTHOTO HUHOUO HVHOVO HWHOWO HXHOXO HYHOYO HZHOZO
+                                    </p>
+                                    <p>
+                                        nnnooo nonono nanoao nbnobo ncnoco ndnodo nenoeo nfnofo ngnogo nhnoho ninoio njnojo nknoko nlnolo nmnomo nnnono nonooo npnopo nqnoqo nrnoro nsnoso ntnoto nunouo nvnovo nwnowo nxnoxo nynoyo nznozo
+                                    </p>
+                                    <p>
+                                        111000 010101 111010 121020 131030 141040 151050 161060 171070 181080 191090 H0HO0O H1HO1O H2HO2O H3HO3O H4HO4O H5HO5O H6HO6O H7HO7O H8HO8O H9HO9O
+                                    </p>
+                                    {% if wdth == "Mono" and wght != "Heavy"%}
+                                    <p>
+                                        ===*** =.=*.* =,=*,* =:=*:* =;=*;* ="=*"* ='=*'* =‘=*‘* =’=*’* =“=*“* =”=*”* =`=*`* =#=*#* =(=*(* =)=*)* ={=*{* =}=*}* =[=*[* =]=*]* =!=*!* =?=*?* =@=*@* =*=*** =-=*-* =_=*_* =/=*/* =\=*\* =&lt;=*&lt;* =&gt;=*&gt;* =$=*$* =%=*%*
+                                    </p>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="page">
+                                <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
+                                <div class="small-text grid-full-width">
+                                    <p class="caption">
+                                            <span class="screen-only">Size: 30px // Line Height: 37.5px</span> <span class="print-only">Size: 22.5pt // Line Height: 28.125pt</span> From <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">Wikipedia</a>
+                                    </p>
+                                    <p>A common
+                                    <a href="/wiki/Computer_programming" title="Computer programming">computer programming</a> tactic is to divide a problem into sub-problems of the same type as the original, solve those sub-problems, and combine the results. This is often referred to as the
+                                    <a href="/wiki/Divide-and-conquer_method" class="mw-redirect" title="Divide-and-conquer method">divide-and-conquer method</a>; when combined with a
+                                    <a href="/wiki/Lookup_table" title="Lookup table">lookup table</a> that stores the results of solving sub-problems (to avoid solving them repeatedly and incurring extra computation time), it can be referred to as
+                                    <a href="/wiki/Dynamic_programming" title="Dynamic programming">dynamic programming</a> or
+                                    <a href="/wiki/Memoization" title="Memoization">memoization</a>.</p>
+                                <p>A recursive function definition has one or more
+                                    <i>base cases</i>, meaning input(s) for which the function produces a result
+                                    <a href="/wiki/Trivial_(mathematics)" class="mw-redirect" title="Trivial (mathematics)">trivially</a> (without recurring), and one or more
+                                    <i>recursive cases</i>, meaning input(s) for which the program recurs (calls itself). For example, the
+                                    <a href="/wiki/Factorial" title="Factorial">factorial</a> function can be defined recursively by the equations
+                                    <span class="texhtml">0! = 1</span> and, for all
+                                    <span class="texhtml">
+                                        <i>n</i> &gt; 0</span>,
+                                    <span class="texhtml">
+                                        <i>n</i>! =
+                                        <i>n</i>(
+                                        <i>n</i> − 1)!</span>. Neither equation by itself constitutes a complete definition; the first is the base case, and the second is the recursive case. Because the base case breaks the chain of recursion, it is sometimes also called the "terminating case".</p>
+                                <p>The job of the recursive cases can be seen as breaking down complex inputs into simpler ones. In a properly designed recursive function, with each recursive call, the input problem must be simplified in such a way that eventually the base case must be reached. (Functions that are not intended to terminate under normal circumstances—for example, some
+                                    <a href="/wiki/Daemon_(computer_software)" class="mw-redirect" title="Daemon (computer software)">system and server processes</a>—are an exception to this.) Neglecting to write a base case, or testing for it incorrectly, can cause an
+                                    <a href="/wiki/Infinite_loop" title="Infinite loop">infinite loop</a>.</p>
+                                <p>For some functions (such as one that computes the
+                                    <a href="/wiki/Series_(mathematics)" title="Series (mathematics)">series</a> for
+                                    <span class="texhtml">
+                                        <i>
+                                            <a href="/wiki/E_(mathematical_constant)" title="E (mathematical constant)">e</a>
+                                        </i> = 1/0! + 1/1! + 1/2! + 1/3! + ...</span>) there is not an obvious base case implied by the input data; for these one may add a
+                                    <a href="/wiki/Parameter" title="Parameter">parameter</a> (such as the number of terms to be added, in our series example) to provide a 'stopping criterion' that establishes the base case. Such an example is more naturally treated by co-recursion, where successive terms in the output are the partial sums; this can be converted to a recursion by using the indexing parameter to say "compute the
+                                    <i>n</i>th term (
+                                    <i>n</i>th partial sum)".</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        
+
+                    {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+
+
+</div>

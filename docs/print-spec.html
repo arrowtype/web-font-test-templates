@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Recursive Web Tests</title>
+
+  <meta name="description" content="">
+  <meta itemprop="name" content="">
+  <meta itemprop="description" content="">
+
+  <!-- prevent google indexing -->
+  <meta name="robots" content="noindex">
+
+  <!-- Twitter-->
+  <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@twitter">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content=""> -->
+
+  <!-- Opengraph-->
+  <!-- <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en_US"> -->
+
+  <!-- Favicons (created with http://realfavicongenerator.net/)-->
+  <!-- <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/img/favicons/manifest.json">
+	<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff"> -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+  <header>
+    <h1><a  href="index.html">Recursive</a></h1>
+    
+    <div id="desktop-nav" class="hide-sm">
+        <nav>
+    <ul>
+        <li>
+            <a class="highlight" href="specs.html">Specimen</a>
+        </li>
+        <li>
+            <a  href="matrix.html">Tester</a>
+        </li>
+    </ul>
+</nav>
+    </div>
+
+    <button id="sidebar-button" class="show-sm">Menu</button>
+</header>
+
+  <div id="sidebar" >
+    <div id="mobile-nav" class="show-sm">
+        <nav>
+    <ul>
+        <li>
+            <a class="highlight" href="specs.html">Specimen</a>
+        </li>
+        <li>
+            <a  href="matrix.html">Tester</a>
+        </li>
+    </ul>
+</nav>
+    </div>  
+    
+    
+    <ul id="specimen-nav">
+        
+            <li>
+                <a href="#mono">Recursive Mono</a>
+                <ul>
+                    
+                        <li>
+                            <a href="#mono-heading">Heading</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-medium">Medium</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-semibold">SemiBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-extrabold">ExtraBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-black">Black</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="#mono-text">Text</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-medium">Medium</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-semibold">SemiBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-extrabold">ExtraBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-black">Black</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#sans">Recursive Sans</a>
+                <ul>
+                    
+                        <li>
+                            <a href="#sans-heading">Heading</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-medium">Medium</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-semibold">SemiBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-extrabold">ExtraBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-black">Black</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="#sans-text">Text</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-medium">Medium</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-semibold">SemiBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-extrabold">ExtraBold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-black">Black</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+    
+    
+    
+</div>
+
+  
+
+<div id="sidebar" >
+    <div id="mobile-nav" class="show-sm">
+        <nav>
+    <ul>
+        <li>
+            <a class="highlight" href="specs.html">Specimen</a>
+        </li>
+        <li>
+            <a  href="matrix.html">Tester</a>
+        </li>
+    </ul>
+</nav>
+    </div>  
+    
+    <ul id="specimen-nav">
+        
+            <li>
+                <a href="#mono">Recursive Mono</a>
+                <ul>
+                    
+                        <li>
+                            <a href="#mono-heading">Heading</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-heading-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="#mono-text">Text</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#mono-text-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <a href="#sans">Recursive Sans</a>
+                <ul>
+                    
+                        <li>
+                            <a href="#sans-heading">Heading</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-heading-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a href="#sans-text">Text</a>
+                            <ul>
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-light">Light</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-regular">Regular</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-bold">Bold</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                                
+                                <li>
+                                
+                                
+                                    <a href="#sans-text-heavy">Heavy</a>   
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+    
+    
+</div>
+
+<div id="tests">
+       
+    
+    <section id="mono" class="font-section mono-heading-bold">
+            <div class="section-title width-section-title ">
+                <div class="section-title-wrapper width-section-title-wrapper">
+                    <h2>Mono</h2>
+                </div>
+            </div>
+        <div>
+            
+                <div id="mono-heading" class="font-section mono-heading-bold">
+                    <div class="section-title ">
+                        <div class="section-title-wrapper">
+                            <h3>Mono Heading</h3>
+                        </div>
+                    </div>
+                    <div>
+                    
+                        
+                    
+                        <div id="mono-heading-light" class=" font-section mono-heading-light" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Heading Light </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Heading Light  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-heading-regular" class=" font-section mono-heading-regular" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Heading Regular </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Heading Regular  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-heading-bold" class=" font-section mono-heading-bold" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Heading Bold </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Heading Bold  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-heading-heavy" class=" font-section mono-heading-heavy" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Heading Heavy </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Heading Heavy  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                    </div>
+                </div>
+            
+                <div id="mono-text" class="font-section mono-text-bold">
+                    <div class="section-title ">
+                        <div class="section-title-wrapper">
+                            <h3>Mono Text</h3>
+                        </div>
+                    </div>
+                    <div>
+                    
+                        
+                    
+                        <div id="mono-text-light" class=" font-section mono-text-light" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Text Light </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Text Light  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-text-regular" class=" font-section mono-text-regular" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Text Regular </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Text Regular  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-text-bold" class=" font-section mono-text-bold" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Text Bold </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Text Bold  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="mono-text-heavy" class=" font-section mono-text-heavy" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Mono Text Heavy </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Mono Text Heavy  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+    
+    <section id="sans" class="font-section sans-heading-bold">
+            <div class="section-title width-section-title ">
+                <div class="section-title-wrapper width-section-title-wrapper">
+                    <h2>Sans</h2>
+                </div>
+            </div>
+        <div>
+            
+                <div id="sans-heading" class="font-section sans-heading-bold">
+                    <div class="section-title ">
+                        <div class="section-title-wrapper">
+                            <h3>Sans Heading</h3>
+                        </div>
+                    </div>
+                    <div>
+                    
+                        
+                    
+                        <div id="sans-heading-light" class=" font-section sans-heading-light" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Heading Light </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Heading Light  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-heading-regular" class=" font-section sans-heading-regular" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Heading Regular </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Heading Regular  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-heading-bold" class=" font-section sans-heading-bold" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Heading Bold </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Heading Bold  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-heading-heavy" class=" font-section sans-heading-heavy" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Heading Heavy </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Heading Heavy  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                    </div>
+                </div>
+            
+                <div id="sans-text" class="font-section sans-text-bold">
+                    <div class="section-title ">
+                        <div class="section-title-wrapper">
+                            <h3>Sans Text</h3>
+                        </div>
+                    </div>
+                    <div>
+                    
+                        
+                    
+                        <div id="sans-text-light" class=" font-section sans-text-light" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Text Light </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Text Light  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-text-regular" class=" font-section sans-text-regular" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Text Regular </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Text Regular  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-text-bold" class=" font-section sans-text-bold" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Text Bold </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Text Bold  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                        
+                    
+                        <div id="sans-text-heavy" class=" font-section sans-text-heavy" >
+                            
+                                <div class="font-title">
+                                    <div class="font-title-wrapper">
+                                        <h4>Sans Text Heavy </h4>
+                                    </div>
+                                </div>
+                                <div class="page" contenteditable="true" spellcheck="false">
+                                    <p class="print-only page-label">Recursive Sans Text Heavy  - 17 May, 2018</p>
+                                    <div class="alphabet-spec">
+                                        
+                                        <p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                                        <p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+                                        <p class="alphabet">0123456789</p>
+
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                    
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+    
+
+
+
+</div>
+
+
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
