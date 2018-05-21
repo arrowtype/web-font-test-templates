@@ -7,7 +7,13 @@
 
   {% include "partials/header.html" %}
 
-  {% include "partials/sidebar-roman.html" %}
+  {% if page === "spec" or page === "spacing"%}
+  <div class="scroll-nav">
+    {% include "partials/sidebar-roman.html" %}
+  </div>
+  {% else %}
+    {% include "partials/sidebar-roman.html" %}
+  {% endif %}
 
   {% block content %}{% endblock %}
 

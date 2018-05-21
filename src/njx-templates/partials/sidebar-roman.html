@@ -3,7 +3,7 @@
         {% include "partials/nav.html" %}
     </div>  
     
-    {%if page == "spec"%}
+    {%if page == "spec" or page == "spacing"%}
     <ul id="specimen-nav">
         {% for wdth in fonts.params.wdth %}
             <li>
@@ -13,7 +13,7 @@
                         <li>
                             <a href="#{{ wdth | lower }}-{{opsz | lower }}">{{ opsz }}</a>
                             <ul>
-                                {% for wght in fonts.params.wght %}
+                                {% for wght in fonts.params.coreWght %}
                                 
                                 <li>
                                 

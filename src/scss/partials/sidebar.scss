@@ -8,10 +8,14 @@
     // letter-spacing: .6em;
     position: fixed;
     width: var(--sidebar-width);
-    // height: 100vh;
     grid-area: sidebar;
     overflow-y: auto;
     border-right: var(--border);
+    padding-bottom: 4rem;
+}
+
+.scroll-nav #sidebar {
+    height: 100vh;
 }
 
 #specimen-nav {

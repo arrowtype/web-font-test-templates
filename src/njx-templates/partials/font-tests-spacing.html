@@ -29,7 +29,7 @@
 
                             <div class="page">
                                 <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
-                                <div class="large-text grid-full-width">
+                                <div class="large-text spacing-text grid-full-width">
                                     <p class="caption">
                                             <span class="screen-only">Size: 30px // Line Height: 37.5px</span> <span class="print-only">Size: 22.5pt // Line Height: 28.125pt</span>
                                     </p>
@@ -42,9 +42,12 @@
                                     <p>
                                         111000 010101 111010 121020 131030 141040 151050 161060 171070 181080 191090 H0HO0O H1HO1O H2HO2O H3HO3O H4HO4O H5HO5O H6HO6O H7HO7O H8HO8O H9HO9O
                                     </p>
-                                    {% if wdth == "Mono" and wght != "Heavy"%}
+                                    {% if wght != "Heavy"%}
                                     <p>
                                         ===*** =.=*.* =,=*,* =:=*:* =;=*;* ="=*"* ='=*'* =‘=*‘* =’=*’* =“=*“* =”=*”* =`=*`* =#=*#* =(=*(* =)=*)* ={=*{* =}=*}* =[=*[* =]=*]* =!=*!* =?=*?* =@=*@* =*=*** =-=*-* =_=*_* =/=*/* =\=*\* =&lt;=*&lt;* =&gt;=*&gt;* =$=*$* =%=*%*
+
+
+                                        100%
                                     </p>
                                     {% endif %}
                                 </div>
@@ -54,7 +57,7 @@
                                 <p class="print-only page-label">{{ familyName }} {{ wdth }} {{ opsz }} {{ wght }} {{ ital }} - {{ versionDate }}</p>
                                 <div class="small-text grid-full-width">
                                     <p class="caption">
-                                            <span class="screen-only">Size: 30px // Line Height: 37.5px</span> <span class="print-only">Size: 22.5pt // Line Height: 28.125pt</span> From <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">Wikipedia</a>
+                                        <span class="screen-only">Size: 30px // Line Height: 37.5px</span> <span class="print-only">Size: 22.5pt // Line Height: 28.125pt</span>; Text from <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">Wikipedia</a>
                                     </p>
                                     <p>A common
                                     <a href="/wiki/Computer_programming" title="Computer programming">computer programming</a> tactic is to divide a problem into sub-problems of the same type as the original, solve those sub-problems, and combine the results. This is often referred to as the
